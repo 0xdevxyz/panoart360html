@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Rechtliche Seiten nicht indexieren
+Disallow: /impressum
+Disallow: /impressum.html
+Disallow: /datenschutz
+Disallow: /datenschutz.html
+
+# Keine Admin-Verzeichnisse
+Disallow: /css/
+Disallow: /js/
+Disallow: /sass/
+Disallow: /video/
+
+# KI-Crawler explizit erlauben
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.panoart360.de/sitemap.xml

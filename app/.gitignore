@@ -1,0 +1,19 @@
+# Exclude demo/template files not needed for production
+sass/
+js/demo/
+img/demo/
+css/main-demo.css
+css/plugins-demo.css
+
+# Exclude draft/internal files
+agb.md
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+*.swp
+*.swo

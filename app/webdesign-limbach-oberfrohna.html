@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Webdesign Limbach-Oberfrohna | Professionelle Webseiten | PanoArt360</title>
+    <meta name="description" content="Professionelles Webdesign in Limbach-Oberfrohna & Region Chemnitz. PanoArt360 erstellt moderne, schnelle Webseiten für kleine und mittelständische Unternehmen in Sachsen. Jetzt anfragen!">
+    <meta name="author" content="PanoArt360">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.panoart360.de/webdesign-limbach-oberfrohna">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:title" content="Webdesign Limbach-Oberfrohna | PanoArt360">
+    <meta property="og:description" content="Moderne Webseiten für Unternehmen in Limbach-Oberfrohna, Chemnitz und der Region Sachsen. Schnell, mobil, sichtbar.">
+    <meta property="og:url" content="https://www.panoart360.de/webdesign-limbach-oberfrohna">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="PanoArt360">
+    <meta property="og:image" content="https://www.panoart360.de/img/favicon/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "PanoArt360",
+      "description": "Webdesign-Agentur in Limbach-Oberfrohna, Sachsen. Professionelle Webseiten, SEO und digitales Marketing.",
+      "url": "https://www.panoart360.de",
+      "telephone": "+49-xxx-xxxxxxx",
+      "email": "info@panoart360.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Limbach-Oberfrohna",
+        "addressRegion": "Sachsen",
+        "postalCode": "09212",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.8666,
+        "longitude": 12.7333
+      },
+      "areaServed": [
+        "Limbach-Oberfrohna",
+        "Chemnitz",
+        "Sachsen"
+      ],
+      "serviceType": "Webdesign",
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": ["https://www.panoart360.de"]
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#1af2dc">
+
+    <style>
+      html, body { overflow: auto !important; height: auto !important; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      .lp {
+        background: #0d0d0f;
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e5e5e5;
+      }
+
+      /* ── Topbar ── */
+      .lp-topbar {
+        position: sticky; top: 0; z-index: 900;
+        background: rgba(13,13,15,0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .lp-topbar__inner {
+        max-width: 1200px; margin: 0 auto;
+        padding: 0 32px; height: 56px;
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .lp-topbar__logo { height: 28px; width: auto; display: block; }
+      .lp-topbar__nav { display: flex; align-items: center; gap: 24px; }
+      .lp-topbar__nav a {
+        font-size: 12px; color: rgba(255,255,255,0.35);
+        text-decoration: none; transition: color .2s;
+      }
+      .lp-topbar__nav a:hover { color: rgba(255,255,255,0.75); }
+      .lp-topbar__cta {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #1af2dc; color: #09090b;
+        font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+        padding: 9px 18px; border-radius: 8px; text-decoration: none;
+        border: none; font-family: inherit; cursor: pointer; transition: opacity .2s;
+      }
+      .lp-topbar__cta:hover { opacity: .84; }
+
+      /* ── Hero ── */
+      .lp-hero {
+        position: relative;
+        padding: 90px 0 80px;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .lp-hero::before {
+        content: '';
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.035) 1px, transparent 1px);
+        background-size: 48px 48px;
+        pointer-events: none;
+      }
+      .lp-hero::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse 60% 70% at 0% 50%, rgba(26,242,220,0.07) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .lp-hero__inner {
+        position: relative; z-index: 1;
+        max-width: 1200px; margin: 0 auto;
+        padding: 0 32px;
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 64px;
+        align-items: center;
+      }
+      .lp-hero__breadcrumb {
+        display: flex; align-items: center; gap: 8px;
+        font-size: 11px; color: rgba(255,255,255,0.28);
+        margin-bottom: 24px;
+      }
+      .lp-hero__breadcrumb a { color: inherit; text-decoration: none; transition: color .2s; }
+      .lp-hero__breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+      .lp-hero__breadcrumb i { font-size: 8px; }
+      .lp-hero__badge {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.2);
+        border-radius: 20px;
+        padding: 5px 14px;
+        font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 20px;
+      }
+      .lp-hero__badge::before {
+        content: '';
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        background: #1af2dc;
+        box-shadow: 0 0 8px #1af2dc;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0.4; }
+      }
+      .lp-hero__h1 {
+        font-size: clamp(32px, 4.5vw, 58px);
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        margin-bottom: 22px;
+      }
+      .lp-hero__h1 em { font-style: normal; color: #1af2dc; }
+      .lp-hero__sub {
+        font-size: 16px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.75;
+        margin-bottom: 36px;
+        max-width: 520px;
+      }
+      .lp-hero__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .lp-hero__btn-primary {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: #1af2dc; color: #09090b;
+        font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+        border: none; padding: 16px 30px; border-radius: 12px;
+        cursor: pointer; font-family: inherit; text-decoration: none;
+        transition: opacity .2s, transform .2s;
+      }
+      .lp-hero__btn-primary:hover { opacity: .87; transform: translateY(-2px); }
+      .lp-hero__btn-ghost {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: rgba(255,255,255,0.65);
+        font-size: 11px; font-weight: 600; letter-spacing: 0.07em;
+        padding: 15px 24px; border-radius: 12px;
+        text-decoration: none; transition: background .2s, color .2s;
+      }
+      .lp-hero__btn-ghost:hover { background: rgba(255,255,255,0.09); color: #fff; }
+
+      /* Hero card / trust signals */
+      .lp-hero__card {
+        background: #16151a;
+        border: 1px solid rgba(26,242,220,0.12);
+        border-radius: 24px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .lp-hero__card-label {
+        font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+        color: rgba(255,255,255,0.25);
+      }
+      .lp-trust-row {
+        display: flex; align-items: center; gap: 14px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .lp-trust-row:last-child { border-bottom: none; padding-bottom: 0; }
+      .lp-trust-icon {
+        width: 38px; height: 38px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.14);
+        border-radius: 10px;
+        display: flex; align-items: center; justify-content: center;
+        color: #1af2dc; font-size: 15px;
+        flex-shrink: 0;
+      }
+      .lp-trust-text strong {
+        display: block;
+        font-size: 13px; font-weight: 600; color: #fff;
+        margin-bottom: 2px;
+      }
+      .lp-trust-text span {
+        font-size: 11px; color: rgba(255,255,255,0.35);
+      }
+
+      /* ── Section wrapper ── */
+      .lp-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 32px;
+      }
+      .lp-section__label {
+        font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+        color: #1af2dc; margin-bottom: 12px;
+      }
+      .lp-section__h2 {
+        font-size: clamp(26px, 3.5vw, 42px);
+        font-weight: 800; color: #fff;
+        letter-spacing: -0.02em; line-height: 1.15;
+        margin-bottom: 16px;
+      }
+      .lp-section__sub {
+        font-size: 15px; color: rgba(255,255,255,0.45);
+        line-height: 1.7; max-width: 580px;
+        margin-bottom: 52px;
+      }
+
+      /* ── Services Grid ── */
+      .lp-services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .lp-service-card {
+        background: #16151a;
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 18px;
+        padding: 28px 26px;
+        transition: border-color .3s, transform .3s;
+      }
+      .lp-service-card:hover {
+        border-color: rgba(26,242,220,0.22);
+        transform: translateY(-4px);
+      }
+      .lp-service-card__icon {
+        width: 44px; height: 44px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.15);
+        border-radius: 12px;
+        display: flex; align-items: center; justify-content: center;
+        color: #1af2dc; font-size: 18px;
+        margin-bottom: 18px;
+      }
+      .lp-service-card__title {
+        font-size: 16px; font-weight: 700; color: #fff;
+        margin-bottom: 10px; letter-spacing: -0.01em;
+      }
+      .lp-service-card__text {
+        font-size: 13px; color: rgba(255,255,255,0.45);
+        line-height: 1.7;
+      }
+
+      /* ── Process ── */
+      .lp-process {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        position: relative;
+      }
+      .lp-process::before {
+        content: '';
+        position: absolute;
+        top: 28px; left: 10%; right: 10%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(26,242,220,0.2), transparent);
+      }
+      .lp-process-step {
+        text-align: center;
+        padding: 0 16px;
+      }
+      .lp-process-step__num {
+        width: 56px; height: 56px;
+        border-radius: 50%;
+        background: #16151a;
+        border: 2px solid rgba(26,242,220,0.2);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 20px; font-weight: 900; color: #1af2dc;
+        margin: 0 auto 20px;
+        position: relative; z-index: 1;
+      }
+      .lp-process-step__title {
+        font-size: 14px; font-weight: 700; color: #fff;
+        margin-bottom: 8px;
+      }
+      .lp-process-step__text {
+        font-size: 12px; color: rgba(255,255,255,0.38);
+        line-height: 1.65;
+      }
+
+      /* ── Why Local ── */
+      .lp-why {
+        background: #16151a;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .lp-why__inner {
+        max-width: 1200px; margin: 0 auto;
+        padding: 72px 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+      }
+      .lp-why__text p {
+        font-size: 15px; color: rgba(255,255,255,0.55);
+        line-height: 1.8; margin-bottom: 16px;
+      }
+      .lp-why__list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+      .lp-why__list li {
+        display: flex; align-items: flex-start; gap: 12px;
+        font-size: 14px; color: rgba(255,255,255,0.65);
+        line-height: 1.6;
+      }
+      .lp-why__list li i { color: #1af2dc; font-size: 13px; margin-top: 2px; flex-shrink: 0; }
+      .lp-why__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .lp-why__stat {
+        background: #0d0d0f;
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px;
+        padding: 24px;
+      }
+      .lp-why__stat-num {
+        font-size: 36px; font-weight: 900;
+        color: #fff; letter-spacing: -0.03em;
+        line-height: 1; margin-bottom: 6px;
+      }
+      .lp-why__stat-num span { color: #1af2dc; }
+      .lp-why__stat-label {
+        font-size: 11px; color: rgba(255,255,255,0.3);
+        line-height: 1.5;
+      }
+
+      /* ── FAQ ── */
+      .lp-faq { max-width: 800px; margin: 0 auto; }
+      .lp-faq-item {
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        padding: 0;
+      }
+      .lp-faq-item__q {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 16px;
+        padding: 22px 0;
+        font-size: 15px; font-weight: 600; color: #fff;
+        cursor: pointer;
+        list-style: none;
+        transition: color .2s;
+      }
+      .lp-faq-item__q:hover { color: #1af2dc; }
+      .lp-faq-item__q::-webkit-details-marker { display: none; }
+      .lp-faq-item__q i {
+        color: #1af2dc; font-size: 11px;
+        transition: transform .3s;
+        flex-shrink: 0;
+      }
+      .lp-faq-item[open] .lp-faq-item__q i { transform: rotate(45deg); }
+      .lp-faq-item__a {
+        font-size: 14px; color: rgba(255,255,255,0.5);
+        line-height: 1.8; padding: 0 0 22px;
+      }
+
+      /* ── Final CTA ── */
+      .lp-cta {
+        position: relative;
+        background: #16151a;
+        border-top: 1px solid rgba(26,242,220,0.1);
+        overflow: hidden;
+      }
+      .lp-cta::before {
+        content: '';
+        position: absolute;
+        top: -100px; left: 50%;
+        transform: translateX(-50%);
+        width: 600px; height: 400px;
+        background: radial-gradient(ellipse, rgba(26,242,220,0.06) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .lp-cta__inner {
+        position: relative; z-index: 1;
+        max-width: 800px; margin: 0 auto;
+        padding: 100px 32px;
+        text-align: center;
+      }
+      .lp-cta__eyebrow {
+        font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+        color: #1af2dc; margin-bottom: 16px;
+      }
+      .lp-cta__h2 {
+        font-size: clamp(28px, 4vw, 50px);
+        font-weight: 900; color: #fff;
+        letter-spacing: -0.03em; line-height: 1.1;
+        margin-bottom: 18px;
+      }
+      .lp-cta__sub {
+        font-size: 15px; color: rgba(255,255,255,0.42);
+        line-height: 1.7; margin-bottom: 36px;
+      }
+      .lp-cta__actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+      .lp-cta__btn {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: #1af2dc; color: #09090b;
+        font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+        border: none; padding: 18px 36px; border-radius: 12px;
+        cursor: pointer; font-family: inherit; text-decoration: none;
+        transition: opacity .2s, transform .2s;
+      }
+      .lp-cta__btn:hover { opacity: .87; transform: translateY(-2px); }
+      .lp-cta__tel {
+        font-size: 13px; color: rgba(255,255,255,0.4);
+        text-decoration: none; transition: color .2s;
+      }
+      .lp-cta__tel:hover { color: rgba(255,255,255,0.75); }
+
+      /* ── Footer ── */
+      .lp-footer {
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding: 28px 32px;
+        max-width: 1200px; margin: 0 auto;
+        display: flex; align-items: center; justify-content: space-between;
+        flex-wrap: wrap; gap: 12px;
+      }
+      .lp-footer__copy { font-size: 11px; color: rgba(255,255,255,0.2); }
+      .lp-footer__links { display: flex; gap: 18px; flex-wrap: wrap; }
+      .lp-footer__links a {
+        font-size: 11px; color: rgba(255,255,255,0.22);
+        text-decoration: none; transition: color .2s;
+      }
+      .lp-footer__links a:hover { color: rgba(255,255,255,0.55); }
+
+      /* ── Responsive ── */
+      @media (max-width: 900px) {
+        .lp-hero__inner { grid-template-columns: 1fr; }
+        .lp-hero__card { display: none; }
+        .lp-services { grid-template-columns: 1fr 1fr; }
+        .lp-process { grid-template-columns: 1fr 1fr; gap: 32px; }
+        .lp-process::before { display: none; }
+        .lp-why__inner { grid-template-columns: 1fr; gap: 40px; }
+      }
+      @media (max-width: 600px) {
+        .lp-hero { padding: 60px 0 52px; }
+        .lp-hero__inner, .lp-section, .lp-footer { padding-left: 20px; padding-right: 20px; }
+        .lp-services { grid-template-columns: 1fr; }
+        .lp-process { grid-template-columns: 1fr 1fr; }
+        .lp-topbar__nav { display: none; }
+        .lp-why__stats { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader-wrap">
+      <div class="loader-inner">
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+      </div>
+    </div>
+
+    <div class="lp">
+
+      <!-- Topbar -->
+      <nav class="lp-topbar">
+        <div class="lp-topbar__inner">
+          <a href="index.html"><img src="img/pano-Logo.png" alt="PanoArt360" class="lp-topbar__logo"></a>
+          <div class="lp-topbar__nav">
+            <a href="index.html">Startseite</a>
+            <a href="blog.html">Blog</a>
+            <a href="referenzen.html">Referenzen</a>
+          </div>
+          <button data-pf-open class="lp-topbar__cta">Jetzt anfragen <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class="lp-hero">
+        <div class="lp-hero__inner">
+          <div>
+            <div class="lp-hero__breadcrumb">
+              <a href="index.html">PanoArt360</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span>Webdesign Limbach-Oberfrohna</span>
+            </div>
+            <div class="lp-hero__badge">
+              <span>Lokal &amp; Pers&ouml;nlich</span>
+            </div>
+            <h1 class="lp-hero__h1">
+              Webdesign in<br>
+              <em>Limbach-Oberfrohna</em>
+            </h1>
+            <p class="lp-hero__sub">
+              Professionelle Webseiten f&uuml;r kleine und mittelst&auml;ndische Unternehmen
+              in Limbach-Oberfrohna, Chemnitz und der Region Sachsen. Schnell. Mobil. Gefunden.
+            </p>
+            <div class="lp-hero__actions">
+              <button data-pf-open class="lp-hero__btn-primary">
+                Kostenlos anfragen <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="referenzen.html" class="lp-hero__btn-ghost">
+                Referenzen ansehen
+              </a>
+            </div>
+          </div>
+
+          <!-- Trust card -->
+          <div class="lp-hero__card">
+            <div class="lp-hero__card-label">Warum PanoArt360?</div>
+            <div class="lp-trust-row">
+              <div class="lp-trust-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="lp-trust-text">
+                <strong>Lokal vor Ort</strong>
+                <span>Limbach-Oberfrohna, Sachsen</span>
+              </div>
+            </div>
+            <div class="lp-trust-row">
+              <div class="lp-trust-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div class="lp-trust-text">
+                <strong>Mobile First</strong>
+                <span>Perfekt auf jedem Ger&auml;t</span>
+              </div>
+            </div>
+            <div class="lp-trust-row">
+              <div class="lp-trust-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="lp-trust-text">
+                <strong>Schnelle Ladezeiten</strong>
+                <span>Besser bei Google ranken</span>
+              </div>
+            </div>
+            <div class="lp-trust-row">
+              <div class="lp-trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="lp-trust-text">
+                <strong>DSGVO-konform</strong>
+                <span>Sicher und rechtssicher</span>
+              </div>
+            </div>
+            <div class="lp-trust-row">
+              <div class="lp-trust-icon"><i class="fa-solid fa-headset"></i></div>
+              <div class="lp-trust-text">
+                <strong>Pers&ouml;nlicher Ansprechpartner</strong>
+                <span>Direkt &ndash; kein Callcenter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="lp-section">
+        <div class="lp-section__label">Unsere Leistungen</div>
+        <h2 class="lp-section__h2">Was wir f&uuml;r Ihr Unternehmen tun</h2>
+        <p class="lp-section__sub">
+          Von der ersten Idee bis zum fertigen Auftritt &ndash; wir begleiten Sie durch den gesamten Prozess.
+          Als lokale Agentur aus Limbach-Oberfrohna kennen wir die Bed&uuml;rfnisse der Region.
+        </p>
+        <div class="lp-services">
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="lp-service-card__title">Webseiten-Erstellung</div>
+            <p class="lp-service-card__text">Moderne, responsive Webseiten die konvertieren. Individuell gestaltet, schnell geladen und auf Ihre Zielgruppe abgestimmt.</p>
+          </div>
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div class="lp-service-card__title">SEO &amp; Sichtbarkeit</div>
+            <p class="lp-service-card__text">Damit Sie bei Google gefunden werden &ndash; lokal in Limbach-Oberfrohna &amp; Chemnitz und regional in ganz Sachsen.</p>
+          </div>
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-palette"></i></div>
+            <div class="lp-service-card__title">Branding &amp; Corporate Design</div>
+            <p class="lp-service-card__text">Logo, Farben, Schriften &ndash; ein konsistentes Erscheinungsbild das in Erinnerung bleibt und Vertrauen aufbaut.</p>
+          </div>
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-camera-rotate"></i></div>
+            <div class="lp-service-card__title">360° Fotografie</div>
+            <p class="lp-service-card__text">Virtuelle Rundg&auml;nge f&uuml;r Google Maps, Ihre Webseite oder Immobilienportale &ndash; ein echter Wettbewerbsvorteil.</p>
+          </div>
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div class="lp-service-card__title">Webseiten-Pflege</div>
+            <p class="lp-service-card__text">Aktualit&auml;t &amp; Sicherheit ohne Aufwand f&uuml;r Sie. Wir k&uuml;mmern uns um Updates, Backups und Inhalte.</p>
+          </div>
+          <div class="lp-service-card">
+            <div class="lp-service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="lp-service-card__title">Digitales Marketing</div>
+            <p class="lp-service-card__text">Google Ads, Social Media und Content-Strategie &ndash; damit Ihre Investition in die Webseite sich auszahlt.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <div style="background:#16151a; border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06);">
+        <div class="lp-section">
+          <div class="lp-section__label">So arbeiten wir</div>
+          <h2 class="lp-section__h2">Von der Idee zur fertigen Webseite</h2>
+          <p class="lp-section__sub">Klarer Prozess, keine Überraschungen &ndash; in 4 Schritten zu Ihrer neuen Webpr&auml;senz.</p>
+          <div class="lp-process">
+            <div class="lp-process-step">
+              <div class="lp-process-step__num">1</div>
+              <div class="lp-process-step__title">Erstgespr&auml;ch</div>
+              <p class="lp-process-step__text">Kostenlos &amp; unverbindlich. Wir lernen Ihr Unternehmen, Ihre Ziele und Ihre Zielgruppe kennen.</p>
+            </div>
+            <div class="lp-process-step">
+              <div class="lp-process-step__num">2</div>
+              <div class="lp-process-step__title">Konzept &amp; Design</div>
+              <p class="lp-process-step__text">Wir entwickeln ein individuelles Konzept und Design &ndash; abgestimmt auf Ihre Marke.</p>
+            </div>
+            <div class="lp-process-step">
+              <div class="lp-process-step__num">3</div>
+              <div class="lp-process-step__title">Entwicklung</div>
+              <p class="lp-process-step__text">Umsetzung der Webseite &ndash; responsiv, schnell und DSGVO-konform. Sie haben jederzeit Einblick.</p>
+            </div>
+            <div class="lp-process-step">
+              <div class="lp-process-step__num">4</div>
+              <div class="lp-process-step__title">Launch &amp; Support</div>
+              <p class="lp-process-step__text">Ihre Webseite geht online. Wir stehen Ihnen langfristig mit Support und Pflege zur Seite.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Local -->
+      <div class="lp-why">
+        <div class="lp-why__inner">
+          <div class="lp-why__text">
+            <div class="lp-section__label" style="margin-bottom:12px;">Lokaler Vorteil</div>
+            <h2 class="lp-section__h2" style="margin-bottom:16px; max-width:440px;">Warum eine lokale Agentur aus Sachsen?</h2>
+            <p>Mit einer lokalen Agentur aus Limbach-Oberfrohna arbeiten Sie nicht anonym mit einem Dienstleister irgendwo in Deutschland &ndash; Sie arbeiten mit Menschen, die Ihre Region kennen und verstehen.</p>
+            <p>Wir wissen, wie Unternehmen im Raum Chemnitz ticken, welche Zielgruppen relevant sind und wie man in Sachsen digital sichtbar wird.</p>
+            <ul class="lp-why__list">
+              <li><i class="fa-solid fa-check"></i> Pers&ouml;nliche Beratung vor Ort &ndash; kein Callcenter</li>
+              <li><i class="fa-solid fa-check"></i> Kenntnis des lokalen Marktes und der Wettbewerber</li>
+              <li><i class="fa-solid fa-check"></i> Schnelle Reaktionszeiten und direkte Kommunikation</li>
+              <li><i class="fa-solid fa-check"></i> Langfristige Partnerschaft statt anonymer Auftrag</li>
+              <li><i class="fa-solid fa-check"></i> F&ouml;rderm&ouml;glichkeiten f&uuml;r KMU in Sachsen bekannt</li>
+            </ul>
+          </div>
+          <div class="lp-why__stats">
+            <div class="lp-why__stat">
+              <div class="lp-why__stat-num"><span>100</span>%</div>
+              <div class="lp-why__stat-label">Lokal in Sachsen verwurzelt</div>
+            </div>
+            <div class="lp-why__stat">
+              <div class="lp-why__stat-num"><span>24h</span></div>
+              <div class="lp-why__stat-label">Reaktionszeit bei Anfragen</div>
+            </div>
+            <div class="lp-why__stat">
+              <div class="lp-why__stat-num"><span>3</span>+</div>
+              <div class="lp-why__stat-label">Jahre Erfahrung &amp; Expertise</div>
+            </div>
+            <div class="lp-why__stat">
+              <div class="lp-why__stat-num"><span>&#10003;</span></div>
+              <div class="lp-why__stat-label">DSGVO &amp; rechtssicher</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section class="lp-section">
+        <div style="text-align:center; margin-bottom:52px;">
+          <div class="lp-section__label">FAQ</div>
+          <h2 class="lp-section__h2">H&auml;ufig gestellte Fragen</h2>
+        </div>
+        <div class="lp-faq">
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Was kostet eine professionelle Webseite in Limbach-Oberfrohna?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Die Kosten h&auml;ngen vom Umfang ab. Eine einfache Unternehmenswebseite beginnt ab ca. 800&nbsp;&euro;, komplexere Projekte mit Online-Shop oder umfangreichem Content entsprechend mehr. Wir erstellen Ihnen immer einen transparenten Kostenvoranschlag &ndash; kostenlos und unverbindlich.</p>
+          </details>
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Wie lange dauert die Erstellung einer Webseite?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Eine typische Unternehmenswebseite ist in 3&ndash;6 Wochen fertig. Der genaue Zeitplan h&auml;ngt vom Umfang und der Bereitstellung von Inhalten (Texte, Fotos) ab. Wir k&uuml;mmern uns auch um Texterstellung und Fotografie, wenn gew&uuml;nscht.</p>
+          </details>
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Kann ich meine bestehende Webseite bei Ihnen &uuml;berarbeiten lassen?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Ja, absolut. Wir &uuml;berarbeiten, modernisieren und optimieren bestehende Webseiten &ndash; egal ob Sie ein komplettes Redesign oder nur einzelne Anpassungen ben&ouml;tigen.</p>
+          </details>
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Ist die Webseite auch auf dem Smartphone gut lesbar?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Selbstverst&auml;ndlich. Alle unsere Webseiten sind "Mobile First" &ndash; sie sind von Grund auf f&uuml;r Smartphones und Tablets optimiert. &Uuml;ber 60&nbsp;% der Webseiten-Besuche erfolgen heute mobil.</p>
+          </details>
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Bieten Sie auch Webseiten-Pflege und Support an?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Ja, wir bieten monatliche Pflegepakete an. Dazu geh&ouml;ren Sicherheits-Updates, Backups, kleine Inhalts&auml;nderungen und technischer Support. So ist Ihre Webseite immer aktuell und sicher.</p>
+          </details>
+          <details class="lp-faq-item">
+            <summary class="lp-faq-item__q">
+              Arbeiten Sie auch mit Unternehmen au&szlig;erhalb von Limbach-Oberfrohna?
+              <i class="fa-solid fa-plus"></i>
+            </summary>
+            <p class="lp-faq-item__a">Ja. Unser Schwerpunkt liegt in der Region Chemnitz und Sachsen, aber wir betreuen auch Kunden bundesweit. Pers&ouml;nliche Treffen sind im Raum Chemnitz/Zwickau m&ouml;glich, vieles l&auml;uft jedoch auch bequem remote.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="lp-cta">
+        <div class="lp-cta__inner">
+          <div class="lp-cta__eyebrow">Lassen Sie uns starten</div>
+          <h2 class="lp-cta__h2">Ihr Unternehmen verdient<br>eine starke Online-Pr&auml;senz.</h2>
+          <p class="lp-cta__sub">
+            Sprechen Sie mit uns &uuml;ber Ihre Webseite &ndash; kostenlos und unverbindlich.
+            Wir melden uns innerhalb von 24&nbsp;Stunden.
+          </p>
+          <div class="lp-cta__actions">
+            <button data-pf-open class="lp-cta__btn">
+              Jetzt Projekt anfragen <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="mailto:info@panoart360.de" class="lp-cta__tel">
+              oder schreiben Sie uns: info@panoart360.de
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="border-top:1px solid rgba(255,255,255,0.05);">
+        <div class="lp-footer">
+          <span class="lp-footer__copy">&copy; 2026 PanoArt360 &ndash; Webdesign Limbach-Oberfrohna</span>
+          <nav class="lp-footer__links">
+            <a href="index.html">Startseite</a>
+            <a href="blog.html">Blog</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="agb.html">AGB</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div><!-- /lp -->
+
+    <!-- Projekt-Overlay (same as blog) -->
+    <div class="pf-overlay" id="pfOverlay" role="dialog" aria-modal="true" aria-label="Projekt anfragen">
+      <div class="pf-topbar">
+        <img src="img/pano-Logo.png" alt="PanoArt360" class="pf-topbar__logo">
+        <div class="pf-topbar__progress"><div class="pf-topbar__bar" id="pfBar"></div></div>
+        <button class="pf-topbar__close" id="pfClose" aria-label="Schlie&szlig;en"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="pf-body">
+        <div class="pf-step" id="pfStep0">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">01 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Wie lautet dein Name?<span class="pf-ast"> *</span></h2>
+            <input type="text" class="pf-input" id="pfName" placeholder="Vor- und Nachname" autocomplete="name">
+            <p class="pf-err" id="pfErr0">Bitte gib deinen Namen ein.</p>
+            <div class="pf-nav"><button class="pf-btn" id="pfBtn0">OK &nbsp;<i class="fa-solid fa-check"></i></button><span class="pf-hint">oder <kbd>Enter</kbd></span></div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep1">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">02 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Wie k&ouml;nnen wir dich erreichen?<span class="pf-ast"> *</span></h2>
+            <input type="email" class="pf-input" id="pfEmail" placeholder="name@beispiel.de" autocomplete="email">
+            <p class="pf-err" id="pfErr1">Bitte gib eine g&uuml;ltige E-Mail-Adresse ein.</p>
+            <div class="pf-nav"><button class="pf-btn" id="pfBtn1">OK &nbsp;<i class="fa-solid fa-check"></i></button><button class="pf-back" id="pfBack1"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep2">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">03 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Was planst du?</h2>
+            <div class="pf-options">
+              <button class="pf-option" data-val="Webdesign Limbach-Oberfrohna"><span class="pf-option__key">A</span> Neue Webseite</button>
+              <button class="pf-option" data-val="Webseite überarbeiten"><span class="pf-option__key">B</span> Webseite &uuml;berarbeiten</button>
+              <button class="pf-option" data-val="SEO & Sichtbarkeit"><span class="pf-option__key">C</span> SEO &amp; Sichtbarkeit</button>
+              <button class="pf-option" data-val="Branding & Logo"><span class="pf-option__key">D</span> Branding &amp; Logo</button>
+              <button class="pf-option" data-val="360° Fotografie"><span class="pf-option__key">E</span> 360° Fotografie</button>
+              <button class="pf-option" data-val="Anderes"><span class="pf-option__key">F</span> Anderes</button>
+            </div>
+            <p class="pf-err" id="pfErr2">Bitte w&auml;hle mindestens eine Option.</p>
+            <div class="pf-nav"><button class="pf-btn" id="pfBtn2">Weiter <i class="fa-solid fa-arrow-right"></i></button><button class="pf-back" id="pfBack2"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep3">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">04 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Beschreibe kurz dein Vorhaben.</h2>
+            <textarea class="pf-textarea" id="pfMessage" placeholder="Wir planen ..." rows="5"></textarea>
+            <p class="pf-err" id="pfErr3">Bitte schreibe ein paar S&auml;tze.</p>
+            <div class="pf-nav"><button class="pf-btn" id="pfSubmit">Absenden <i class="fa-solid fa-paper-plane"></i></button><button class="pf-back" id="pfBack3"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep4">
+          <div class="pf-success__wrap" style="margin:0 auto;">
+            <div class="pf-success__icon"><i class="fa-solid fa-check"></i></div>
+            <h2 class="pf-success__h">Nachricht gesendet!</h2>
+            <p class="pf-success__p">Danke, <strong id="pfThanksName" style="color:#fff;"></strong> &mdash; wir melden uns innerhalb von 24&nbsp;Stunden.</p>
+            <button class="pf-btn" id="pfDone">Schlie&szlig;en <i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="pf-footer"><span class="pf-counter" id="pfCounter">1 / 4</span></div>
+    </div>
+
+    <div class="cursor"></div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    (function(){
+      var TOTAL=4,cur=0,data={name:'',email:'',project:[],message:''};
+      var overlay=document.getElementById('pfOverlay'),bar=document.getElementById('pfBar'),counter=document.getElementById('pfCounter');
+      var steps=[document.getElementById('pfStep0'),document.getElementById('pfStep1'),document.getElementById('pfStep2'),document.getElementById('pfStep3'),document.getElementById('pfStep4')];
+      function openForm(){cur=0;document.getElementById('pfName').value='';document.getElementById('pfEmail').value='';document.getElementById('pfMessage').value='';document.querySelectorAll('#pfStep2 .pf-option').forEach(function(o){o.classList.remove('is-sel');});document.querySelectorAll('.pf-err').forEach(function(e){e.classList.remove('show');});steps.forEach(function(s){s.classList.remove('is-active','is-out');});bar.style.width='0%';counter.textContent='1 / '+TOTAL;overlay.classList.add('is-open');document.body.style.overflow='hidden';steps[0].classList.add('is-active');setTimeout(function(){document.getElementById('pfName').focus();},120);}
+      function closePF(){overlay.classList.remove('is-open');document.body.style.overflow='';}
+      function goTo(n){var p=steps[cur];p.classList.add('is-out');p.classList.remove('is-active');setTimeout(function(){p.classList.remove('is-out');cur=n;steps[n].classList.add('is-active');var i=steps[n].querySelector('.pf-input,.pf-textarea');if(i)setTimeout(function(){i.focus();},80);bar.style.width=(n/TOTAL*100)+'%';if(n<TOTAL)counter.textContent=(n+1)+' / '+TOTAL;},280);}
+      function showErr(id,on){var e=document.getElementById(id);if(e)e.classList[on?'add':'remove']('show');}
+      function validate(s){if(s===0){var v=document.getElementById('pfName').value.trim();showErr('pfErr0',!v);if(v){data.name=v;return true;}return false;}if(s===1){var v=document.getElementById('pfEmail').value.trim(),ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);showErr('pfErr1',!ok);if(ok){data.email=v;return true;}return false;}if(s===2){var sel=document.querySelectorAll('#pfStep2 .pf-option.is-sel');showErr('pfErr2',sel.length===0);if(sel.length>0){data.project=[];sel.forEach(function(o){data.project.push(o.getAttribute('data-val'));});return true;}return false;}if(s===3){var v=document.getElementById('pfMessage').value.trim();showErr('pfErr3',!v);if(v){data.message=v;return true;}return false;}return true;}
+      document.querySelectorAll('[data-pf-open]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopImmediatePropagation();openForm();});});
+      document.getElementById('pfClose').addEventListener('click',closePF);
+      document.getElementById('pfBtn0').addEventListener('click',function(){if(validate(0))goTo(1);});
+      document.getElementById('pfBtn1').addEventListener('click',function(){if(validate(1))goTo(2);});
+      document.getElementById('pfBtn2').addEventListener('click',function(){if(validate(2))goTo(3);});
+      document.getElementById('pfBack1').addEventListener('click',function(){goTo(0);});
+      document.getElementById('pfBack2').addEventListener('click',function(){goTo(1);});
+      document.getElementById('pfBack3').addEventListener('click',function(){goTo(2);});
+      document.querySelectorAll('#pfStep2 .pf-option').forEach(function(b){b.addEventListener('click',function(){b.classList.toggle('is-sel');});});
+      document.getElementById('pfSubmit').addEventListener('click',function(){if(!validate(3))return;var sub=encodeURIComponent('Projektanfrage von '+data.name),bod=encodeURIComponent('Name: '+data.name+'\nE-Mail: '+data.email+'\nProjekt: '+data.project.join(', ')+'\n\nNachricht:\n'+data.message);window.location.href='mailto:info@panoart360.de?subject='+sub+'&body='+bod;document.getElementById('pfThanksName').textContent=data.name;goTo(4);});
+      document.getElementById('pfDone').addEventListener('click',closePF);
+      document.addEventListener('keydown',function(e){if(!overlay.classList.contains('is-open'))return;if(e.key==='Escape'){closePF();return;}if(e.key==='Enter'&&cur===0)document.getElementById('pfBtn0').click();if(e.key==='Enter'&&cur===1)document.getElementById('pfBtn1').click();if(e.ctrlKey&&e.key==='Enter'&&cur===3)document.getElementById('pfSubmit').click();});
+    }());
+    </script>
+  </body>
+
+</html>

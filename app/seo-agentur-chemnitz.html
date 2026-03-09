@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>SEO Agentur Chemnitz & Sachsen | Mehr Google-Sichtbarkeit | PanoArt360</title>
+    <meta name="description" content="SEO Agentur aus Limbach-Oberfrohna für Chemnitz und ganz Sachsen. Lokale Suchmaschinenoptimierung, Google My Business & Content-SEO für KMU. Jetzt kostenlos beraten lassen!">
+    <meta name="author" content="PanoArt360">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.panoart360.de/seo-agentur-chemnitz">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:title" content="SEO Agentur Chemnitz | PanoArt360">
+    <meta property="og:description" content="Lokale Suchmaschinenoptimierung für Unternehmen in Chemnitz, Limbach-Oberfrohna und Sachsen. Mehr Besucher, mehr Kunden.">
+    <meta property="og:url" content="https://www.panoart360.de/seo-agentur-chemnitz">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="PanoArt360">
+    <meta property="og:image" content="https://www.panoart360.de/img/favicon/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SEO Beratung Chemnitz & Sachsen",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "PanoArt360",
+        "url": "https://www.panoart360.de",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Limbach-Oberfrohna",
+          "addressRegion": "Sachsen",
+          "postalCode": "09212",
+          "addressCountry": "DE"
+        }
+      },
+      "areaServed": ["Chemnitz", "Limbach-Oberfrohna", "Sachsen", "Zwickau", "Plauen"],
+      "serviceType": "Suchmaschinenoptimierung",
+      "description": "Lokale SEO-Optimierung, Google My Business, Technisches SEO und Content-Strategie für KMU in Chemnitz und Sachsen."
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#1af2dc">
+
+    <style>
+      html, body { overflow: auto !important; height: auto !important; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      /* Reuse same base styles as webdesign LP */
+      .lp {
+        background: #0d0d0f;
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e5e5e5;
+      }
+      .lp-topbar {
+        position: sticky; top: 0; z-index: 900;
+        background: rgba(13,13,15,0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .lp-topbar__inner {
+        max-width: 1200px; margin: 0 auto;
+        padding: 0 32px; height: 56px;
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .lp-topbar__logo { height: 28px; width: auto; }
+      .lp-topbar__nav { display: flex; align-items: center; gap: 24px; }
+      .lp-topbar__nav a { font-size: 12px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color .2s; }
+      .lp-topbar__nav a:hover { color: rgba(255,255,255,0.75); }
+      .lp-topbar__cta {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #1af2dc; color: #09090b;
+        font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+        padding: 9px 18px; border-radius: 8px; border: none; font-family: inherit; cursor: pointer; transition: opacity .2s;
+      }
+      .lp-topbar__cta:hover { opacity: .84; }
+
+      /* Hero */
+      .lp-hero {
+        position: relative; padding: 90px 0 80px; overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .lp-hero::before {
+        content: ''; position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.03) 1px, transparent 1px);
+        background-size: 48px 48px; pointer-events: none;
+      }
+      .lp-hero::after {
+        content: ''; position: absolute; inset: 0;
+        background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(26,242,220,0.06) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .lp-hero__inner {
+        position: relative; z-index: 1;
+        max-width: 1200px; margin: 0 auto; padding: 0 32px;
+        display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: center;
+      }
+      .lp-hero__breadcrumb {
+        display: flex; align-items: center; gap: 8px;
+        font-size: 11px; color: rgba(255,255,255,0.28); margin-bottom: 24px;
+      }
+      .lp-hero__breadcrumb a { color: inherit; text-decoration: none; }
+      .lp-hero__breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+      .lp-hero__badge {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: rgba(26,242,220,0.08); border: 1px solid rgba(26,242,220,0.2);
+        border-radius: 20px; padding: 5px 14px;
+        font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+        color: #1af2dc; margin-bottom: 20px;
+      }
+      .lp-hero__badge::before {
+        content: ''; width: 6px; height: 6px; border-radius: 50%;
+        background: #1af2dc; box-shadow: 0 0 8px #1af2dc; animation: pulse 2s infinite;
+      }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+      .lp-hero__h1 {
+        font-size: clamp(30px, 4vw, 56px); font-weight: 900; color: #fff;
+        line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 22px;
+      }
+      .lp-hero__h1 em { font-style: normal; color: #1af2dc; }
+      .lp-hero__sub {
+        font-size: 16px; color: rgba(255,255,255,0.5);
+        line-height: 1.75; margin-bottom: 36px; max-width: 520px;
+      }
+      .lp-hero__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .lp-hero__btn {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: #1af2dc; color: #09090b;
+        font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+        border: none; padding: 16px 30px; border-radius: 12px;
+        cursor: pointer; font-family: inherit; text-decoration: none;
+        transition: opacity .2s, transform .2s;
+      }
+      .lp-hero__btn:hover { opacity: .87; transform: translateY(-2px); }
+      .lp-hero__ghost {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+        color: rgba(255,255,255,0.65); font-size: 11px; font-weight: 600;
+        padding: 15px 24px; border-radius: 12px; text-decoration: none;
+        transition: background .2s, color .2s;
+      }
+      .lp-hero__ghost:hover { background: rgba(255,255,255,0.09); color: #fff; }
+
+      /* SEO rank visual */
+      .seo-rank-visual {
+        background: #16151a; border: 1px solid rgba(26,242,220,0.12);
+        border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px;
+      }
+      .seo-rank-visual__label {
+        font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+        color: rgba(255,255,255,0.25); margin-bottom: 6px;
+      }
+      .seo-rank-bar { display: flex; flex-direction: column; gap: 8px; }
+      .seo-rank-bar__item {
+        display: flex; align-items: center; gap: 12px;
+        font-size: 12px; color: rgba(255,255,255,0.5);
+      }
+      .seo-rank-bar__pos {
+        width: 22px; height: 22px; border-radius: 6px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 11px; font-weight: 700; flex-shrink: 0;
+      }
+      .seo-rank-bar__pos.top { background: rgba(26,242,220,0.15); color: #1af2dc; }
+      .seo-rank-bar__pos.mid { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.3); }
+      .seo-rank-bar__track {
+        flex: 1; height: 6px; background: rgba(255,255,255,0.05);
+        border-radius: 3px; overflow: hidden;
+      }
+      .seo-rank-bar__fill {
+        height: 100%; border-radius: 3px;
+        background: linear-gradient(90deg, #1af2dc, #0dd9c3);
+      }
+      .seo-rank-bar__pct {
+        font-size: 10px; color: rgba(255,255,255,0.3); width: 32px; text-align: right;
+      }
+
+      /* Sections */
+      .lp-section { max-width: 1200px; margin: 0 auto; padding: 80px 32px; }
+      .lp-section__label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 12px; }
+      .lp-section__h2 { font-size: clamp(26px, 3.5vw, 42px); font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 16px; }
+      .lp-section__sub { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 580px; margin-bottom: 52px; }
+
+      /* SEO pillars */
+      .seo-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .seo-pillar {
+        background: #16151a; border: 1px solid rgba(255,255,255,0.07);
+        border-top: 3px solid transparent;
+        border-radius: 18px; padding: 28px 24px;
+        transition: border-color .3s, transform .3s;
+      }
+      .seo-pillar:nth-child(1) { border-top-color: #1af2dc; }
+      .seo-pillar:nth-child(2) { border-top-color: #8b5cf6; }
+      .seo-pillar:nth-child(3) { border-top-color: #f59e0b; }
+      .seo-pillar:hover { transform: translateY(-4px); }
+      .seo-pillar__num {
+        font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+        color: rgba(255,255,255,0.2); margin-bottom: 16px;
+      }
+      .seo-pillar__title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+      .seo-pillar__text { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; margin-bottom: 16px; }
+      .seo-pillar__items { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+      .seo-pillar__items li {
+        display: flex; align-items: flex-start; gap: 8px;
+        font-size: 12px; color: rgba(255,255,255,0.5);
+      }
+      .seo-pillar__items li::before { content: '→'; color: #1af2dc; flex-shrink: 0; }
+
+      /* Local SEO cities */
+      .seo-cities {
+        display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px;
+      }
+      .seo-city {
+        display: flex; align-items: center; gap: 8px;
+        background: #16151a; border: 1px solid rgba(255,255,255,0.08);
+        padding: 10px 18px; border-radius: 20px;
+        font-size: 13px; color: rgba(255,255,255,0.55);
+      }
+      .seo-city i { color: #1af2dc; font-size: 10px; }
+
+      /* Results / Numbers */
+      .seo-results {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+        background: #16151a; border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 24px; padding: 48px;
+        margin-top: 52px;
+      }
+      .seo-result-item { text-align: center; padding: 0 16px; }
+      .seo-result-item + .seo-result-item { border-left: 1px solid rgba(255,255,255,0.07); }
+      .seo-result-item__num {
+        font-size: clamp(28px, 3vw, 44px); font-weight: 900; color: #fff;
+        letter-spacing: -0.03em; margin-bottom: 6px;
+      }
+      .seo-result-item__num span { color: #1af2dc; }
+      .seo-result-item__label { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.5; }
+
+      /* FAQ */
+      .lp-faq { max-width: 800px; margin: 0 auto; }
+      .lp-faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+      .lp-faq-item__q {
+        display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        padding: 22px 0; font-size: 15px; font-weight: 600; color: #fff;
+        cursor: pointer; list-style: none; transition: color .2s;
+      }
+      .lp-faq-item__q:hover { color: #1af2dc; }
+      .lp-faq-item__q::-webkit-details-marker { display: none; }
+      .lp-faq-item__q i { color: #1af2dc; font-size: 11px; transition: transform .3s; flex-shrink: 0; }
+      .lp-faq-item[open] .lp-faq-item__q i { transform: rotate(45deg); }
+      .lp-faq-item__a { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; padding: 0 0 22px; }
+
+      /* CTA */
+      .lp-cta { position: relative; background: #16151a; border-top: 1px solid rgba(26,242,220,0.1); overflow: hidden; }
+      .lp-cta::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 400px;
+        background: radial-gradient(ellipse, rgba(26,242,220,0.06) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .lp-cta__inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 100px 32px; text-align: center; }
+      .lp-cta__eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; }
+      .lp-cta__h2 { font-size: clamp(28px, 4vw, 50px); font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 18px; }
+      .lp-cta__sub { font-size: 15px; color: rgba(255,255,255,0.42); line-height: 1.7; margin-bottom: 36px; }
+      .lp-cta__actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+      .lp-cta__btn { display: inline-flex; align-items: center; gap: 10px; background: #1af2dc; color: #09090b; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 18px 36px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
+      .lp-cta__btn:hover { opacity: .87; transform: translateY(-2px); }
+      .lp-cta__secondary { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color .2s; }
+      .lp-cta__secondary:hover { color: rgba(255,255,255,0.75); }
+
+      /* Footer */
+      .lp-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 28px 32px; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+      .lp-footer__copy { font-size: 11px; color: rgba(255,255,255,0.2); }
+      .lp-footer__links { display: flex; gap: 18px; flex-wrap: wrap; }
+      .lp-footer__links a { font-size: 11px; color: rgba(255,255,255,0.22); text-decoration: none; transition: color .2s; }
+      .lp-footer__links a:hover { color: rgba(255,255,255,0.55); }
+
+      /* Overlay form styles (copied from blog.html) */
+      .pf-overlay { position: fixed; inset: 0; z-index: 9999; background: #0a0a0c; display: flex; flex-direction: column; opacity: 0; pointer-events: none; transition: opacity .3s ease; overflow: hidden; }
+      .pf-overlay::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(26,242,220,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(26,242,220,0.025) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
+      .pf-overlay.is-open { opacity: 1; pointer-events: all; }
+      .pf-topbar { position: relative; z-index: 2; display: flex; align-items: center; gap: 18px; padding: 16px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); flex-shrink: 0; }
+      .pf-topbar__logo { height: 28px; width: auto; opacity: .65; }
+      .pf-topbar__progress { flex: 1; height: 2px; background: rgba(255,255,255,0.06); border-radius: 2px; overflow: hidden; }
+      .pf-topbar__bar { height: 100%; background: linear-gradient(90deg, #1af2dc, #0dd9c3); border-radius: 2px; width: 0%; transition: width .5s cubic-bezier(.25,1,.5,1); }
+      .pf-topbar__close { width: 32px; height: 32px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s; flex-shrink: 0; }
+      .pf-topbar__close:hover { background: rgba(255,255,255,0.1); color: #fff; }
+      .pf-body { flex: 1; position: relative; overflow: hidden; }
+      .pf-step { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 40px; opacity: 0; transform: translateY(40px); pointer-events: none; }
+      .pf-step.is-active { opacity: 1; transform: translateY(0); pointer-events: all; transition: opacity .45s cubic-bezier(.25,1,.5,1), transform .45s cubic-bezier(.25,1,.5,1); }
+      .pf-step.is-out { opacity: 0; transform: translateY(-40px); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+      .pf-step__inner { width: 100%; max-width: 660px; }
+      .pf-step__num { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+      .pf-step__q { font-size: clamp(24px, 4vw, 42px); font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px; }
+      .pf-step__q .pf-ast { color: #1af2dc; }
+      .pf-input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(18px, 2.5vw, 26px); font-family: inherit; padding: 8px 0 12px; outline: none; caret-color: #1af2dc; transition: border-color .2s; }
+      .pf-input:focus { border-color: #1af2dc; }
+      .pf-input::placeholder { color: rgba(255,255,255,0.15); }
+      .pf-textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(16px, 2vw, 22px); font-family: inherit; padding: 8px 0 12px; outline: none; resize: none; min-height: 120px; line-height: 1.65; caret-color: #1af2dc; transition: border-color .2s; }
+      .pf-textarea:focus { border-color: #1af2dc; }
+      .pf-textarea::placeholder { color: rgba(255,255,255,0.15); }
+      .pf-options { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+      .pf-option { display: flex; align-items: center; gap: 10px; padding: 11px 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: rgba(255,255,255,0.5); font-size: 14px; font-family: inherit; cursor: pointer; transition: border-color .2s, background .2s, color .2s; }
+      .pf-option:hover { border-color: rgba(26,242,220,0.25); color: #e0e0e0; }
+      .pf-option.is-sel { border-color: #1af2dc; background: rgba(26,242,220,0.07); color: #fff; }
+      .pf-option__key { width: 20px; height: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-radius: 4px; font-size: 9px; font-weight: 700; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); flex-shrink: 0; }
+      .pf-option.is-sel .pf-option__key { background: rgba(26,242,220,0.12); border-color: rgba(26,242,220,0.3); color: #1af2dc; }
+      .pf-err { font-size: 13px; color: #ff6b6b; margin-top: 10px; opacity: 0; transition: opacity .2s; min-height: 18px; }
+      .pf-err.show { opacity: 1; }
+      .pf-nav { margin-top: 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .pf-btn { display: inline-flex; align-items: center; gap: 8px; background: #1af2dc; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 13px 24px; border-radius: 10px; cursor: pointer; transition: opacity .2s, transform .2s; font-family: inherit; }
+      .pf-btn:hover { opacity: .87; transform: translateY(-2px); }
+      .pf-hint { font-size: 11px; color: rgba(255,255,255,0.18); }
+      .pf-hint kbd { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); border-radius: 3px; padding: 1px 5px; font-size: 9px; font-family: monospace; }
+      .pf-back { background: none; border: none; color: rgba(255,255,255,0.25); font-size: 11px; font-family: inherit; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: color .2s; padding: 0; letter-spacing: 0.07em; text-transform: uppercase; }
+      .pf-back:hover { color: rgba(255,255,255,0.6); }
+      .pf-success__wrap { text-align: center; max-width: 480px; width: 100%; }
+      .pf-success__icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(26,242,220,0.1); border: 1px solid rgba(26,242,220,0.25); display: flex; align-items: center; justify-content: center; color: #1af2dc; font-size: 24px; margin: 0 auto 24px; }
+      .pf-success__h { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; }
+      .pf-success__p { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.65; margin-bottom: 28px; }
+      .pf-footer { position: relative; z-index: 2; padding: 14px 40px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: flex-end; flex-shrink: 0; }
+      .pf-counter { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.08em; }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .lp-hero__inner { grid-template-columns: 1fr; }
+        .seo-rank-visual { display: none; }
+        .seo-pillars { grid-template-columns: 1fr 1fr; }
+        .seo-results { grid-template-columns: 1fr 1fr; }
+        .seo-result-item + .seo-result-item { border-left: none; border-top: 1px solid rgba(255,255,255,0.07); }
+      }
+      @media (max-width: 600px) {
+        .lp-hero { padding: 60px 0 52px; }
+        .lp-hero__inner, .lp-section, .lp-footer { padding-left: 20px; padding-right: 20px; }
+        .seo-pillars { grid-template-columns: 1fr; }
+        .seo-results { padding: 32px 24px; }
+        .lp-topbar__nav { display: none; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader-wrap">
+      <div class="loader-inner">
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+      </div>
+    </div>
+
+    <div class="lp">
+
+      <nav class="lp-topbar">
+        <div class="lp-topbar__inner">
+          <a href="index.html"><img src="img/pano-Logo.png" alt="PanoArt360" class="lp-topbar__logo"></a>
+          <div class="lp-topbar__nav">
+            <a href="index.html">Startseite</a>
+            <a href="webdesign-limbach-oberfrohna.html">Webdesign</a>
+            <a href="blog.html">Blog</a>
+          </div>
+          <button data-pf-open class="lp-topbar__cta">Jetzt anfragen <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class="lp-hero">
+        <div class="lp-hero__inner">
+          <div>
+            <div class="lp-hero__breadcrumb">
+              <a href="index.html">PanoArt360</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span>SEO Agentur Chemnitz</span>
+            </div>
+            <div class="lp-hero__badge">SEO &amp; Sichtbarkeit</div>
+            <h1 class="lp-hero__h1">
+              SEO Agentur f&uuml;r<br>
+              <em>Chemnitz &amp; Sachsen</em>
+            </h1>
+            <p class="lp-hero__sub">
+              Mehr Sichtbarkeit bei Google &ndash; f&uuml;r Unternehmen in Chemnitz, Limbach-Oberfrohna und
+              der gesamten Region Sachsen. Lokale SEO, Google My Business &amp; nachhaltiges Ranking.
+            </p>
+            <div class="lp-hero__actions">
+              <button data-pf-open class="lp-hero__btn">
+                SEO-Analyse anfordern <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <a href="blog.html" class="lp-hero__ghost">SEO Blog lesen</a>
+            </div>
+          </div>
+
+          <!-- SEO rank visual -->
+          <div class="seo-rank-visual">
+            <div class="seo-rank-visual__label">Google-Ranking &ndash; Beispiel Vorher/Nachher</div>
+            <div class="seo-rank-bar">
+              <div class="seo-rank-bar__item">
+                <div class="seo-rank-bar__pos top">1</div>
+                <span style="flex:0 0 140px; font-size:11px;">Ihr Unternehmen</span>
+                <div class="seo-rank-bar__track"><div class="seo-rank-bar__fill" style="width:96%"></div></div>
+                <span class="seo-rank-bar__pct" style="color:#1af2dc;">96%</span>
+              </div>
+              <div class="seo-rank-bar__item" style="opacity:.5">
+                <div class="seo-rank-bar__pos mid">2</div>
+                <span style="flex:0 0 140px; font-size:11px;">Wettbewerber A</span>
+                <div class="seo-rank-bar__track"><div class="seo-rank-bar__fill" style="width:64%; background:rgba(255,255,255,0.12);"></div></div>
+                <span class="seo-rank-bar__pct">64%</span>
+              </div>
+              <div class="seo-rank-bar__item" style="opacity:.35">
+                <div class="seo-rank-bar__pos mid">3</div>
+                <span style="flex:0 0 140px; font-size:11px;">Wettbewerber B</span>
+                <div class="seo-rank-bar__track"><div class="seo-rank-bar__fill" style="width:42%; background:rgba(255,255,255,0.08);"></div></div>
+                <span class="seo-rank-bar__pct">42%</span>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+              <div style="background:#0d0d0f;border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
+                <div style="font-size:22px;font-weight:900;color:#1af2dc;letter-spacing:-0.02em;">+128%</div>
+                <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:3px;">Mehr organische Besucher</div>
+              </div>
+              <div style="background:#0d0d0f;border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
+                <div style="font-size:22px;font-weight:900;color:#fff;letter-spacing:-0.02em;">Pos. 1</div>
+                <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:3px;">Google &ldquo;Webdesign Chemnitz&rdquo;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEO Pillars -->
+      <section class="lp-section">
+        <div class="lp-section__label">SEO-Leistungen</div>
+        <h2 class="lp-section__h2">Die drei S&auml;ulen unserer SEO-Arbeit</h2>
+        <p class="lp-section__sub">Nachhaltige Sichtbarkeit entsteht durch das Zusammenspiel von technischem SEO, relevanten Inhalten und einer starken lokalen Pr&auml;senz.</p>
+        <div class="seo-pillars">
+          <div class="seo-pillar">
+            <div class="seo-pillar__num">01 &mdash; Lokal</div>
+            <div class="seo-pillar__title">Lokales SEO &amp; Google My Business</div>
+            <p class="seo-pillar__text">Damit Kunden aus Chemnitz, Limbach-Oberfrohna und der Region Sie bei &ldquo;nahe mir&rdquo;-Suchen zuerst finden.</p>
+            <ul class="seo-pillar__items">
+              <li>Google My Business Optimierung</li>
+              <li>Lokale Keywords &amp; Landingpages</li>
+              <li>Bewertungsmanagement &amp; Citations</li>
+              <li>Google Maps Ranking</li>
+            </ul>
+          </div>
+          <div class="seo-pillar">
+            <div class="seo-pillar__num">02 &mdash; Technisch</div>
+            <div class="seo-pillar__title">Technisches SEO &amp; Core Web Vitals</div>
+            <p class="seo-pillar__text">Google bewertet nicht nur Inhalte &ndash; auch Ladezeit, Mobilfreundlichkeit und Seitenstruktur f&uuml;r das Ranking.</p>
+            <ul class="seo-pillar__items">
+              <li>Ladezeit-Optimierung (&lt;2 Sek.)</li>
+              <li>Core Web Vitals (LCP, CLS, FID)</li>
+              <li>Sitemap &amp; strukturierte Daten</li>
+              <li>HTTPS &amp; Crawlability</li>
+            </ul>
+          </div>
+          <div class="seo-pillar">
+            <div class="seo-pillar__num">03 &mdash; Content</div>
+            <div class="seo-pillar__title">Content-SEO &amp; Keyword-Strategie</div>
+            <p class="seo-pillar__text">Relevante Inhalte, die Ihre Zielgruppe wirklich sucht &ndash; und die Google als Autorit&auml;t in Ihrer Branche einstuft.</p>
+            <ul class="seo-pillar__items">
+              <li>Keyword-Recherche &amp; Mapping</li>
+              <li>SEO-optimierte Texte &amp; Landingpages</li>
+              <li>Blog-Strategie &amp; Content-Kalender</li>
+              <li>Interne Verlinkung &amp; Topical Authority</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service cities -->
+        <div style="margin-top:52px;">
+          <div class="lp-section__label" style="margin-bottom:16px;">Unsere Einzugsgebiete</div>
+          <div class="seo-cities">
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Chemnitz</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Limbach-Oberfrohna</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Zwickau</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Plauen</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Glauchau</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Hohenstein-Ernstthal</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Freiberg</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> Mittelsachsen</span>
+            <span class="seo-city"><i class="fa-solid fa-location-dot"></i> &hellip; und ganz Sachsen</span>
+          </div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="seo-results">
+          <div class="seo-result-item">
+            <div class="seo-result-item__num"><span>93</span>%</div>
+            <div class="seo-result-item__label">aller Klicks gehen an die ersten 10 Ergebnisse</div>
+          </div>
+          <div class="seo-result-item">
+            <div class="seo-result-item__num"><span>46</span>%</div>
+            <div class="seo-result-item__label">aller Google-Suchen haben lokalen Bezug</div>
+          </div>
+          <div class="seo-result-item">
+            <div class="seo-result-item__num"><span>78</span>%</div>
+            <div class="seo-result-item__label">lokaler Suchen f&uuml;hren noch am selben Tag zum Besuch</div>
+          </div>
+          <div class="seo-result-item">
+            <div class="seo-result-item__num"><span>3&times;</span></div>
+            <div class="seo-result-item__label">h&ouml;herer ROI durch SEO vs. bezahlte Werbung langfristig</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <div style="background:#16151a; border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06);">
+        <section class="lp-section">
+          <div style="text-align:center; margin-bottom:52px;">
+            <div class="lp-section__label">FAQ</div>
+            <h2 class="lp-section__h2">SEO &ndash; H&auml;ufige Fragen</h2>
+          </div>
+          <div class="lp-faq">
+            <details class="lp-faq-item">
+              <summary class="lp-faq-item__q">Wie lange dauert es, bis SEO-Ma&szlig;nahmen Ergebnisse zeigen?<i class="fa-solid fa-plus"></i></summary>
+              <p class="lp-faq-item__a">Erste Verbesserungen im Ranking sind oft nach 4&ndash;8 Wochen sichtbar. Signifikante Ergebnisse in Form von deutlich mehr organischen Besuchern kommen typischerweise nach 3&ndash;6 Monaten. SEO ist eine Langzeitinvestition &ndash; im Gegensatz zu bezahlter Werbung wachsen die Ergebnisse &uuml;ber die Zeit.</p>
+            </details>
+            <details class="lp-faq-item">
+              <summary class="lp-faq-item__q">Was kostet SEO-Optimierung f&uuml;r kleine Unternehmen?<i class="fa-solid fa-plus"></i></summary>
+              <p class="lp-faq-item__a">Unsere SEO-Pakete f&uuml;r KMU starten ab ca. 300&nbsp;&euro;/Monat f&uuml;r lokales SEO-Grundpaket. Umfangreichere Pakete mit Content-Erstellung und aktivem Linkaufbau liegen h&ouml;her. Wir erstellen immer einen individuellen Kostenvoranschlag nach einem kostenlosen Erstgespr&auml;ch.</p>
+            </details>
+            <details class="lp-faq-item">
+              <summary class="lp-faq-item__q">Kann ich meine Webseite schon selbst f&uuml;r SEO optimieren?<i class="fa-solid fa-plus"></i></summary>
+              <p class="lp-faq-item__a">Grundlegende Ma&szlig;nahmen wie Google My Business einrichten, relevante Keywords in Texte einbauen und Ladezeiten verbessern kann jeder. F&uuml;r nachhaltige Ergebnisse in wettbewerbsintensiven Branchen empfehlen wir professionelle Unterst&uuml;tzung &ndash; lesen Sie dazu auch unseren <a href="blog.html" style="color:#1af2dc;">SEO-Blog</a>.</p>
+            </details>
+            <details class="lp-faq-item">
+              <summary class="lp-faq-item__q">Arbeitet ihr auch mit Google Ads zusammen?<i class="fa-solid fa-plus"></i></summary>
+              <p class="lp-faq-item__a">Ja. Oft empfehlen wir in der Startphase eine Kombination aus Google Ads (f&uuml;r sofortige Sichtbarkeit) und SEO (f&uuml;r langfristigen, kostenlosen Traffic). W&auml;hrend Ads laufen, baut SEO im Hintergrund nachhaltigen Traffic auf.</p>
+            </details>
+          </div>
+        </section>
+      </div>
+
+      <!-- Final CTA -->
+      <section class="lp-cta">
+        <div class="lp-cta__inner">
+          <div class="lp-cta__eyebrow">Kostenlose SEO-Analyse</div>
+          <h2 class="lp-cta__h2">Wie sichtbar sind Sie<br>bei Google wirklich?</h2>
+          <p class="lp-cta__sub">
+            Wir analysieren Ihre aktuelle SEO-Situation und zeigen Ihnen konkret, welche Ma&szlig;nahmen den gr&ouml;&szlig;ten Effekt haben.
+            Kostenlos &amp; unverbindlich.
+          </p>
+          <div class="lp-cta__actions">
+            <button data-pf-open class="lp-cta__btn">
+              SEO-Analyse anfordern <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="mailto:info@panoart360.de" class="lp-cta__secondary">
+              oder: info@panoart360.de
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="border-top:1px solid rgba(255,255,255,0.05);">
+        <div class="lp-footer">
+          <span class="lp-footer__copy">&copy; 2026 PanoArt360 &ndash; SEO Agentur Chemnitz &amp; Sachsen</span>
+          <nav class="lp-footer__links">
+            <a href="index.html">Startseite</a>
+            <a href="webdesign-limbach-oberfrohna.html">Webdesign</a>
+            <a href="blog.html">Blog</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Projekt-Overlay -->
+    <div class="pf-overlay" id="pfOverlay" role="dialog" aria-modal="true" aria-label="Projekt anfragen">
+      <div class="pf-topbar"><img src="img/pano-Logo.png" alt="PanoArt360" class="pf-topbar__logo"><div class="pf-topbar__progress"><div class="pf-topbar__bar" id="pfBar"></div></div><button class="pf-topbar__close" id="pfClose" aria-label="Schlie&szlig;en"><i class="fa-solid fa-xmark"></i></button></div>
+      <div class="pf-body">
+        <div class="pf-step" id="pfStep0"><div class="pf-step__inner"><p class="pf-step__num">01 <i class="fa-solid fa-arrow-right"></i></p><h2 class="pf-step__q">Wie lautet dein Name?<span class="pf-ast"> *</span></h2><input type="text" class="pf-input" id="pfName" placeholder="Vor- und Nachname" autocomplete="name"><p class="pf-err" id="pfErr0">Bitte gib deinen Namen ein.</p><div class="pf-nav"><button class="pf-btn" id="pfBtn0">OK &nbsp;<i class="fa-solid fa-check"></i></button><span class="pf-hint">oder <kbd>Enter</kbd></span></div></div></div>
+        <div class="pf-step" id="pfStep1"><div class="pf-step__inner"><p class="pf-step__num">02 <i class="fa-solid fa-arrow-right"></i></p><h2 class="pf-step__q">Ihre E-Mail-Adresse?<span class="pf-ast"> *</span></h2><input type="email" class="pf-input" id="pfEmail" placeholder="name@beispiel.de" autocomplete="email"><p class="pf-err" id="pfErr1">Bitte eine g&uuml;ltige E-Mail eingeben.</p><div class="pf-nav"><button class="pf-btn" id="pfBtn1">OK &nbsp;<i class="fa-solid fa-check"></i></button><button class="pf-back" id="pfBack1"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div></div></div>
+        <div class="pf-step" id="pfStep2"><div class="pf-step__inner"><p class="pf-step__num">03 <i class="fa-solid fa-arrow-right"></i></p><h2 class="pf-step__q">Was interessiert Sie?</h2><div class="pf-options"><button class="pf-option" data-val="SEO Analyse"><span class="pf-option__key">A</span> Kostenlose SEO-Analyse</button><button class="pf-option" data-val="Lokales SEO"><span class="pf-option__key">B</span> Lokales SEO</button><button class="pf-option" data-val="Technisches SEO"><span class="pf-option__key">C</span> Technisches SEO</button><button class="pf-option" data-val="Content SEO"><span class="pf-option__key">D</span> Content &amp; Blog-SEO</button><button class="pf-option" data-val="Google Ads"><span class="pf-option__key">E</span> Google Ads</button><button class="pf-option" data-val="Anderes"><span class="pf-option__key">F</span> Anderes</button></div><p class="pf-err" id="pfErr2">Bitte mindestens eine Option w&auml;hlen.</p><div class="pf-nav"><button class="pf-btn" id="pfBtn2">Weiter <i class="fa-solid fa-arrow-right"></i></button><button class="pf-back" id="pfBack2"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div></div></div>
+        <div class="pf-step" id="pfStep3"><div class="pf-step__inner"><p class="pf-step__num">04 <i class="fa-solid fa-arrow-right"></i></p><h2 class="pf-step__q">Kurz zu Ihrem Unternehmen?</h2><textarea class="pf-textarea" id="pfMessage" placeholder="Branche, aktuelle Webseite, Ziele ..." rows="5"></textarea><p class="pf-err" id="pfErr3">Bitte ein paar S&auml;tze schreiben.</p><div class="pf-nav"><button class="pf-btn" id="pfSubmit">Absenden <i class="fa-solid fa-paper-plane"></i></button><button class="pf-back" id="pfBack3"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button></div></div></div>
+        <div class="pf-step" id="pfStep4"><div class="pf-success__wrap" style="margin:0 auto;"><div class="pf-success__icon"><i class="fa-solid fa-check"></i></div><h2 class="pf-success__h">Anfrage erhalten!</h2><p class="pf-success__p">Danke, <strong id="pfThanksName" style="color:#fff;"></strong> &mdash; wir melden uns innerhalb von 24&nbsp;h mit Ihrer SEO-Analyse.</p><button class="pf-btn" id="pfDone">Schlie&szlig;en <i class="fa-solid fa-xmark"></i></button></div></div>
+      </div>
+      <div class="pf-footer"><span class="pf-counter" id="pfCounter">1 / 4</span></div>
+    </div>
+
+    <div class="cursor"></div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    (function(){
+      var TOTAL=4,cur=0,data={name:'',email:'',project:[],message:''};
+      var overlay=document.getElementById('pfOverlay'),bar=document.getElementById('pfBar'),counter=document.getElementById('pfCounter');
+      var steps=[document.getElementById('pfStep0'),document.getElementById('pfStep1'),document.getElementById('pfStep2'),document.getElementById('pfStep3'),document.getElementById('pfStep4')];
+      function openForm(){cur=0;document.getElementById('pfName').value='';document.getElementById('pfEmail').value='';document.getElementById('pfMessage').value='';document.querySelectorAll('#pfStep2 .pf-option').forEach(function(o){o.classList.remove('is-sel');});document.querySelectorAll('.pf-err').forEach(function(e){e.classList.remove('show');});steps.forEach(function(s){s.classList.remove('is-active','is-out');});bar.style.width='0%';counter.textContent='1 / '+TOTAL;overlay.classList.add('is-open');document.body.style.overflow='hidden';steps[0].classList.add('is-active');setTimeout(function(){document.getElementById('pfName').focus();},120);}
+      function closePF(){overlay.classList.remove('is-open');document.body.style.overflow='';}
+      function goTo(n){var p=steps[cur];p.classList.add('is-out');p.classList.remove('is-active');setTimeout(function(){p.classList.remove('is-out');cur=n;steps[n].classList.add('is-active');var i=steps[n].querySelector('.pf-input,.pf-textarea');if(i)setTimeout(function(){i.focus();},80);bar.style.width=(n/TOTAL*100)+'%';if(n<TOTAL)counter.textContent=(n+1)+' / '+TOTAL;},280);}
+      function showErr(id,on){var e=document.getElementById(id);if(e)e.classList[on?'add':'remove']('show');}
+      function validate(s){if(s===0){var v=document.getElementById('pfName').value.trim();showErr('pfErr0',!v);if(v){data.name=v;return true;}return false;}if(s===1){var v=document.getElementById('pfEmail').value.trim(),ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);showErr('pfErr1',!ok);if(ok){data.email=v;return true;}return false;}if(s===2){var sel=document.querySelectorAll('#pfStep2 .pf-option.is-sel');showErr('pfErr2',sel.length===0);if(sel.length>0){data.project=[];sel.forEach(function(o){data.project.push(o.getAttribute('data-val'));});return true;}return false;}if(s===3){var v=document.getElementById('pfMessage').value.trim();showErr('pfErr3',!v);if(v){data.message=v;return true;}return false;}return true;}
+      document.querySelectorAll('[data-pf-open]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopImmediatePropagation();openForm();});});
+      document.getElementById('pfClose').addEventListener('click',closePF);
+      document.getElementById('pfBtn0').addEventListener('click',function(){if(validate(0))goTo(1);});
+      document.getElementById('pfBtn1').addEventListener('click',function(){if(validate(1))goTo(2);});
+      document.getElementById('pfBtn2').addEventListener('click',function(){if(validate(2))goTo(3);});
+      document.getElementById('pfBack1').addEventListener('click',function(){goTo(0);});
+      document.getElementById('pfBack2').addEventListener('click',function(){goTo(1);});
+      document.getElementById('pfBack3').addEventListener('click',function(){goTo(2);});
+      document.querySelectorAll('#pfStep2 .pf-option').forEach(function(b){b.addEventListener('click',function(){b.classList.toggle('is-sel');});});
+      document.getElementById('pfSubmit').addEventListener('click',function(){if(!validate(3))return;var sub=encodeURIComponent('SEO-Anfrage von '+data.name),bod=encodeURIComponent('Name: '+data.name+'\nE-Mail: '+data.email+'\nInteresse: '+data.project.join(', ')+'\n\nUnternehmen:\n'+data.message);window.location.href='mailto:info@panoart360.de?subject='+sub+'&body='+bod;document.getElementById('pfThanksName').textContent=data.name;goTo(4);});
+      document.getElementById('pfDone').addEventListener('click',closePF);
+      document.addEventListener('keydown',function(e){if(!overlay.classList.contains('is-open'))return;if(e.key==='Escape'){closePF();return;}if(e.key==='Enter'&&cur===0)document.getElementById('pfBtn0').click();if(e.key==='Enter'&&cur===1)document.getElementById('pfBtn1').click();if(e.ctrlKey&&e.key==='Enter'&&cur===3)document.getElementById('pfSubmit').click();});
+    }());
+    </script>
+  </body>
+
+</html>
