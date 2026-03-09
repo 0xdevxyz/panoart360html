@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Datenschutzerklärung | PanoArt360 Werbestudio Webdesign</title>
+    <meta name="description" content="Datenschutzerklärung von PanoArt360 gemäß DSGVO und TDDDG. Informationen zur Verarbeitung personenbezogener Daten.">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.panoart360.de/datenschutz">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:title" content="Datenschutzerklärung | PanoArt360">
+    <meta property="og:url" content="https://www.panoart360.de/datenschutz">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#1af2dc">
+
+    <style>
+      html, body { overflow: auto !important; height: auto !important; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      .legal-page {
+        background: #0d0d0f;
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e5e5e5;
+      }
+
+      /* Hero */
+      .legal-hero {
+        position: relative;
+        background: #0a0a0c;
+        padding: 0 0 56px;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(26,242,220,0.12);
+      }
+      .legal-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.04) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+      }
+      .legal-hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(26,242,220,0.07) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .legal-hero__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      .legal-hero__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255,255,255,0.4);
+        text-decoration: none;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        transition: color .2s;
+      }
+      .legal-hero__back:hover { color: #1af2dc; }
+      .legal-hero__topbar {
+        position: relative;
+        z-index: 2;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 28px 32px 24px;
+      }
+      .legal-hero__topbar img { height: 38px; width: auto; display: block; }
+      .legal-hero__eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 14px;
+        display: block;
+      }
+      .legal-hero__h1 {
+        font-size: clamp(32px, 5vw, 60px);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.05;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+      }
+      .legal-hero__sub {
+        font-size: 14px;
+        color: rgba(255,255,255,0.4);
+      }
+
+      /* TOC */
+      .legal-toc {
+        max-width: 880px;
+        margin: 48px auto 0;
+        padding: 0 32px;
+      }
+      .legal-toc__card {
+        background: #16151a;
+        border: 1px solid rgba(26,242,220,0.12);
+        border-radius: 20px;
+        padding: 28px 32px;
+      }
+      .legal-toc__label {
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 16px;
+        display: block;
+      }
+      .legal-toc__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 8px 24px;
+        list-style: none;
+      }
+      .legal-toc__list a {
+        font-size: 13px;
+        color: rgba(255,255,255,0.5);
+        text-decoration: none;
+        transition: color .2s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .legal-toc__list a::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: #1af2dc;
+        border-radius: 50%;
+        flex-shrink: 0;
+        opacity: 0.5;
+        transition: opacity .2s;
+      }
+      .legal-toc__list a:hover { color: #1af2dc; }
+      .legal-toc__list a:hover::before { opacity: 1; }
+
+      /* Content */
+      .legal-content {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 48px 32px 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      /* Cards */
+      .legal-card {
+        background: #16151a;
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 20px;
+        padding: 32px 36px;
+        transition: border-color .25s;
+      }
+      .legal-card:hover { border-color: rgba(26,242,220,0.2); }
+      .legal-card__header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .legal-card__num {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #1af2dc;
+      }
+      .legal-card__icon {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1af2dc;
+        font-size: 14px;
+      }
+      .legal-card__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -0.01em;
+      }
+      .legal-card__body p {
+        font-size: 13.5px;
+        color: rgba(255,255,255,0.58);
+        line-height: 1.85;
+        margin-bottom: 12px;
+      }
+      .legal-card__body p:last-child { margin-bottom: 0; }
+      .legal-card__body ul {
+        padding-left: 18px;
+        margin-bottom: 12px;
+      }
+      .legal-card__body li {
+        font-size: 13.5px;
+        color: rgba(255,255,255,0.58);
+        line-height: 1.85;
+        margin-bottom: 4px;
+        list-style: disc;
+      }
+      .legal-card__body h3 {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.8);
+        margin: 18px 0 6px;
+      }
+      .legal-card__body a { color: #1af2dc; text-decoration: none; }
+      .legal-card__body a:hover { text-decoration: underline; }
+      .legal-card__body strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+      .legal-card__divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 16px 0; }
+
+      /* Rights grid */
+      .rights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 10px;
+      }
+      .rights-item {
+        background: rgba(26,242,220,0.05);
+        border: 1px solid rgba(26,242,220,0.1);
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+      .rights-item__art {
+        font-size: 10px;
+        color: #1af2dc;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .rights-item__name {
+        font-size: 12.5px;
+        color: rgba(255,255,255,0.7);
+        font-weight: 500;
+      }
+
+      /* Footer */
+      .legal-footer {
+        background: #0a0a0c;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        padding: 32px;
+        text-align: center;
+      }
+      .legal-footer p { font-size: 12px; color: rgba(255,255,255,0.3); }
+      .legal-footer a { color: #1af2dc; text-decoration: none; }
+
+      @media (max-width: 600px) {
+        .legal-hero__inner, .legal-toc, .legal-content { padding-left: 16px; padding-right: 16px; }
+        .legal-card { padding: 24px 20px; }
+        .legal-toc__card { padding: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Loader Start -->
+    <div class="loader">
+      <div class="loader__container">
+        <div class="loader__content">
+          <div class="loader__text" style="font-size:0;line-height:0;">
+            <img src="img/pano-Logo.png" alt="PanoArt360" style="display:inline-block;height:72px;width:auto;animation:1s ease-in-out 0s infinite alternate fadeIn;">
+          </div>
+        </div>
+        <div class="loader__caption">
+          <p>PanoArt360 &mdash; <a href="index.html">Zur&uuml;ck zur Startseite</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <div class="legal-page">
+
+      <!-- Hero -->
+      <header class="legal-hero">
+        <div class="legal-hero__topbar">
+          <img src="img/pano-Logo.png" alt="PanoArt360">
+        </div>
+        <div class="legal-hero__inner">
+          <a href="index.html" class="legal-hero__back">
+            <i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck zur Startseite
+          </a>
+          <span class="legal-hero__eyebrow">Rechtliches</span>
+          <h1 class="legal-hero__h1">Datenschutz&shy;erkl&auml;rung</h1>
+          <p class="legal-hero__sub">Gem&auml;&szlig; DSGVO, TDDDG &amp; &sect;&nbsp;13 TMG &ndash; Stand: Januar 2025</p>
+        </div>
+      </header>
+
+      <!-- TOC -->
+      <nav class="legal-toc" aria-label="Inhaltsverzeichnis">
+        <div class="legal-toc__card">
+          <span class="legal-toc__label">Inhaltsverzeichnis</span>
+          <ul class="legal-toc__list">
+            <li><a href="#ds1">1. Verantwortlicher</a></li>
+            <li><a href="#ds2">2. Allgemeines</a></li>
+            <li><a href="#ds3">3. Server-Log-Dateien</a></li>
+            <li><a href="#ds4">4. Kontaktformular</a></li>
+            <li><a href="#ds5">5. Newsletter</a></li>
+            <li><a href="#ds6">6. Cookies</a></li>
+            <li><a href="#ds7">7. Google Maps</a></li>
+            <li><a href="#ds8">8. SSL-Verschl&uuml;sselung</a></li>
+            <li><a href="#ds9">9. Ihre Rechte</a></li>
+            <li><a href="#ds10">10. Aufsichtsbeh&ouml;rde</a></li>
+            <li><a href="#ds11">11. Aktualit&auml;t</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <main class="legal-content">
+
+        <!-- 1. Verantwortlicher -->
+        <article class="legal-card" id="ds1">
+          <div class="legal-card__header">
+            <div class="legal-card__num">1</div>
+            <h2 class="legal-card__title">Verantwortlicher</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Verantwortlicher im Sinne der DSGVO:</p>
+            <p>
+              <strong>PanoArt360 &ndash; Yvonne Weishar</strong><br>
+              Am Quirlbusch 6 &middot; 09212 Limbach-Oberfrohna &middot; Deutschland<br>
+              Telefon: <a href="tel:+4917384489441">+49 173 8448 941</a><br>
+              E-Mail: <a href="mailto:mail@panoart360.de">mail@panoart360.de</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 2. Allgemeines -->
+        <article class="legal-card" id="ds2">
+          <div class="legal-card__header">
+            <div class="legal-card__num">2</div>
+            <h2 class="legal-card__title">Allgemeines zur Datenverarbeitung</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Wir nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich sowie entsprechend der gesetzlichen Datenschutzvorschriften.</p>
+            <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m&ouml;glich. Soweit personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben.</p>
+          </div>
+        </article>
+
+        <!-- 3. Server-Log -->
+        <article class="legal-card" id="ds3">
+          <div class="legal-card__header">
+            <div class="legal-card__num">3</div>
+            <h2 class="legal-card__title">Server-Log-Dateien</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Der Provider erhebt automatisch Informationen in Server-Log-Dateien:</p>
+            <ul>
+              <li>Browsertyp und -version</li>
+              <li>Verwendetes Betriebssystem</li>
+              <li>Referrer URL</li>
+              <li>Hostname des zugreifenden Rechners</li>
+              <li>Uhrzeit der Serveranfrage</li>
+              <li>IP-Adresse (anonymisiert)</li>
+            </ul>
+            <p>Diese Daten werden nicht bestimmten Personen zugeordnet. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigte Interessen).</p>
+          </div>
+        </article>
+
+        <!-- 4. Kontaktformular -->
+        <article class="legal-card" id="ds4">
+          <div class="legal-card__header">
+            <div class="legal-card__num">4</div>
+            <h2 class="legal-card__title">Kontaktformular &amp; E-Mail-Kontakt</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir ohne Ihre Einwilligung nicht weiter.</p>
+            <p>Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragsanbahnung) sowie Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.</p>
+          </div>
+        </article>
+
+        <!-- 5. Newsletter -->
+        <article class="legal-card" id="ds5">
+          <div class="legal-card__header">
+            <div class="legal-card__num">5</div>
+            <h2 class="legal-card__title">Newsletter</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>F&uuml;r den Newsletter-Versand ben&ouml;tigen wir Ihre E-Mail-Adresse und Ihre Einwilligung. Die erteilte Einwilligung k&ouml;nnen Sie jederzeit widerrufen, z.&nbsp;B. per E-Mail an <a href="mailto:mail@panoart360.de">mail@panoart360.de</a>.</p>
+            <p>Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO (Einwilligung).</p>
+          </div>
+        </article>
+
+        <!-- 6. Cookies -->
+        <article class="legal-card" id="ds6">
+          <div class="legal-card__header">
+            <div class="legal-card__num">6</div>
+            <h2 class="legal-card__title">Cookies</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Unsere Webseite verwendet Cookies. Das sind kleine Textdateien, die Ihr Browser auf Ihrem Ger&auml;t speichert.</p>
+            <h3>Notwendige Cookies</h3>
+            <p>Ohne diese Cookies funktioniert die Webseite nicht einwandfrei. Sie speichern keine personenbezogenen Informationen. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.</p>
+            <h3>Google Analytics</h3>
+            <p>Diese Webseite nutzt Google Analytics (Google Ireland Limited, Gordon House, Dublin 4, Irland). Die IP-Anonymisierung ist aktiviert. Ihre IP-Adresse wird vor der &Uuml;bermittlung in die USA gek&uuml;rzt. Sie k&ouml;nnen die Cookie-Speicherung &uuml;ber Ihre Browser-Einstellungen verhindern. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO.</p>
+          </div>
+        </article>
+
+        <!-- 7. Google Maps -->
+        <article class="legal-card" id="ds7">
+          <div class="legal-card__header">
+            <div class="legal-card__num">7</div>
+            <h2 class="legal-card__title">Google Maps</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Diese Seite nutzt Google Maps (Google Ireland Limited, Gordon House, Dublin 4, Irland). Zur Nutzung der Kartenfunktionen wird Ihre IP-Adresse gespeichert und an Google-Server &uuml;bermittelt.</p>
+            <p>Datenschutzerkl&auml;rung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.</p>
+          </div>
+        </article>
+
+        <!-- 8. SSL -->
+        <article class="legal-card" id="ds8">
+          <div class="legal-card__header">
+            <div class="legal-card__num">8</div>
+            <h2 class="legal-card__title">SSL- / TLS-Verschl&uuml;sselung</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Diese Seite nutzt SSL- bzw. TLS-Verschl&uuml;sselung f&uuml;r die sichere &Uuml;bertragung vertraulicher Inhalte. Eine verschl&uuml;sselte Verbindung erkennen Sie an <strong>https://</strong> in der Adresszeile und dem Schloss-Symbol im Browser.</p>
+          </div>
+        </article>
+
+        <!-- 9. Rechte -->
+        <article class="legal-card" id="ds9">
+          <div class="legal-card__header">
+            <div class="legal-card__num">9</div>
+            <h2 class="legal-card__title">Ihre Rechte</h2>
+          </div>
+          <div class="legal-card__body">
+            <p style="margin-bottom:16px;">Sie haben gegen&uuml;ber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+            <div class="rights-grid">
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 15</div>
+                <div class="rights-item__name">Auskunftsrecht</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 16</div>
+                <div class="rights-item__name">Recht auf Berichtigung</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 17</div>
+                <div class="rights-item__name">Recht auf L&ouml;schung</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 18</div>
+                <div class="rights-item__name">Einschr&auml;nkung der Verarbeitung</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 20</div>
+                <div class="rights-item__name">Daten&uuml;bertragbarkeit</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 21</div>
+                <div class="rights-item__name">Widerspruchsrecht</div>
+              </div>
+              <div class="rights-item">
+                <div class="rights-item__art">Art. 7 Abs. 3</div>
+                <div class="rights-item__name">Widerrufsrecht</div>
+              </div>
+            </div>
+            <p style="margin-top:16px;">Zur Aus&uuml;bung Ihrer Rechte: <a href="mailto:mail@panoart360.de">mail@panoart360.de</a></p>
+          </div>
+        </article>
+
+        <!-- 10. Aufsichtsbehörde -->
+        <article class="legal-card" id="ds10">
+          <div class="legal-card__header">
+            <div class="legal-card__num">10</div>
+            <h2 class="legal-card__title">Beschwerderecht bei der Aufsichtsbeh&ouml;rde</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Sie haben das Recht, sich bei der zust&auml;ndigen Datenschutz-Aufsichtsbeh&ouml;rde zu beschweren:</p>
+            <p>
+              <strong>S&auml;chsischer Datenschutz- und Transparenzbeauftragter</strong><br>
+              Devrientsstr. 5 &middot; 01067 Dresden<br>
+              Telefon: +49 351 85471 101<br>
+              E-Mail: <a href="mailto:saechsdsb@slt.sachsen.de">saechsdsb@slt.sachsen.de</a><br>
+              Web: <a href="https://www.saechsdsb.de" target="_blank" rel="noopener noreferrer">www.saechsdsb.de</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 11. Aktualität -->
+        <article class="legal-card" id="ds11">
+          <div class="legal-card__header">
+            <div class="legal-card__num">11</div>
+            <h2 class="legal-card__title">Aktualit&auml;t dieser Erkl&auml;rung</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Diese Datenschutzerkl&auml;rung hat den Stand <strong>Januar 2025</strong>. Durch die Weiterentwicklung unserer Webseite oder ge&auml;nderte gesetzliche Vorgaben kann es notwendig werden, diese Erkl&auml;rung anzupassen. Die jeweils aktuelle Version ist unter <a href="https://www.panoart360.de/datenschutz" target="_blank">www.panoart360.de/datenschutz</a> abrufbar.</p>
+          </div>
+        </article>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="legal-footer">
+        <p>
+          &copy; 2025 PanoArt360 &ndash;
+          <a href="index.html">Startseite</a> &middot;
+          <a href="impressum.html">Impressum</a> &middot;
+          <a href="agb.html">AGB</a> &middot;
+          <a href="mailto:mail@panoart360.de">mail@panoart360.de</a>
+        </p>
+      </footer>
+
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

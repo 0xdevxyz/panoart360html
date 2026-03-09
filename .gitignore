@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Images (werden direkt auf den Server hochgeladen)
+app/img/
+dist/img/
+dist/source-files/
+
+# Build artifacts aus app (nur dist wird deployed)
+dist/css/main-demo.css
+dist/css/plugins-demo.css
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
