@@ -3819,3 +3819,107 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Google Map End */
 /* ------------------------------------------------*/
+/* ------------------------------------------------*/
+/* PanoArt360 Conversion Additions */
+/* ------------------------------------------------*/
+
+/* WhatsApp Floating Button */
+.pano-wa-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px 12px 14px;
+  border-radius: 50px;
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  box-shadow: 0 4px 20px rgba(37,211,102,.35);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.pano-wa-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37,211,102,.45);
+  color: #fff;
+  text-decoration: none;
+}
+.pano-wa-btn__icon {
+  font-size: 20px;
+  line-height: 1;
+}
+@media (max-width: 575px) {
+  .pano-wa-btn {
+    bottom: 20px;
+    right: 16px;
+    padding: 13px;
+    border-radius: 50%;
+  }
+  .pano-wa-btn__label {
+    display: none;
+  }
+}
+
+/* FAQ Accordion */
+.pano-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.pano-faq__item {
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.pano-faq__item:first-child {
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+.pano-faq__q {
+  list-style: none;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  user-select: none;
+}
+.pano-faq__q::-webkit-details-marker { display: none; }
+.pano-faq__q::after {
+  content: '+';
+  font-size: 20px;
+  font-weight: 300;
+  color: #1af2dc;
+  flex-shrink: 0;
+  transition: transform .25s ease;
+}
+.pano-faq__item[open] .pano-faq__q::after {
+  transform: rotate(45deg);
+}
+.pano-faq__item[open] .pano-faq__q {
+  color: #1af2dc;
+}
+.pano-faq__a {
+  padding: 0 0 20px;
+}
+.pano-faq__a p {
+  font-size: 14px;
+  color: rgba(255,255,255,.6);
+  line-height: 1.75;
+  margin: 0;
+}
+.pano-faq__a strong {
+  color: rgba(255,255,255,.9);
+}
+
+/* ------------------------------------------------*/
+/* PanoArt360 Conversion Additions End */
+/* ------------------------------------------------*/
