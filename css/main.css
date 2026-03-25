@@ -3823,10 +3823,33 @@ form .inputs-description {
 /* PanoArt360 Conversion Additions */
 /* ------------------------------------------------*/
 
+/* About Section – smarte Scrollleiste wenn Inhalt zu hoch */
+@media only screen and (min-width: 1200px) {
+  .about .blocks-container {
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #1af2dc rgba(255,255,255,.06);
+  }
+  .about .blocks-container::-webkit-scrollbar {
+    width: 3px;
+  }
+  .about .blocks-container::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.04);
+    border-radius: 2px;
+  }
+  .about .blocks-container::-webkit-scrollbar-thumb {
+    background: #1af2dc;
+    border-radius: 2px;
+  }
+}
+
 /* WhatsApp Floating Button */
 .pano-wa-btn {
   position: fixed;
-  bottom: 28px;
+  bottom: 72px;
   right: 28px;
   z-index: 9000;
   display: flex;
