@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Blog | Webdesign, SEO &amp; Digitale Strategie | PanoArt360</title>
+    <meta name="description" content="Der Blog von PanoArt360 – Tipps und Wissen zu Webdesign, SEO, DSGVO und digitaler Strategie für Unternehmen aus Limbach-Oberfrohna und der Region.">
+    <meta name="author" content="PanoArt360">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.panoart360.de/blog">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:title" content="Blog | Webdesign, SEO & Digitale Strategie | PanoArt360">
+    <meta property="og:description" content="Tipps zu Webdesign, SEO, DSGVO und digitaler Strategie von PanoArt360 aus Limbach-Oberfrohna.">
+    <meta property="og:url" content="https://www.panoart360.de/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="PanoArt360">
+    <meta property="og:image" content="https://www.panoart360.de/img/favicon/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@werbeagentur_lo">
+    <meta name="twitter:title" content="Blog | Webdesign & SEO Tipps | PanoArt360">
+    <meta name="twitter:description" content="Webdesign, SEO und DSGVO-Wissen für Unternehmen – der PanoArt360 Blog.">
+    <meta name="twitter:image" content="https://www.panoart360.de/img/favicon/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "PanoArt360 Blog",
+      "description": "Tipps und Wissen zu Webdesign, SEO, DSGVO und digitaler Strategie",
+      "url": "https://www.panoart360.de/blog",
+      "inLanguage": "de-DE",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PanoArt360",
+        "url": "https://www.panoart360.de",
+        "logo": "https://www.panoart360.de/img/pano-Logo.png"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.panoart360.de/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.panoart360.de/blog" }
+        ]
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "DSGVO 2025: Was Unternehmen jetzt wissen müssen",
+          "description": "Neue EuGH-Urteile, Cookie-Anforderungen und was konkret auf Ihrer Webseite angepasst werden muss.",
+          "datePublished": "2025-01-15",
+          "url": "https://www.panoart360.de/blog/dsgvo-2025-was-unternehmen-jetzt-wissen-muessen/",
+          "author": { "@type": "Organization", "name": "PanoArt360" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "ChatGPT & OpenAI im Unternehmen: 10 Dos & Don'ts",
+          "description": "KI-Tools versprechen viel – aber die meisten Unternehmen setzen sie falsch ein.",
+          "datePublished": "2026-03-01",
+          "url": "https://www.panoart360.de/blog/chatgpt-openai-unternehmen-dos-donts/",
+          "author": { "@type": "Organization", "name": "PanoArt360" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "16 Gründe, warum Nutzer Ihre Website verlassen",
+          "description": "Warum springen Besucher von Ihrer Website ab? 16 häufige Gründe und wie Sie diese beheben.",
+          "datePublished": "2022-11-25",
+          "url": "https://www.panoart360.de/blog/16-gruende-warum-nutzer-ihre-website-verlassen/",
+          "author": { "@type": "Organization", "name": "PanoArt360" }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#1af2dc">
+
+    <style>
+      /* ══════════════════════════════════════════════
+         BLOG — EIGENE WELT
+         Basis: #0d0d0f | Akzent: #1af2dc | Surface: #16151a
+      ══════════════════════════════════════════════ */
+
+      html, body { overflow: auto !important; height: auto !important; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      .blog-page {
+        background: #0d0d0f;
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e5e5e5;
+      }
+
+      /* ─── 1. Blog-Nav ─────────────────────────────── */
+      .blog-nav {
+        position: sticky;
+        top: 0;
+        z-index: 900;
+        background: rgba(13,13,15,0.92);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .blog-nav__inner {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 32px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        gap: 0;
+      }
+      .blog-nav__logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        flex-shrink: 0;
+        margin-right: 28px;
+      }
+      .blog-nav__logo img {
+        height: 28px;
+        width: auto;
+      }
+      .blog-nav__divider {
+        width: 1px;
+        height: 18px;
+        background: rgba(255,255,255,0.12);
+        margin: 0 16px 0 0;
+        flex-shrink: 0;
+      }
+      .blog-nav__label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-right: 28px;
+        flex-shrink: 0;
+      }
+      .blog-nav__cats {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        flex: 1;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .blog-nav__cats::-webkit-scrollbar { display: none; }
+      .blog-nav__cat {
+        font-size: 11px;
+        color: rgba(255,255,255,0.38);
+        text-decoration: none;
+        padding: 5px 12px;
+        border-radius: 20px;
+        white-space: nowrap;
+        transition: color .2s, background .2s;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: inherit;
+      }
+      .blog-nav__cat:hover,
+      .blog-nav__cat.is-active {
+        color: #fff;
+        background: rgba(255,255,255,0.07);
+      }
+      .blog-nav__cat.is-active {
+        color: #1af2dc;
+        background: rgba(26,242,220,0.08);
+      }
+      .blog-nav__actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        margin-left: 16px;
+      }
+      .blog-nav__home {
+        font-size: 11px;
+        color: rgba(255,255,255,0.3);
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        transition: color .2s;
+        white-space: nowrap;
+      }
+      .blog-nav__home:hover { color: rgba(255,255,255,0.7); }
+      .blog-nav__cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: #1af2dc;
+        color: #09090b;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        border: none;
+        font-family: inherit;
+        cursor: pointer;
+        transition: opacity .2s;
+        white-space: nowrap;
+      }
+      .blog-nav__cta:hover { opacity: .84; }
+
+      /* ─── 2. Hero ─────────────────────────────────── */
+      .blog-hero {
+        position: relative;
+        padding: 72px 0 64px;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .blog-hero::before {
+        content: '';
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.035) 1px, transparent 1px);
+        background-size: 48px 48px;
+        pointer-events: none;
+      }
+      .blog-hero::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 300px;
+        background: radial-gradient(ellipse 80% 100% at 20% 0%, rgba(26,242,220,0.06) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .blog-hero__inner {
+        position: relative; z-index: 1;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 32px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 32px;
+      }
+      .blog-hero__eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 16px;
+      }
+      .blog-hero__eyebrow::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background: #1af2dc;
+        border-radius: 2px;
+      }
+      .blog-hero__h1 {
+        font-size: clamp(36px, 5vw, 68px);
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.0;
+        letter-spacing: -0.03em;
+        margin-bottom: 16px;
+      }
+      .blog-hero__sub {
+        font-size: 15px;
+        color: rgba(255,255,255,0.42);
+        line-height: 1.7;
+        max-width: 540px;
+      }
+      .blog-hero__stats {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-end;
+      }
+      .blog-stat {
+        text-align: right;
+      }
+      .blog-stat__num {
+        font-size: clamp(28px, 3vw, 40px);
+        font-weight: 900;
+        color: #fff;
+        line-height: 1;
+        letter-spacing: -0.03em;
+      }
+      .blog-stat__num span { color: #1af2dc; }
+      .blog-stat__label {
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.3);
+        margin-top: 3px;
+      }
+
+      /* ─── 3. Featured ─────────────────────────────── */
+      .blog-featured-wrap {
+        max-width: 1300px;
+        margin: 52px auto 0;
+        padding: 0 32px;
+      }
+      .blog-section-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.25);
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .blog-section-label::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: rgba(255,255,255,0.07);
+      }
+      .blog-featured__card {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        background: #16151a;
+        border: 1px solid rgba(26,242,220,0.15);
+        border-radius: 24px;
+        overflow: hidden;
+        text-decoration: none;
+        transition: border-color .3s;
+      }
+      .blog-featured__card:hover { border-color: rgba(26,242,220,0.4); }
+      .blog-featured__img-wrap {
+        position: relative;
+        overflow: hidden;
+        min-height: 320px;
+      }
+      .blog-featured__img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform .6s ease;
+      }
+      .blog-featured__card:hover .blog-featured__img { transform: scale(1.04); }
+      .blog-featured__img-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to right, transparent 60%, #16151a);
+      }
+      .blog-featured__badge {
+        position: absolute;
+        top: 20px; left: 20px;
+        background: #1af2dc;
+        color: #09090b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        padding: 5px 12px;
+        border-radius: 20px;
+      }
+      .blog-featured__body {
+        padding: 44px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+      }
+      .blog-featured__meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .blog-featured__date {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1af2dc;
+      }
+      .blog-featured__tag {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+        background: rgba(255,255,255,0.06);
+        padding: 3px 10px;
+        border-radius: 20px;
+      }
+      .blog-featured__read {
+        font-size: 11px;
+        color: rgba(255,255,255,0.3);
+      }
+      .blog-featured__title {
+        font-size: clamp(20px, 2.2vw, 28px);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+      .blog-featured__excerpt {
+        font-size: 14px;
+        color: rgba(255,255,255,0.48);
+        line-height: 1.75;
+      }
+      .blog-featured__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-top: 4px;
+      }
+      .blog-featured__link i {
+        transition: transform .2s;
+      }
+      .blog-featured__card:hover .blog-featured__link i {
+        transform: translateX(4px);
+      }
+
+      /* ─── 4. Layout: Main + Sidebar ───────────────── */
+      .blog-layout {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 52px 32px 80px;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 40px;
+        align-items: start;
+      }
+
+      /* ─── 5. Category Filter ──────────────────────── */
+      .blog-filters {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+      .blog-filter-btn {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: rgba(255,255,255,0.4);
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 7px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .2s;
+        font-family: inherit;
+      }
+      .blog-filter-btn:hover {
+        color: rgba(255,255,255,0.8);
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(255,255,255,0.14);
+      }
+      .blog-filter-btn.is-active {
+        color: #1af2dc;
+        background: rgba(26,242,220,0.09);
+        border-color: rgba(26,242,220,0.3);
+      }
+      .bfb-dot {
+        display: inline-block;
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        margin-right: 7px;
+        flex-shrink: 0;
+        vertical-align: middle;
+        position: relative; top: -1px;
+      }
+      .blog-filter-btn[data-filter="webdesign"].is-active { color: #818cf8; background: rgba(129,140,248,0.09); border-color: rgba(129,140,248,0.3); }
+      .blog-filter-btn[data-filter="ki"].is-active        { color: #22d3ee; background: rgba(34,211,238,0.09);  border-color: rgba(34,211,238,0.3); }
+      .blog-filter-btn[data-filter="dsgvo"].is-active     { color: #fbbf24; background: rgba(251,191,36,0.09);  border-color: rgba(251,191,36,0.3); }
+      .blog-filter-btn[data-filter="seo"].is-active       { color: #34d399; background: rgba(52,211,153,0.09);  border-color: rgba(52,211,153,0.3); }
+      .blog-filter-btn[data-filter="social"].is-active    { color: #fb7185; background: rgba(251,113,133,0.09); border-color: rgba(251,113,133,0.3); }
+      .blog-filter-btn[data-filter="marketing"].is-active { color: #fb923c; background: rgba(251,146,60,0.09);  border-color: rgba(251,146,60,0.3); }
+
+      /* ─── 6. Post Cards ───────────────────────────── */
+      .blog-posts-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .blog-card {
+        background: #16151a;
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        transition: border-color .3s, transform .3s;
+      }
+      .blog-card:hover {
+        border-color: rgba(26,242,220,0.22);
+        transform: translateY(-4px);
+      }
+      .blog-card__img-wrap { overflow: hidden; position: relative; }
+      .blog-card__img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+        transition: transform .5s ease;
+        background: #1e1d22;
+      }
+      .blog-card:hover .blog-card__img { transform: scale(1.04); }
+      .blog-card__cat-badge {
+        position: absolute;
+        bottom: 10px; left: 10px;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: rgba(13,13,15,0.85);
+        color: #1af2dc;
+        border: 1px solid rgba(26,242,220,0.25);
+        padding: 4px 10px;
+        border-radius: 20px;
+        backdrop-filter: blur(6px);
+      }
+      .blog-card__body {
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        flex: 1;
+      }
+      .blog-card__meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .blog-card__date {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+      }
+      .blog-card__sep {
+        width: 3px; height: 3px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+      }
+      .blog-card__read {
+        font-size: 10px;
+        color: rgba(255,255,255,0.28);
+      }
+      .blog-card__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+        flex: 1;
+      }
+      .blog-card__excerpt {
+        font-size: 12.5px;
+        color: rgba(255,255,255,0.42);
+        line-height: 1.7;
+      }
+      .blog-card__footer {
+        padding: 14px 22px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .blog-card__author {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.2);
+      }
+      .blog-card__arrow {
+        width: 28px; height: 28px;
+        border-radius: 8px;
+        background: rgba(26,242,220,0.07);
+        border: 1px solid rgba(26,242,220,0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1af2dc;
+        font-size: 11px;
+        transition: background .2s, transform .2s;
+      }
+      .blog-card:hover .blog-card__arrow {
+        background: rgba(26,242,220,0.16);
+        transform: translateX(3px);
+      }
+
+      /* Hidden by filter */
+      .blog-card[hidden] { display: none; }
+
+      /* ─── 7. Sidebar ──────────────────────────────── */
+      .blog-sidebar {
+        position: sticky;
+        top: 74px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .sidebar-widget {
+        background: #16151a;
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .sidebar-widget__head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.25);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .sidebar-widget__head::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: rgba(255,255,255,0.07);
+      }
+      .sidebar-widget__body { padding: 20px 22px; }
+
+      /* About widget */
+      .sw-about__logo {
+        height: 32px;
+        width: auto;
+        display: block;
+        margin-bottom: 14px;
+        opacity: .85;
+      }
+      .sw-about__text {
+        font-size: 13px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+      .sw-about__location {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 11px;
+        color: rgba(255,255,255,0.28);
+        margin-bottom: 6px;
+      }
+      .sw-about__location i { color: #1af2dc; font-size: 10px; }
+      .sw-about__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        text-decoration: none;
+        margin-top: 12px;
+        transition: opacity .2s;
+      }
+      .sw-about__link:hover { opacity: .7; }
+
+      /* Categories widget */
+      .sw-cats { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+      .sw-cats__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background .2s;
+        font-size: 13px;
+        color: rgba(255,255,255,0.55);
+        text-decoration: none;
+        background: none;
+        border: none;
+        font-family: inherit;
+        width: 100%;
+      }
+      .sw-cats__item:hover,
+      .sw-cats__item.is-active {
+        background: rgba(255,255,255,0.05);
+        color: #fff;
+      }
+      .sw-cats__item.is-active { color: #1af2dc; }
+      .sw-cats__left { display: flex; align-items: center; gap: 10px; }
+      .sw-cats__dot {
+        width: 7px; height: 7px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .sw-cats__count {
+        font-size: 10px;
+        color: rgba(255,255,255,0.2);
+        background: rgba(255,255,255,0.05);
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+
+      /* Popular widget */
+      .sw-popular { display: flex; flex-direction: column; gap: 2px; }
+      .sw-pop-item {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        padding: 10px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background .2s;
+      }
+      .sw-pop-item:hover { background: rgba(255,255,255,0.04); }
+      .sw-pop-item__num {
+        font-size: 22px;
+        font-weight: 900;
+        color: rgba(26,242,220,0.18);
+        line-height: 1;
+        flex-shrink: 0;
+        width: 30px;
+        letter-spacing: -0.03em;
+        margin-top: 2px;
+      }
+      .sw-pop-item__info { flex: 1; }
+      .sw-pop-item__cat {
+        font-size: 9px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 4px;
+      }
+      .sw-pop-item__title {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.75);
+        line-height: 1.4;
+      }
+
+      /* Newsletter widget */
+      .sw-newsletter {
+        background: linear-gradient(135deg, #16151a 0%, #0f1a1a 100%);
+        border-color: rgba(26,242,220,0.15);
+      }
+      .sw-newsletter .sidebar-widget__body { padding: 24px 22px; }
+      .sw-nl__icon {
+        width: 40px; height: 40px;
+        background: rgba(26,242,220,0.1);
+        border: 1px solid rgba(26,242,220,0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1af2dc;
+        font-size: 16px;
+        margin-bottom: 14px;
+      }
+      .sw-nl__title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 6px;
+        letter-spacing: -0.01em;
+      }
+      .sw-nl__sub {
+        font-size: 12px;
+        color: rgba(255,255,255,0.4);
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+      .sw-nl__form { display: flex; flex-direction: column; gap: 8px; }
+      .sw-nl__input {
+        width: 100%;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 13px;
+        font-family: inherit;
+        padding: 11px 14px;
+        outline: none;
+        transition: border-color .2s;
+        caret-color: #1af2dc;
+      }
+      .sw-nl__input::placeholder { color: rgba(255,255,255,0.2); }
+      .sw-nl__input:focus { border-color: rgba(26,242,220,0.4); }
+      .sw-nl__btn {
+        width: 100%;
+        background: #1af2dc;
+        color: #09090b;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: opacity .2s;
+      }
+      .sw-nl__btn:hover { opacity: .84; }
+      .sw-nl__note {
+        font-size: 10px;
+        color: rgba(255,255,255,0.2);
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      /* Tags widget */
+      .sw-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+      .sw-tag {
+        font-size: 11px;
+        color: rgba(255,255,255,0.4);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.07);
+        padding: 5px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .2s;
+      }
+      .sw-tag:hover {
+        color: #1af2dc;
+        background: rgba(26,242,220,0.07);
+        border-color: rgba(26,242,220,0.2);
+      }
+
+      /* ─── 8. CTA Banner ───────────────────────────── */
+      .blog-cta {
+        max-width: 1300px;
+        margin: 0 auto 80px;
+        padding: 0 32px;
+      }
+      .blog-cta__inner {
+        position: relative;
+        background: #16151a;
+        border: 1px solid rgba(26,242,220,0.15);
+        border-radius: 24px;
+        padding: 52px 56px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+      .blog-cta__inner::before {
+        content: '';
+        position: absolute;
+        top: -80px; right: -80px;
+        width: 300px; height: 300px;
+        background: radial-gradient(circle, rgba(26,242,220,0.07) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .blog-cta__inner::after {
+        content: '';
+        position: absolute;
+        bottom: -60px; left: -60px;
+        width: 200px; height: 200px;
+        background: radial-gradient(circle, rgba(26,242,220,0.04) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .blog-cta__text { position: relative; }
+      .blog-cta__eyebrow {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 10px;
+      }
+      .blog-cta__text h2 {
+        font-size: clamp(22px, 2.5vw, 30px);
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+      .blog-cta__text p {
+        font-size: 14px;
+        color: rgba(255,255,255,0.42);
+        line-height: 1.65;
+        max-width: 460px;
+      }
+      .blog-cta__btn {
+        position: relative;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #1af2dc;
+        color: #09090b;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: inherit;
+        text-decoration: none;
+        transition: opacity .2s, transform .2s;
+      }
+      .blog-cta__btn:hover { opacity: .87; transform: translateY(-2px); }
+
+      /* ─── 9. Footer ───────────────────────────────── */
+      .blog-footer {
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding: 32px;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .blog-footer__left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .blog-footer__logo { height: 22px; width: auto; opacity: .4; }
+      .blog-footer__copy {
+        font-size: 11px;
+        color: rgba(255,255,255,0.2);
+      }
+      .blog-footer__links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .blog-footer__links a {
+        font-size: 11px;
+        color: rgba(255,255,255,0.25);
+        text-decoration: none;
+        transition: color .2s;
+      }
+      .blog-footer__links a:hover { color: rgba(255,255,255,0.6); }
+
+      /* ─── 10. Responsive ──────────────────────────── */
+      @media (max-width: 1100px) {
+        .blog-layout { grid-template-columns: 1fr 290px; gap: 28px; }
+        .blog-sidebar { position: static; }
+      }
+      @media (max-width: 900px) {
+        .blog-layout { grid-template-columns: 1fr; }
+        .blog-sidebar { order: -1; }
+        .blog-sidebar { position: static; flex-direction: row; flex-wrap: wrap; }
+        .sidebar-widget { flex: 1; min-width: 260px; }
+        .blog-featured__card { grid-template-columns: 1fr; }
+        .blog-featured__img-wrap { min-height: 240px; }
+        .blog-featured__img-overlay { background: linear-gradient(to bottom, transparent 40%, #16151a); }
+        .blog-posts-grid { grid-template-columns: 1fr 1fr; }
+        .blog-hero__inner { grid-template-columns: 1fr; }
+        .blog-hero__stats { flex-direction: row; align-items: flex-start; }
+      }
+      @media (max-width: 640px) {
+        .blog-nav__cats { display: none; }
+        .blog-hero { padding: 52px 0 48px; }
+        .blog-hero__inner, .blog-featured-wrap, .blog-layout, .blog-cta, .blog-footer { padding-left: 20px; padding-right: 20px; }
+        .blog-posts-grid { grid-template-columns: 1fr; }
+        .blog-cta__inner { padding: 36px 28px; }
+        .blog-footer { flex-direction: column; align-items: flex-start; }
+      }
+
+      /* ─── 11. Form Overlay ────────────────────────── */
+      .pf-overlay {
+        position: fixed; inset: 0; z-index: 9999;
+        background: #0a0a0c;
+        display: flex; flex-direction: column;
+        opacity: 0; pointer-events: none;
+        transition: opacity .3s ease;
+        overflow: hidden;
+      }
+      .pf-overlay::before {
+        content: '';
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.025) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.025) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+      }
+      .pf-overlay.is-open { opacity: 1; pointer-events: all; }
+      .pf-topbar {
+        position: relative; z-index: 2;
+        display: flex; align-items: center; gap: 18px;
+        padding: 16px 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        flex-shrink: 0;
+      }
+      .pf-topbar__logo { height: 28px; width: auto; opacity: .65; }
+      .pf-topbar__progress {
+        flex: 1; height: 2px;
+        background: rgba(255,255,255,0.06);
+        border-radius: 2px; overflow: hidden;
+      }
+      .pf-topbar__bar {
+        height: 100%;
+        background: linear-gradient(90deg, #1af2dc, #0dd9c3);
+        border-radius: 2px; width: 0%;
+        transition: width .5s cubic-bezier(.25,1,.5,1);
+      }
+      .pf-topbar__close {
+        width: 32px; height: 32px; border-radius: 8px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.07);
+        color: rgba(255,255,255,0.35); font-size: 14px;
+        cursor: pointer; display: flex; align-items: center; justify-content: center;
+        transition: background .2s, color .2s; flex-shrink: 0;
+      }
+      .pf-topbar__close:hover { background: rgba(255,255,255,0.1); color: #fff; }
+      .pf-body { flex: 1; position: relative; overflow: hidden; }
+      .pf-step {
+        position: absolute; inset: 0;
+        display: flex; align-items: center; justify-content: center;
+        padding: 40px;
+        opacity: 0; transform: translateY(40px);
+        pointer-events: none;
+      }
+      .pf-step.is-active {
+        opacity: 1; transform: translateY(0); pointer-events: all;
+        transition: opacity .45s cubic-bezier(.25,1,.5,1), transform .45s cubic-bezier(.25,1,.5,1);
+      }
+      .pf-step.is-out {
+        opacity: 0; transform: translateY(-40px); pointer-events: none;
+        transition: opacity .25s ease, transform .25s ease;
+      }
+      .pf-step__inner { width: 100%; max-width: 660px; }
+      .pf-step__num {
+        font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+        color: #1af2dc; margin-bottom: 16px;
+        display: flex; align-items: center; gap: 8px;
+      }
+      .pf-step__q {
+        font-size: clamp(24px, 4vw, 42px); font-weight: 800;
+        color: #fff; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px;
+      }
+      .pf-step__q .pf-ast { color: #1af2dc; }
+      .pf-step__sub { font-size: 14px; color: rgba(255,255,255,0.3); margin: -16px 0 22px; line-height: 1.55; }
+      .pf-input {
+        width: 100%; background: transparent;
+        border: none; border-bottom: 2px solid rgba(255,255,255,0.12);
+        color: #fff; font-size: clamp(18px, 2.5vw, 26px); font-family: inherit;
+        padding: 8px 0 12px; outline: none; caret-color: #1af2dc; transition: border-color .2s;
+      }
+      .pf-input:focus { border-color: #1af2dc; }
+      .pf-input::placeholder { color: rgba(255,255,255,0.15); }
+      .pf-textarea {
+        width: 100%; background: transparent;
+        border: none; border-bottom: 2px solid rgba(255,255,255,0.12);
+        color: #fff; font-size: clamp(16px, 2vw, 22px); font-family: inherit;
+        padding: 8px 0 12px; outline: none; resize: none; min-height: 120px;
+        line-height: 1.65; caret-color: #1af2dc; transition: border-color .2s;
+      }
+      .pf-textarea:focus { border-color: #1af2dc; }
+      .pf-textarea::placeholder { color: rgba(255,255,255,0.15); }
+      .pf-options { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+      .pf-option {
+        display: flex; align-items: center; gap: 10px;
+        padding: 11px 18px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 12px; color: rgba(255,255,255,0.5);
+        font-size: 14px; font-family: inherit; cursor: pointer;
+        transition: border-color .2s, background .2s, color .2s;
+      }
+      .pf-option:hover { border-color: rgba(26,242,220,0.25); color: #e0e0e0; }
+      .pf-option.is-sel { border-color: #1af2dc; background: rgba(26,242,220,0.07); color: #fff; }
+      .pf-option__key {
+        width: 20px; height: 20px;
+        background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+        border-radius: 4px; font-size: 9px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center;
+        color: rgba(255,255,255,0.25); flex-shrink: 0;
+      }
+      .pf-option.is-sel .pf-option__key { background: rgba(26,242,220,0.12); border-color: rgba(26,242,220,0.3); color: #1af2dc; }
+      .pf-err { font-size: 13px; color: #ff6b6b; margin-top: 10px; opacity: 0; transition: opacity .2s; min-height: 18px; }
+      .pf-err.show { opacity: 1; }
+      .pf-nav { margin-top: 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .pf-btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #1af2dc; color: #09090b;
+        font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+        border: none; padding: 13px 24px; border-radius: 10px;
+        cursor: pointer; transition: opacity .2s, transform .2s; font-family: inherit;
+      }
+      .pf-btn:hover { opacity: .87; transform: translateY(-2px); }
+      .pf-hint { font-size: 11px; color: rgba(255,255,255,0.18); }
+      .pf-hint kbd { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); border-radius: 3px; padding: 1px 5px; font-size: 9px; font-family: monospace; }
+      .pf-back {
+        background: none; border: none; color: rgba(255,255,255,0.25);
+        font-size: 11px; font-family: inherit; cursor: pointer;
+        display: flex; align-items: center; gap: 6px;
+        transition: color .2s; padding: 0; letter-spacing: 0.07em; text-transform: uppercase;
+      }
+      .pf-back:hover { color: rgba(255,255,255,0.6); }
+      .pf-success__wrap { text-align: center; max-width: 480px; width: 100%; }
+      .pf-success__icon {
+        width: 64px; height: 64px; border-radius: 50%;
+        background: rgba(26,242,220,0.1); border: 1px solid rgba(26,242,220,0.25);
+        display: flex; align-items: center; justify-content: center;
+        color: #1af2dc; font-size: 24px; margin: 0 auto 24px;
+      }
+      .pf-success__h { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; }
+      .pf-success__p { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.65; margin-bottom: 28px; }
+      .pf-footer {
+        position: relative; z-index: 2;
+        padding: 14px 40px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        display: flex; justify-content: flex-end;
+        flex-shrink: 0;
+      }
+      .pf-counter { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.08em; }
+    </style>
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-wrap">
+      <div class="loader-inner">
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+        <div class="loader-line-wrap"><div class="loader-line"></div></div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <div class="blog-page">
+
+      <!-- ══ Blog-Nav ══════════════════════════════════════════════════════ -->
+      <nav class="blog-nav" aria-label="Blog-Navigation">
+        <div class="blog-nav__inner">
+          <a href="index.html" class="blog-nav__logo">
+            <img src="img/pano-Logo.png" alt="PanoArt360">
+          </a>
+          <div class="blog-nav__divider"></div>
+          <span class="blog-nav__label">Blog</span>
+
+          <!-- Category Nav (desktop) -->
+          <div class="blog-nav__cats" role="list">
+            <button class="blog-nav__cat is-active" data-filter="all" role="listitem">Alle</button>
+            <button class="blog-nav__cat" data-filter="seo" role="listitem">SEO</button>
+            <button class="blog-nav__cat" data-filter="webdesign" role="listitem">Webdesign</button>
+            <button class="blog-nav__cat" data-filter="ki" role="listitem">KI &amp; Digitalisierung</button>
+            <button class="blog-nav__cat" data-filter="dsgvo" role="listitem">DSGVO</button>
+            <button class="blog-nav__cat" data-filter="social" role="listitem">Social Media</button>
+            <button class="blog-nav__cat" data-filter="marketing" role="listitem">Marketing</button>
+          </div>
+
+          <div class="blog-nav__actions">
+            <a href="index.html" class="blog-nav__home">&#8592; Startseite</a>
+            <button data-pf-open class="blog-nav__cta">Projekt anfragen <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ══ Hero ══════════════════════════════════════════════════════════ -->
+      <header class="blog-hero">
+        <div class="blog-hero__inner">
+          <div class="blog-hero__left">
+            <div class="blog-hero__eyebrow">Wissen &amp; Strategie</div>
+            <h1 class="blog-hero__h1">Unser <span style="color:#1af2dc;">Blog</span></h1>
+            <p class="blog-hero__sub">
+              Praxiswissen zu Webdesign, SEO, DSGVO, KI und digitalem Marketing &ndash;
+              f&uuml;r Unternehmen aus Limbach-Oberfrohna und der Region Chemnitz.
+            </p>
+          </div>
+          <div class="blog-hero__stats">
+            <div class="blog-stat">
+              <div class="blog-stat__num"><span id="stat-articles">7</span></div>
+              <div class="blog-stat__label">Ver&ouml;ffentlichte Artikel</div>
+            </div>
+            <div class="blog-stat">
+              <div class="blog-stat__num"><span>7</span></div>
+              <div class="blog-stat__label">Themengebiete</div>
+            </div>
+            <div class="blog-stat">
+              <div class="blog-stat__num"><span>3</span><span style="font-size:.5em;color:rgba(255,255,255,.3)">/Woche</span></div>
+              <div class="blog-stat__label">Neue Artikel geplant</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ══ Featured Article ══════════════════════════════════════════════ -->
+      <div class="blog-featured-wrap">
+        <div class="blog-section-label">Neuester Beitrag</div>
+        <a href="blog-website-kosten-2026.html" class="blog-featured__card">
+          <div class="blog-featured__img-wrap">
+            <img
+              src="img/blog/blog-kosten-hero.jpg"
+              class="blog-featured__img"
+              loading="eager"
+              alt="Was kostet eine professionelle Website 2026?"
+            >
+            <div class="blog-featured__img-overlay"></div>
+            <span class="blog-featured__badge">Neuester Beitrag</span>
+          </div>
+          <div class="blog-featured__body">
+            <div class="blog-featured__meta">
+              <span class="blog-featured__date">13. M&auml;rz 2026</span>
+              <span class="blog-featured__tag">Webdesign &amp; Preise</span>
+              <span class="blog-featured__read">12 Min.</span>
+            </div>
+            <h2 class="blog-featured__title">Was kostet eine professionelle Website 2026? Ehrlicher Preisvergleich</h2>
+            <p class="blog-featured__excerpt">
+              Von 500 bis 50.000 Euro &ndash; wir erkl&auml;ren, was eine Website wirklich kosten sollte,
+              wo die Unterschiede liegen und worauf Sie bei der Wahl der Agentur achten m&uuml;ssen.
+            </p>
+            <span class="blog-featured__link">Artikel lesen <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ══ Main Layout (Posts + Sidebar) ════════════════════════════════ -->
+      <div class="blog-layout">
+
+        <!-- ── Main Column ──────────────────────────────────────────────── -->
+        <main>
+          <div class="blog-section-label" style="margin-bottom:16px;">Alle Beitr&auml;ge</div>
+
+          <!-- Category Filter Pills -->
+          <div class="blog-filters" role="toolbar" aria-label="Kategorie-Filter">
+            <button class="blog-filter-btn is-active" data-filter="all"><span class="bfb-dot" style="background:#1af2dc;"></span>Alle Themen</button>
+            <button class="blog-filter-btn" data-filter="ki"><span class="bfb-dot" style="background:#22d3ee;"></span>KI &amp; Digitalisierung</button>
+            <button class="blog-filter-btn" data-filter="webdesign"><span class="bfb-dot" style="background:#818cf8;"></span>Webdesign</button>
+            <button class="blog-filter-btn" data-filter="seo"><span class="bfb-dot" style="background:#34d399;"></span>SEO</button>
+            <button class="blog-filter-btn" data-filter="dsgvo"><span class="bfb-dot" style="background:#fbbf24;"></span>DSGVO</button>
+            <button class="blog-filter-btn" data-filter="social"><span class="bfb-dot" style="background:#fb7185;"></span>Social Media</button>
+            <button class="blog-filter-btn" data-filter="marketing"><span class="bfb-dot" style="background:#fb923c;"></span>Marketing</button>
+          </div>
+
+          <!-- Posts Grid — sortiert nach Datum, neueste zuerst -->
+          <div class="blog-posts-grid" id="postsGrid">
+
+            <!-- 21. März 2026 — Social Media / Social Media -->
+            <a href="blog-social-media-kmu-2026.html" class="blog-card" data-cat="social">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-gmb-card.jpg" class="blog-card__img" loading="lazy" alt="Social Media Marketing f&uuml;r kleine Unternehmen 2026">
+                <span class="blog-card__cat-badge">Social Media</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">21. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">14 Min.</span>
+                </div>
+                <h2 class="blog-card__title">Social Media f&uuml;r kleine Unternehmen 2026: Instagram, Facebook oder LinkedIn?</h2>
+                <p class="blog-card__excerpt">Welche Plattform lohnt sich wirklich f&uuml;r Ihr Unternehmen? Ehrlicher Vergleich mit konkreten Tipps f&uuml;r KMU.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 21. März 2026 — E-Mail-Marketing / Marketing -->
+            <a href="blog-email-marketing-2026.html" class="blog-card" data-cat="marketing">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-ki-card.jpg" class="blog-card__img" loading="lazy" alt="E-Mail-Marketing Newsletter 2026">
+                <span class="blog-card__cat-badge">Marketing</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">21. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">13 Min.</span>
+                </div>
+                <h2 class="blog-card__title">E-Mail-Marketing 2026: Warum Newsletter mehr Kunden bringen als Social Media</h2>
+                <p class="blog-card__excerpt">42-facher ROI, keine Algorithmus-Abh&auml;ngigkeit &ndash; wie KMU mit einem Newsletter-System echte Kundenbindung aufbauen.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 21. März 2026 — Core Web Vitals / SEO -->
+            <a href="blog-core-web-vitals-2026.html" class="blog-card" data-cat="seo">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-performance-card.jpg" class="blog-card__img" loading="lazy" alt="Core Web Vitals 2026 Google Ranking">
+                <span class="blog-card__cat-badge">SEO &amp; Sichtbarkeit</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">21. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">11 Min.</span>
+                </div>
+                <h2 class="blog-card__title">Core Web Vitals 2026: So verbessern Sie Ihr Google-Ranking durch bessere Ladezeiten</h2>
+                <p class="blog-card__excerpt">LCP, CLS und INP erkl&auml;rt &ndash; wie Sie die Google-Rankingfaktoren messen und Schritt f&uuml;r Schritt verbessern.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 13. März 2026 — Website Kosten / Webdesign -->
+            <a href="blog-website-kosten-2026.html" class="blog-card" data-cat="webdesign">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-kosten-card.jpg" class="blog-card__img" loading="lazy" alt="Website Kosten Preisvergleich 2026">
+                <span class="blog-card__cat-badge">Webdesign &amp; Preise</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">13. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">12 Min.</span>
+                </div>
+                <h2 class="blog-card__title">Was kostet eine professionelle Website 2026? Ehrlicher Preisvergleich</h2>
+                <p class="blog-card__excerpt">Von 500 bis 50.000 Euro &ndash; wir erkl&auml;ren was eine Website wirklich kosten sollte und wo der Unterschied liegt.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 11. März 2026 — Google My Business / SEO -->
+            <a href="blog-google-my-business-optimieren.html" class="blog-card" data-cat="seo">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-gmb-card.jpg" class="blog-card__img" loading="lazy" alt="Google My Business optimieren">
+                <span class="blog-card__cat-badge">SEO &amp; Sichtbarkeit</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">11. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">8 Min.</span>
+                </div>
+                <h2 class="blog-card__title">Google My Business 2026: So optimieren Sie Ihr Profil in 30 Minuten</h2>
+                <p class="blog-card__excerpt">Das kostenloseste Werbemittel von Google &ndash; richtig eingesetzt. Mit konkretem 30-Minuten-Plan und monatlicher Routine.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 9. März 2026 — Lokales SEO / SEO -->
+            <a href="blog-local-seo-limbach-oberfrohna.html" class="blog-card" data-cat="seo">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-local-seo-card.jpg" class="blog-card__img" loading="lazy" alt="Lokales SEO f&uuml;r Unternehmen">
+                <span class="blog-card__cat-badge">SEO &amp; Sichtbarkeit</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">9. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">10 Min.</span>
+                </div>
+                <h2 class="blog-card__title">Lokales SEO f&uuml;r Unternehmen in Limbach-Oberfrohna: Schritt f&uuml;r Schritt</h2>
+                <p class="blog-card__excerpt">Wie lokale Unternehmen bei Google ganz oben erscheinen &ndash; konkrete Ma&szlig;nahmen f&uuml;r mehr Sichtbarkeit im Umkreis.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 1. März 2026 — ChatGPT / KI -->
+            <a href="blog-ki-chatgpt-dos-donts.html" class="blog-card" data-cat="ki">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-ki-card.jpg" class="blog-card__img" loading="lazy" alt="ChatGPT &amp; OpenAI im Unternehmen">
+                <span class="blog-card__cat-badge">KI &amp; Digitalisierung</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">1. M&auml;rz 2026</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">12 Min.</span>
+                </div>
+                <h2 class="blog-card__title">ChatGPT &amp; OpenAI im Unternehmen: 10 Dos &amp; Don'ts</h2>
+                <p class="blog-card__excerpt">KI-Tools versprechen viel &ndash; aber die meisten Unternehmen setzen sie falsch ein. Was wirklich funktioniert.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 15. Jan. 2025 — DSGVO -->
+            <a href="blog-dsgvo-2024.html" class="blog-card" data-cat="dsgvo">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-dsgvo-card.jpg" class="blog-card__img" loading="lazy" alt="DSGVO 2025">
+                <span class="blog-card__cat-badge">DSGVO &amp; Recht</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">15. Jan. 2025</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">8 Min.</span>
+                </div>
+                <h2 class="blog-card__title">DSGVO 2025: Was Unternehmen jetzt wissen m&uuml;ssen</h2>
+                <p class="blog-card__excerpt">Neue EuGH-Entscheidungen und versch&auml;rfte Cookie-Anforderungen &ndash; was sich 2025 &auml;ndert und was auf Ihrer Webseite angepasst werden muss.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 25. Nov. 2022 — Absprung / Webdesign -->
+            <a href="blog-website-absprung.html" class="blog-card" data-cat="webdesign">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-absprung-card.jpg" class="blog-card__img" loading="lazy" alt="16 Gr&uuml;nde warum Nutzer Ihre Website verlassen">
+                <span class="blog-card__cat-badge">Webdesign</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">25. Nov. 2022</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">17 Min.</span>
+                </div>
+                <h2 class="blog-card__title">16 Gr&uuml;nde, warum Nutzer Ihre Website verlassen</h2>
+                <p class="blog-card__excerpt">Warum springen Besucher ab? 16 h&auml;ufige Gr&uuml;nde und wie Sie diese beheben &ndash; f&uuml;r mehr Verweildauer und bessere Konversionsraten.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+            <!-- 25. Okt. 2022 — Performance / Webdesign -->
+            <a href="blog-website-performance.html" class="blog-card" data-cat="webdesign">
+              <div class="blog-card__img-wrap">
+                <img src="img/blog/blog-performance-card.jpg" class="blog-card__img" loading="lazy" alt="Website-Performance optimieren">
+                <span class="blog-card__cat-badge">Webdesign</span>
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span class="blog-card__date">25. Okt. 2022</span>
+                  <span class="blog-card__sep"></span>
+                  <span class="blog-card__read">16 Min.</span>
+                </div>
+                <h2 class="blog-card__title">HTTP-Anfragen Ihrer Website um 20&nbsp;% reduzieren</h2>
+                <p class="blog-card__excerpt">Schnellere Ladezeiten = besseres Google-Ranking. Mit diesen konkreten Techniken verbessern Sie die Performance Ihrer Webseite sp&uuml;rbar.</p>
+              </div>
+              <div class="blog-card__footer">
+                <span class="blog-card__author">PanoArt360</span>
+                <div class="blog-card__arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </a>
+
+          </div><!-- /blog-posts-grid -->
+
+          <!-- Empty state (shown when filter has no matches) -->
+          <div id="emptyState" style="display:none; padding:48px 0; text-align:center; color:rgba(255,255,255,0.25); font-size:14px;">
+            Noch keine Artikel in dieser Kategorie &ndash; kommen bald!
+          </div>
+
+        </main>
+
+        <!-- ── Sidebar ───────────────────────────────────────────────────── -->
+        <aside class="blog-sidebar" aria-label="Blog-Sidebar">
+
+          <!-- Widget: Über den Blog -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__head">&Uuml;ber den Blog</div>
+            <div class="sidebar-widget__body">
+              <img src="img/pano-Logo.png" alt="PanoArt360" class="sw-about__logo">
+              <p class="sw-about__text">
+                Wir teilen Wissen, das wirklich hilft &ndash; kein Fachjargon, keine Werbung.
+                Praxisorientierte Tipps f&uuml;r Webdesign, SEO und digitales Marketing.
+              </p>
+              <div class="sw-about__location">
+                <i class="fa-solid fa-location-dot"></i>
+                Limbach-Oberfrohna, Sachsen
+              </div>
+              <div class="sw-about__location">
+                <i class="fa-solid fa-pen-nib"></i>
+                Autorin: Yvonne Weishar
+              </div>
+              <a href="index.html" class="sw-about__link">
+                Zur Website <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget: Kategorien -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__head">Kategorien</div>
+            <div class="sidebar-widget__body" style="padding-top:12px;padding-bottom:12px;">
+              <ul class="sw-cats">
+                <li>
+                  <button class="sw-cats__item is-active" data-filter="all">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#1af2dc;"></span>
+                      Alle Beitr&auml;ge
+                    </span>
+                    <span class="sw-cats__count">7</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="webdesign">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#818cf8;"></span>
+                      Webdesign
+                    </span>
+                    <span class="sw-cats__count">3</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="ki">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#22d3ee;"></span>
+                      KI &amp; Digitalisierung
+                    </span>
+                    <span class="sw-cats__count">1</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="dsgvo">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#fbbf24;"></span>
+                      DSGVO &amp; Recht
+                    </span>
+                    <span class="sw-cats__count">1</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="seo">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#34d399;"></span>
+                      SEO &amp; Sichtbarkeit
+                    </span>
+                    <span class="sw-cats__count">2</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="social">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#fb7185;"></span>
+                      Social Media
+                    </span>
+                    <span class="sw-cats__count">0</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sw-cats__item" data-filter="marketing">
+                    <span class="sw-cats__left">
+                      <span class="sw-cats__dot" style="background:#fb923c;"></span>
+                      Marketing
+                    </span>
+                    <span class="sw-cats__count">0</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Widget: Beliebte Artikel -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__head">Beliebt</div>
+            <div class="sidebar-widget__body" style="padding: 16px 14px;">
+              <div class="sw-popular">
+                <a href="blog-website-absprung.html" class="sw-pop-item">
+                  <div class="sw-pop-item__num">01</div>
+                  <div class="sw-pop-item__info">
+                    <div class="sw-pop-item__cat">Webdesign</div>
+                    <div class="sw-pop-item__title">16 Gr&uuml;nde, warum Nutzer Ihre Website verlassen</div>
+                  </div>
+                </a>
+                <a href="blog-ki-chatgpt-dos-donts.html" class="sw-pop-item">
+                  <div class="sw-pop-item__num">02</div>
+                  <div class="sw-pop-item__info">
+                    <div class="sw-pop-item__cat">KI &amp; Digitalisierung</div>
+                    <div class="sw-pop-item__title">ChatGPT im Unternehmen: 10 Dos &amp; Don'ts</div>
+                  </div>
+                </a>
+                <a href="blog-dsgvo-2024.html" class="sw-pop-item">
+                  <div class="sw-pop-item__num">03</div>
+                  <div class="sw-pop-item__info">
+                    <div class="sw-pop-item__cat">DSGVO &amp; Recht</div>
+                    <div class="sw-pop-item__title">DSGVO 2025: Was Unternehmen jetzt wissen m&uuml;ssen</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget: Newsletter -->
+          <div class="sidebar-widget sw-newsletter">
+            <div class="sidebar-widget__body">
+              <div class="sw-nl__icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="sw-nl__title">Blog-Updates erhalten</div>
+              <p class="sw-nl__sub">Neue Artikel direkt in Ihr Postfach &ndash; kein Spam, jederzeit abbestellbar.</p>
+              <div class="sw-nl__form" id="nlForm">
+                <input
+                  type="email"
+                  class="sw-nl__input"
+                  id="nlEmail"
+                  placeholder="ihre@email.de"
+                  autocomplete="email"
+                >
+                <button class="sw-nl__btn" id="nlBtn" type="button">Anmelden</button>
+                <p class="sw-nl__note">DSGVO-konform &middot; Keine Weitergabe an Dritte</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget: Tags -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__head">Schlagw&ouml;rter</div>
+            <div class="sidebar-widget__body">
+              <div class="sw-tags">
+                <a class="sw-tag" data-filter="seo">SEO</a>
+                <a class="sw-tag" data-filter="webdesign">Webdesign</a>
+                <a class="sw-tag" data-filter="ki">ChatGPT</a>
+                <a class="sw-tag" data-filter="dsgvo">DSGVO</a>
+                <a class="sw-tag" data-filter="ki">K&uuml;nstliche Intelligenz</a>
+                <a class="sw-tag" data-filter="webdesign">Performance</a>
+                <a class="sw-tag" data-filter="marketing">Branding</a>
+                <a class="sw-tag" data-filter="social">Social Media</a>
+                <a class="sw-tag" data-filter="seo">Google</a>
+                <a class="sw-tag" data-filter="webdesign">UX</a>
+                <a class="sw-tag" data-filter="marketing">Content</a>
+                <a class="sw-tag" data-filter="dsgvo">Datenschutz</a>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div><!-- /blog-layout -->
+
+      <!-- ══ CTA Banner ════════════════════════════════════════════════════ -->
+      <div class="blog-cta">
+        <div class="blog-cta__inner">
+          <div class="blog-cta__text">
+            <div class="blog-cta__eyebrow">Ihr n&auml;chstes Projekt</div>
+            <h2>Wissen ist gut &ndash;<br>Umsetzung ist besser.</h2>
+            <p>PanoArt360 unterst&uuml;tzt Unternehmen aus Limbach-Oberfrohna und der Region Chemnitz mit Webdesign, SEO und digitalem Marketing. Sprechen Sie mit uns &uuml;ber Ihr Vorhaben.</p>
+          </div>
+          <button data-pf-open class="blog-cta__btn">
+            Projekt anfragen <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ══ Footer ════════════════════════════════════════════════════════ -->
+      <footer class="blog-footer">
+        <div class="blog-footer__left">
+          <img src="img/pano-Logo.png" alt="PanoArt360" class="blog-footer__logo">
+          <span class="blog-footer__copy">&copy; 2026 PanoArt360 &ndash; Limbach-Oberfrohna</span>
+        </div>
+        <nav class="blog-footer__links">
+          <a href="index.html">Startseite</a>
+          <a href="referenzen.html">Referenzen</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+          <a href="mailto:mail@panoart360.de">mail@panoart360.de</a>
+        </nav>
+      </footer>
+
+    </div><!-- /blog-page -->
+
+    <!-- ══ Projekt-Overlay ══════════════════════════════════════════════════ -->
+    <div class="pf-overlay" id="pfOverlay" role="dialog" aria-modal="true" aria-label="Projekt anfragen">
+      <div class="pf-topbar">
+        <img src="img/pano-Logo.png" alt="PanoArt360" class="pf-topbar__logo">
+        <div class="pf-topbar__progress"><div class="pf-topbar__bar" id="pfBar"></div></div>
+        <button class="pf-topbar__close" id="pfClose" aria-label="Schlie&szlig;en"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="pf-body">
+        <div class="pf-step" id="pfStep0">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">01 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Wie lautet dein Name?<span class="pf-ast"> *</span></h2>
+            <input type="text" class="pf-input" id="pfName" placeholder="Vor- und Nachname" autocomplete="name">
+            <p class="pf-err" id="pfErr0">Bitte gib deinen Namen ein.</p>
+            <div class="pf-nav">
+              <button class="pf-btn" id="pfBtn0">OK &nbsp;<i class="fa-solid fa-check"></i></button>
+              <span class="pf-hint">oder <kbd>Enter</kbd> dr&uuml;cken</span>
+            </div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep1">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">02 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Wie k&ouml;nnen wir dich erreichen?<span class="pf-ast"> *</span></h2>
+            <p class="pf-step__sub">Damit wir uns bei dir melden k&ouml;nnen.</p>
+            <input type="email" class="pf-input" id="pfEmail" placeholder="name@beispiel.de" autocomplete="email">
+            <p class="pf-err" id="pfErr1">Bitte gib eine g&uuml;ltige E-Mail-Adresse ein.</p>
+            <div class="pf-nav">
+              <button class="pf-btn" id="pfBtn1">OK &nbsp;<i class="fa-solid fa-check"></i></button>
+              <button class="pf-back" id="pfBack1"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button>
+              <span class="pf-hint">oder <kbd>Enter</kbd></span>
+            </div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep2">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">03 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Was planst du?</h2>
+            <p class="pf-step__sub">Mehrfachauswahl m&ouml;glich.</p>
+            <div class="pf-options">
+              <button class="pf-option" data-val="Neue Webseite"><span class="pf-option__key">A</span> Neue Webseite</button>
+              <button class="pf-option" data-val="Webseite überarbeiten"><span class="pf-option__key">B</span> Webseite &uuml;berarbeiten</button>
+              <button class="pf-option" data-val="SEO & Sichtbarkeit"><span class="pf-option__key">C</span> SEO &amp; Sichtbarkeit</button>
+              <button class="pf-option" data-val="Branding & Logo"><span class="pf-option__key">D</span> Branding &amp; Logo</button>
+              <button class="pf-option" data-val="360° Fotografie"><span class="pf-option__key">E</span> 360° Fotografie</button>
+              <button class="pf-option" data-val="Anderes"><span class="pf-option__key">F</span> Anderes</button>
+            </div>
+            <p class="pf-err" id="pfErr2">Bitte w&auml;hle mindestens eine Option aus.</p>
+            <div class="pf-nav">
+              <button class="pf-btn" id="pfBtn2">Weiter <i class="fa-solid fa-arrow-right"></i></button>
+              <button class="pf-back" id="pfBack2"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button>
+            </div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep3">
+          <div class="pf-step__inner">
+            <p class="pf-step__num">04 <i class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="pf-step__q">Beschreibe kurz dein Vorhaben.</h2>
+            <p class="pf-step__sub">Was soll entstehen, was sind deine Ziele?</p>
+            <textarea class="pf-textarea" id="pfMessage" placeholder="Wir planen eine neue Webseite f&uuml;r ..." rows="5"></textarea>
+            <p class="pf-err" id="pfErr3">Bitte schreibe ein paar S&auml;tze zu deinem Vorhaben.</p>
+            <div class="pf-nav">
+              <button class="pf-btn" id="pfSubmit">Absenden <i class="fa-solid fa-paper-plane"></i></button>
+              <button class="pf-back" id="pfBack3"><i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck</button>
+              <span class="pf-hint"><kbd>Strg</kbd>+<kbd>Enter</kbd> absenden</span>
+            </div>
+          </div>
+        </div>
+        <div class="pf-step" id="pfStep4">
+          <div class="pf-success__wrap" style="margin:0 auto;">
+            <div class="pf-success__icon"><i class="fa-solid fa-check"></i></div>
+            <h2 class="pf-success__h">Nachricht gesendet!</h2>
+            <p class="pf-success__p">Danke, <strong id="pfThanksName" style="color:#fff;font-weight:600;"></strong> &mdash; wir melden uns in der Regel innerhalb von 24&nbsp;Stunden bei dir.</p>
+            <button class="pf-btn" id="pfDone">Zur&uuml;ck zum Blog <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="pf-footer">
+        <span class="pf-counter" id="pfCounter">1 / 4</span>
+      </div>
+    </div>
+    <!-- /Projekt-Overlay -->
+
+    <div class="cursor"></div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+    (function () {
+      /* ════════════════════════════════════════
+         CATEGORY FILTER
+      ════════════════════════════════════════ */
+      var allCards = document.querySelectorAll('#postsGrid .blog-card');
+      var emptyState = document.getElementById('emptyState');
+
+      function applyFilter(cat) {
+        var visible = 0;
+        allCards.forEach(function(card) {
+          var cardCat = card.getAttribute('data-cat') || '';
+          var show = (cat === 'all' || cardCat === cat);
+          card.hidden = !show;
+          if (show) visible++;
+        });
+        emptyState.style.display = visible === 0 ? 'block' : 'none';
+      }
+
+      // Nav bar buttons
+      document.querySelectorAll('.blog-nav__cat').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.blog-nav__cat').forEach(function(b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+          applyFilter(btn.getAttribute('data-filter'));
+          // sync pills + sidebar
+          syncFilterUI(btn.getAttribute('data-filter'));
+        });
+      });
+
+      // Filter pills (below heading)
+      document.querySelectorAll('.blog-filter-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          applyFilter(btn.getAttribute('data-filter'));
+          syncFilterUI(btn.getAttribute('data-filter'));
+        });
+      });
+
+      // Sidebar category buttons
+      document.querySelectorAll('.sw-cats__item').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          applyFilter(btn.getAttribute('data-filter'));
+          syncFilterUI(btn.getAttribute('data-filter'));
+        });
+      });
+
+      // Tags
+      document.querySelectorAll('.sw-tag').forEach(function(tag) {
+        tag.addEventListener('click', function(e) {
+          e.preventDefault();
+          applyFilter(tag.getAttribute('data-filter'));
+          syncFilterUI(tag.getAttribute('data-filter'));
+        });
+      });
+
+      function syncFilterUI(cat) {
+        // Nav cats
+        document.querySelectorAll('.blog-nav__cat').forEach(function(b) {
+          b.classList.toggle('is-active', b.getAttribute('data-filter') === cat);
+        });
+        // Filter pills
+        document.querySelectorAll('.blog-filter-btn').forEach(function(b) {
+          b.classList.toggle('is-active', b.getAttribute('data-filter') === cat);
+        });
+        // Sidebar items
+        document.querySelectorAll('.sw-cats__item').forEach(function(b) {
+          b.classList.toggle('is-active', b.getAttribute('data-filter') === cat);
+        });
+        // Update visible count stat
+        var count = cat === 'all'
+          ? allCards.length
+          : document.querySelectorAll('#postsGrid .blog-card[data-cat="' + cat + '"]').length;
+        var statEl = document.getElementById('stat-articles');
+        if (statEl) statEl.textContent = count;
+      }
+
+      /* ════════════════════════════════════════
+         NEWSLETTER WIDGET
+      ════════════════════════════════════════ */
+      document.getElementById('nlBtn').addEventListener('click', function() {
+        var emailInput = document.getElementById('nlEmail');
+        var email = emailInput.value.trim();
+        var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!ok) {
+          emailInput.style.borderColor = '#ff6b6b';
+          return;
+        }
+        emailInput.style.borderColor = '';
+        var btn = document.getElementById('nlBtn');
+        btn.disabled = true;
+        btn.textContent = '…';
+
+        var body = new URLSearchParams({
+          project_name: 'PanoArt360',
+          admin_email:  'mail@panoart360.de',
+          form_subject: 'Newsletter-Anmeldung Blog',
+          Email:        email
+        });
+
+        fetch('mail.php', { method: 'POST', body: body })
+          .catch(function() {})
+          .finally(function() {
+            document.getElementById('nlForm').innerHTML =
+              '<div style="text-align:center;padding:8px 0;">' +
+              '<div style="color:#1af2dc;font-size:22px;margin-bottom:10px;">&#10003;</div>' +
+              '<div style="font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;">' +
+              'Danke! Wir melden uns bei Ihnen.</div>' +
+              '</div>';
+          });
+      });
+
+      /* ════════════════════════════════════════
+         PROJEKT-OVERLAY FORM
+      ════════════════════════════════════════ */
+      var TOTAL = 4;
+      var cur   = 0;
+      var data  = { name: '', email: '', project: [], message: '' };
+
+      var overlay = document.getElementById('pfOverlay');
+      var bar     = document.getElementById('pfBar');
+      var counter = document.getElementById('pfCounter');
+
+      var steps = [
+        document.getElementById('pfStep0'),
+        document.getElementById('pfStep1'),
+        document.getElementById('pfStep2'),
+        document.getElementById('pfStep3'),
+        document.getElementById('pfStep4'),
+      ];
+
+      function openForm() {
+        cur = 0;
+        document.getElementById('pfName').value    = '';
+        document.getElementById('pfEmail').value   = '';
+        document.getElementById('pfMessage').value = '';
+        document.querySelectorAll('#pfStep2 .pf-option').forEach(function(o) { o.classList.remove('is-sel'); });
+        document.querySelectorAll('.pf-err').forEach(function(e) { e.classList.remove('show'); });
+        steps.forEach(function(s) { s.classList.remove('is-active', 'is-out'); });
+        setBar(0); setCounter(1);
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+        steps[0].classList.add('is-active');
+        setTimeout(function() { document.getElementById('pfName').focus(); }, 120);
+      }
+
+      function closePF() {
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      function goTo(next) {
+        var prev = steps[cur];
+        prev.classList.add('is-out');
+        prev.classList.remove('is-active');
+        setTimeout(function () {
+          prev.classList.remove('is-out');
+          cur = next;
+          steps[next].classList.add('is-active');
+          var inp = steps[next].querySelector('.pf-input, .pf-textarea');
+          if (inp) setTimeout(function () { inp.focus(); }, 80);
+          setBar(next);
+          if (next < TOTAL) setCounter(next + 1);
+        }, 280);
+      }
+
+      function setBar(n)     { bar.style.width = (n / TOTAL * 100) + '%'; }
+      function setCounter(n) { counter.textContent = n + ' / ' + TOTAL; }
+
+      function showErr(id, on) {
+        var el = document.getElementById(id);
+        if (el) el.classList[on ? 'add' : 'remove']('show');
+      }
+
+      function validate(step) {
+        if (step === 0) {
+          var v = document.getElementById('pfName').value.trim();
+          showErr('pfErr0', !v);
+          if (v) { data.name = v; return true; }
+          return false;
+        }
+        if (step === 1) {
+          var v2 = document.getElementById('pfEmail').value.trim();
+          var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v2);
+          showErr('pfErr1', !ok);
+          if (ok) { data.email = v2; return true; }
+          return false;
+        }
+        if (step === 2) {
+          var sel = document.querySelectorAll('#pfStep2 .pf-option.is-sel');
+          showErr('pfErr2', sel.length === 0);
+          if (sel.length > 0) {
+            data.project = [];
+            sel.forEach(function (o) { data.project.push(o.getAttribute('data-val')); });
+            return true;
+          }
+          return false;
+        }
+        if (step === 3) {
+          var v3 = document.getElementById('pfMessage').value.trim();
+          showErr('pfErr3', !v3);
+          if (v3) { data.message = v3; return true; }
+          return false;
+        }
+        return true;
+      }
+
+      document.querySelectorAll('[data-pf-open]').forEach(function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          openForm();
+        });
+      });
+
+      document.getElementById('pfClose').addEventListener('click', closePF);
+
+      document.getElementById('pfBtn0').addEventListener('click', function() { if (validate(0)) goTo(1); });
+      document.getElementById('pfBtn1').addEventListener('click', function() { if (validate(1)) goTo(2); });
+      document.getElementById('pfBtn2').addEventListener('click', function() { if (validate(2)) goTo(3); });
+
+      document.getElementById('pfBack1').addEventListener('click', function() { goTo(0); });
+      document.getElementById('pfBack2').addEventListener('click', function() { goTo(1); });
+      document.getElementById('pfBack3').addEventListener('click', function() { goTo(2); });
+
+      document.querySelectorAll('#pfStep2 .pf-option').forEach(function(btn) {
+        btn.addEventListener('click', function() { btn.classList.toggle('is-sel'); });
+      });
+
+      document.getElementById('pfSubmit').addEventListener('click', function() {
+        if (!validate(3)) return;
+        var subject = encodeURIComponent('Projektanfrage von ' + data.name);
+        var body    = encodeURIComponent(
+          'Name: ' + data.name + '\n' +
+          'E-Mail: ' + data.email + '\n' +
+          'Projekt: ' + data.project.join(', ') + '\n\n' +
+          'Nachricht:\n' + data.message
+        );
+        window.location.href = 'mailto:info@panoart360.de?subject=' + subject + '&body=' + body;
+        document.getElementById('pfThanksName').textContent = data.name;
+        goTo(4);
+      });
+
+      document.getElementById('pfDone').addEventListener('click', closePF);
+
+      document.addEventListener('keydown', function(e) {
+        if (!overlay.classList.contains('is-open')) return;
+        if (e.key === 'Escape') { closePF(); return; }
+        if (e.key === 'Enter' && cur < 3) {
+          var btns = ['pfBtn0','pfBtn1',null,'pfSubmit'];
+          if (cur === 2) return;
+          if (e.ctrlKey && cur === 3) { document.getElementById('pfSubmit').click(); return; }
+          var b = btns[cur];
+          if (b) document.getElementById(b).click();
+        }
+      });
+
+    }());
+    </script>
+
+  </body>
+
+</html>

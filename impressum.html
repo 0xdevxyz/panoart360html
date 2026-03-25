@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Impressum | PanoArt360 Werbestudio Webdesign Limbach-Oberfrohna</title>
+    <meta name="description" content="Impressum von PanoArt360 – Werbestudio und Webdesign aus Limbach-Oberfrohna. Angaben gemäß § 5 TMG.">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.panoart360.de/impressum">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:title" content="Impressum | PanoArt360">
+    <meta property="og:url" content="https://www.panoart360.de/impressum">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#1af2dc">
+
+    <style>
+      html, body { overflow: auto !important; height: auto !important; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      .legal-page {
+        background: #0d0d0f;
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e5e5e5;
+      }
+      .legal-page h1, .legal-page h2, .legal-page h3,
+      .legal-page h4, .legal-page p, .legal-page ul,
+      .legal-page ol, .legal-page li, .legal-page a,
+      .legal-page span, .legal-page strong, .legal-page em {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      /* Hero */
+      .legal-hero {
+        position: relative;
+        background: #0a0a0c;
+        padding: 0 0 56px;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(26,242,220,0.12);
+      }
+      .legal-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(26,242,220,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(26,242,220,0.04) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+      }
+      .legal-hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(26,242,220,0.07) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .legal-hero__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      .legal-hero__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255,255,255,0.4);
+        text-decoration: none;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        transition: color .2s;
+      }
+      .legal-hero__back:hover { color: #1af2dc; }
+      .legal-hero__topbar {
+        position: relative;
+        z-index: 2;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 28px 32px 24px;
+      }
+      .legal-hero__topbar img { height: 38px; width: auto; display: block; }
+      .legal-hero__eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #1af2dc;
+        margin-bottom: 14px;
+        display: block;
+      }
+      .legal-hero__h1 {
+        font-size: clamp(36px, 6vw, 64px);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.05;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+      }
+      .legal-hero__sub {
+        font-size: 14px;
+        color: rgba(255,255,255,0.4);
+      }
+
+      /* Content */
+      .legal-content {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 48px 32px 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      /* Cards */
+      .legal-card {
+        background: #16151a;
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 20px;
+        padding: 32px 36px;
+        transition: border-color .25s;
+      }
+      .legal-card:hover { border-color: rgba(26,242,220,0.2); }
+      .legal-card__header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .legal-card__icon {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(26,242,220,0.08);
+        border: 1px solid rgba(26,242,220,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1af2dc;
+        font-size: 14px;
+      }
+      .legal-card__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -0.01em;
+      }
+      .legal-card__body p {
+        font-size: 13.5px;
+        color: rgba(255,255,255,0.58);
+        line-height: 1.85;
+        margin-bottom: 10px;
+      }
+      .legal-card__body p:last-child { margin-bottom: 0; }
+      .legal-card__body a { color: #1af2dc; text-decoration: none; }
+      .legal-card__body a:hover { text-decoration: underline; }
+      .legal-card__body strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+      .legal-card__divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 16px 0; }
+
+      /* Data rows */
+      .legal-data { display: flex; flex-direction: column; gap: 6px; }
+      .legal-data__row {
+        display: flex;
+        gap: 12px;
+        font-size: 13.5px;
+        line-height: 1.7;
+      }
+      .legal-data__label {
+        min-width: 120px;
+        color: rgba(255,255,255,0.35);
+        flex-shrink: 0;
+        font-size: 12px;
+        padding-top: 2px;
+        letter-spacing: 0.04em;
+      }
+      .legal-data__value { color: rgba(255,255,255,0.7); }
+      .legal-data__value a { color: #1af2dc; text-decoration: none; }
+      .legal-data__value a:hover { text-decoration: underline; }
+
+      /* Footer */
+      .legal-footer {
+        background: #0a0a0c;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        padding: 32px;
+        text-align: center;
+      }
+      .legal-footer p { font-size: 11px; color: rgba(255,255,255,0.3); }
+      .legal-footer a { color: #1af2dc; text-decoration: none; }
+
+      @media (max-width: 600px) {
+        .legal-hero__inner, .legal-content { padding-left: 16px; padding-right: 16px; }
+        .legal-card { padding: 24px 20px; }
+        .legal-data__label { min-width: 90px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Loader Start -->
+    <div class="loader">
+      <div class="loader__container">
+        <div class="loader__content">
+          <div class="loader__text" style="font-size:0;line-height:0;">
+            <img src="img/pano-Logo.png" alt="PanoArt360" style="display:inline-block;height:72px;width:auto;animation:1s ease-in-out 0s infinite alternate fadeIn;">
+          </div>
+        </div>
+        <div class="loader__caption">
+          <p>PanoArt360 &mdash; <a href="index.html">Zur&uuml;ck zur Startseite</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <div class="legal-page">
+
+      <!-- Hero -->
+      <header class="legal-hero">
+        <div class="legal-hero__topbar">
+          <img src="img/pano-Logo.png" alt="PanoArt360">
+        </div>
+        <div class="legal-hero__inner">
+          <a href="index.html" class="legal-hero__back">
+            <i class="fa-solid fa-arrow-left"></i> Zur&uuml;ck zur Startseite
+          </a>
+          <span class="legal-hero__eyebrow">Rechtliches</span>
+          <h1 class="legal-hero__h1">Impressum</h1>
+          <p class="legal-hero__sub">Angaben gem&auml;&szlig; &sect;&nbsp;5 TMG &amp; &sect;&nbsp;55 RStV</p>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <main class="legal-content">
+
+        <!-- Anbieter -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-building"></i></div>
+            <h2 class="legal-card__title">Anbieter &amp; Verantwortlicher</h2>
+          </div>
+          <div class="legal-card__body">
+            <div class="legal-data">
+              <div class="legal-data__row">
+                <span class="legal-data__label">Firma</span>
+                <span class="legal-data__value"><strong>PanoArt360</strong></span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Inhaberin</span>
+                <span class="legal-data__value">Yvonne Weishar</span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">T&auml;tigkeit</span>
+                <span class="legal-data__value">Werbestudio &amp; Webdesign</span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Adresse</span>
+                <span class="legal-data__value">Am Quirlbusch 6<br>09212 Limbach-Oberfrohna<br>Deutschland</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kontakt -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-envelope"></i></div>
+            <h2 class="legal-card__title">Kontakt</h2>
+          </div>
+          <div class="legal-card__body">
+            <div class="legal-data">
+              <div class="legal-data__row">
+                <span class="legal-data__label">Telefon</span>
+                <span class="legal-data__value"><a href="tel:+4917384489441">+49 173 8448 941</a></span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">E-Mail</span>
+                <span class="legal-data__value"><a href="mailto:mail@panoart360.de">mail@panoart360.de</a></span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Website</span>
+                <span class="legal-data__value"><a href="https://www.panoart360.de" target="_blank" rel="noopener">www.panoart360.de</a></span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Gesch&auml;ftszeiten</span>
+                <span class="legal-data__value">Mo&ndash;Fr, 10:00&ndash;17:00 Uhr</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Steuer -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-receipt"></i></div>
+            <h2 class="legal-card__title">Steuerliche Angaben</h2>
+          </div>
+          <div class="legal-card__body">
+            <div class="legal-data">
+              <div class="legal-data__row">
+                <span class="legal-data__label">Umsatzsteuer-ID</span>
+                <span class="legal-data__value"><strong>DE405368946</strong></span>
+              </div>
+            </div>
+            <p style="margin-top:12px;">Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;&nbsp;27a Umsatzsteuergesetz: <strong>DE405368946</strong></p>
+          </div>
+        </article>
+
+        <!-- Berufsbezeichnung -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h2 class="legal-card__title">Berufsbezeichnung &amp; T&auml;tigkeit</h2>
+          </div>
+          <div class="legal-card__body">
+            <div class="legal-data">
+              <div class="legal-data__row">
+                <span class="legal-data__label">T&auml;tigkeit</span>
+                <span class="legal-data__value">Werbestudio, Webdesign, Webentwicklung, App-Entwicklung, Grafikdesign, SEO-Beratung</span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Bezeichnung</span>
+                <span class="legal-data__value">Webdesignerin / Mediengestalterin</span>
+              </div>
+              <div class="legal-data__row">
+                <span class="legal-data__label">Kammer</span>
+                <span class="legal-data__value">Nicht kammerpflichtig</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Inhaltlich Verantwortlicher -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h2 class="legal-card__title">Inhaltlich Verantwortlicher gem&auml;&szlig; &sect;&nbsp;55 Abs.&nbsp;2 RStV</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Yvonne Weishar &ndash; PanoArt360, Am Quirlbusch 6, 09212 Limbach-Oberfrohna</p>
+          </div>
+        </article>
+
+        <!-- EU-Streit -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h2 class="legal-card__title">EU-Streitschlichtung</h2>
+          </div>
+          <div class="legal-card__body">
+            <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+          </div>
+        </article>
+
+        <!-- Haftung Inhalte -->
+        <article class="legal-card">
+          <div class="legal-card__header">
+            <div class="legal-card__icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h2 class="legal-card__title">Haftungshinweise</h2>
+          </div>
+          <div class="legal-card__body">
+            <p><strong>Haftung f&uuml;r Inhalte:</strong> Als Diensteanbieter sind wir gem&auml;&szlig; &sect;&nbsp;7 Abs.&nbsp;1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect;&nbsp;8 bis 10 TMG sind wir jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen. Bei Bekanntwerden von Rechtsverletzungen entfernen wir diese Inhalte umgehend.</p>
+            <hr class="legal-card__divider">
+            <p><strong>Haftung f&uuml;r Links:</strong> Unser Angebot enth&auml;lt Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von Rechtsverletzungen entfernen wir entsprechende Links umgehend.</p>
+            <hr class="legal-card__divider">
+            <p><strong>Urheberrecht:</strong> Die durch uns erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet. Bei Bekanntwerden von Urheberrechtsverletzungen entfernen wir derartige Inhalte umgehend.</p>
+          </div>
+        </article>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="legal-footer">
+        <p>
+          &copy; 2025 PanoArt360 &ndash;
+          <a href="index.html">Startseite</a> &middot;
+          <a href="datenschutz.html">Datenschutz</a> &middot;
+          <a href="agb.html">AGB</a> &middot;
+          <a href="mailto:mail@panoart360.de">mail@panoart360.de</a>
+        </p>
+      </footer>
+
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
