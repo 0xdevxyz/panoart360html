@@ -265,6 +265,39 @@ $(function() {
   // --------------------------------------------- //
 
   // --------------------------------------------- //
+  // Hero Mouse Parallax Start
+  // --------------------------------------------- //
+  (function() {
+    var $headline = $('.headline');
+    var $grid = $('.hero-grid');
+    if (!$headline.length) return;
+
+    var raf = null, mx = 0, my = 0;
+
+    $(document).on('mousemove.heroParallax', function(e) {
+      if (window.innerWidth < 1200) return;
+      mx = (e.clientX / window.innerWidth)  - 0.5;
+      my = (e.clientY / window.innerHeight) - 0.5;
+      if (raf) return;
+      raf = requestAnimationFrame(function() {
+        raf = null;
+        var hx = mx * 14, hy = my * 9;
+        var gx = -mx * 22, gy = -my * 14;
+        $headline.css('transform', 'translate(' + hx + 'px,' + hy + 'px)');
+        $grid.css('transform',     'translate(' + gx + 'px,' + gy + 'px)');
+      });
+    });
+
+    $(document).on('mouseleave.heroParallax', function() {
+      $headline.css('transform', 'translate(0,0)');
+      $grid.css('transform',     'translate(0,0)');
+    });
+  })();
+  // --------------------------------------------- //
+  // Hero Mouse Parallax End
+  // --------------------------------------------- //
+
+  // --------------------------------------------- //
   // ParticlesJS Backgrounds Start
   // --------------------------------------------- //
   // Night Sky BG - particlesJS

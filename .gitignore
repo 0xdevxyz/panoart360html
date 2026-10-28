@@ -1,0 +1,6 @@
+mail.js
+node_modules/
+*.bak-*
+*.bak
+.claude/
+.DS_Store

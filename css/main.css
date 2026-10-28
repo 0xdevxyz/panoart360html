@@ -2344,6 +2344,7 @@ form .inputs-description {
   width: 100%;
   height: 70px;
   z-index: 4;
+  transition: opacity 0.2s ease-in-out;
 }
 @media only screen and (min-width: 1200px) {
   .main__header {
@@ -3963,4 +3964,107 @@ form .inputs-description {
 
 /* ------------------------------------------------*/
 /* PanoArt360 Conversion Additions End */
+
+/* ------------------------------------------------*/
+/* Animated Hero Background Start */
+/* ------------------------------------------------*/
+.hero-animated-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: -80px;
+  background-image:
+    linear-gradient(rgba(26, 242, 220, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 242, 220, 0.022) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: heroGridDrift 30s linear infinite;
+  transition: transform 0.18s ease-out;
+  will-change: transform, background-position;
+}
+
+@keyframes heroGridDrift {
+  from { background-position: 0 0; }
+  to   { background-position: 60px 60px; }
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.hero-orb-1 {
+  width: min(700px, 70vw);
+  height: min(700px, 70vw);
+  background: radial-gradient(circle, rgba(26, 242, 220, 0.11) 0%, transparent 65%);
+  top: -20%;
+  left: -15%;
+  animation: orbFloat1 20s ease-in-out infinite;
+}
+
+.hero-orb-2 {
+  width: min(500px, 50vw);
+  height: min(500px, 50vw);
+  background: radial-gradient(circle, rgba(26, 242, 220, 0.07) 0%, transparent 65%);
+  bottom: -15%;
+  right: 5%;
+  animation: orbFloat2 26s ease-in-out infinite;
+}
+
+.hero-orb-3 {
+  width: min(380px, 38vw);
+  height: min(380px, 38vw);
+  background: radial-gradient(circle, rgba(26, 242, 220, 0.05) 0%, transparent 65%);
+  top: 30%;
+  left: 42%;
+  animation: orbFloat3 17s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%,  100% { transform: translate(0, 0) scale(1);      opacity: 0.60; }
+  28%        { transform: translate(45px, -35px) scale(1.08); opacity: 0.90; }
+  58%        { transform: translate(18px, 42px) scale(0.93);  opacity: 0.70; }
+  80%        { transform: translate(-22px, 10px) scale(1.03);  opacity: 0.80; }
+}
+
+@keyframes orbFloat2 {
+  0%,  100% { transform: translate(0, 0) scale(1);       opacity: 0.50; }
+  35%        { transform: translate(-50px, 32px) scale(1.12); opacity: 0.80; }
+  70%        { transform: translate(28px, -40px) scale(0.91);  opacity: 0.60; }
+}
+
+@keyframes orbFloat3 {
+  0%,  100% { transform: translate(0, 0) scale(1);       opacity: 0.40; }
+  50%        { transform: translate(22px, 28px) scale(1.18); opacity: 0.65; }
+}
+
+/* Headline gets smooth parallax transition */
+.headline {
+  transition: transform 0.18s ease-out;
+  will-change: transform;
+}
+
+/* Ensure hero background sits behind all main content */
+.main .hero-animated-bg ~ .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide main header when menu is open to prevent visual overlap */
+.main.animate-out .main__header {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+/* ------------------------------------------------*/
+/* Animated Hero Background End */
+/* ------------------------------------------------*/
 /* ------------------------------------------------*/
