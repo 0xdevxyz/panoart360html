@@ -1,0 +1,25 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strukturnachweis Musterobjekt | panoart360</title>
+<meta name="description" content="Beispiel einer panoart360-Nachweisseite: Vorher/Nachher-Schieber, Differenzkarte und Messwerte je Zone. Sample proof page for verified virtual staging.">
+<link rel="canonical" href="https://panoart360.de/nachweis/beispiel/">
+<style>body{font-family:Arial,sans-serif;background:#0b0b0b;color:#eee;margin:0;padding:24px;max-width:1100px;margin:auto}
+h1{font-size:1.4rem}h2{font-size:1.05rem;margin-top:36px}.ba{position:relative;overflow:hidden;border-radius:8px}
+.ba img{display:block;width:100%;height:auto}.ba .top{position:absolute;inset:0;width:50%;overflow:hidden}.ba .top img{width:1100px;max-width:none}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .line{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#1af2dc;pointer-events:none}
+table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #333;padding:8px;text-align:left}
+.ok{color:#1af2dc}.nein{color:#ffc800}small{color:#999}</style></head><body>
+<p style="margin:0 0 18px"><a href="/" style="color:#1af2dc;text-decoration:none;font-size:.85rem">&larr; panoart360.de</a> &nbsp;<small>· <a href="/en/" style="color:#999">English site</a></small></p>
+<h1>Strukturnachweis Musterobjekt (Wohnzimmer, Testlauf 29.10.2026)</h1>
+<p><small>EN: Sample proof page. Red in the difference map is every pixel the AI changed; furniture may be red, walls, ceiling and windows may not. Zones: oben = top 42 % of the frame, fenster = window area. Verdict ok = below the 20 % threshold.</small></p>
+<p>Datum 29.10.2026 · Original: Unsplash-Foto (Lisa Anna), leeres Wohnzimmer · Markt us · Hinweistext: <em>Virtually Staged. Some elements have been digitally added.</em></p>
+<p>Geprüft wird, ob Wände, Decke, Fenster und Böden gegenüber dem Originalfoto unverändert sind. Rot in der Differenzkarte ist jedes Pixel, das die KI verändert hat; Möbel dürfen rot sein, Raumstruktur nicht. Dünne rote Linien an Kanten zeigen, dass ein Modell Fenster oder Wände um Pixel verschoben hat.</p>
+<h2>wohnzimmer</h2>
+<div class="ba"><img src="nachher.jpg" alt="nachher"><div class="top"><img src="vorher.jpg" alt="vorher"></div><div class="line"></div><input type="range" min="0" max="100" value="50"></div>
+<p><small>Schieber: links Original, rechts Lieferung · Liefergröße 4096x2751 (Original 3000x2000, Hochrechnung: 4k-Modell (wohnzimmer.png, 4096x2751))</small></p>
+<img src="differenzkarte.jpg" alt="Differenzkarte" style="width:100%;border-radius:8px">
+<table><tr><th>Zone</th><th>veränderte Pixel</th><th>davon zusammenhängende Fläche (Möbel)</th><th>mittlere Abweichung</th><th>Urteil</th></tr><tr><td>gesamt</td><td>33.2 %</td><td>26.0 %</td><td>28.1</td><td class='ok'>ok</td></tr><tr><td>oben</td><td>5.7 %</td><td>4.1 %</td><td>5.1</td><td class='ok'>ok</td></tr><tr><td>fenster</td><td>15.8 %</td><td>2.9 %</td><td>10.8</td><td class='ok'>ok</td></tr></table>
+<p><small>Lieferschein: <a href="lieferschein.json" style="color:#1af2dc">lieferschein.json</a> · Bilder hier auf 2.000 px verkleinert, geliefert wird in 4.096 px · panoart360, Koburger Straße 198, 04416 Markkleeberg · <a href="/impressum.html" style="color:#999">Impressum</a></small></p>
+<script>document.querySelectorAll('.ba').forEach(b=>{const r=b.querySelector('input'),t=b.querySelector('.top'),l=b.querySelector('.line');
+const set=v=>{t.style.width=v+'%';l.style.left=v+'%'};r.addEventListener('input',e=>set(e.target.value));
+const fit=()=>{t.querySelector('img').style.width=b.clientWidth+'px'};fit();addEventListener('resize',fit)});</script></body></html>

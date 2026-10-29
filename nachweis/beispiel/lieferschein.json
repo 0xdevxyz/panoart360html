@@ -1,0 +1,57 @@
+{
+  "objekt": "Echtfoto-Unsplash",
+  "datum": "2026-10-29",
+  "markt": "us",
+  "metadaten_imagedescription": "Virtually staged. Some elements have been digitally added. Unaltered original delivered alongside (CA AB 723).",
+  "kunde_muss": "Disclosure must stay visible on every agent-controlled site; publish the unaltered original (CA AB 723, MLS rules).",
+  "pruefung": {
+    "zonen": {
+      "oben": [
+        0.0,
+        0.0,
+        1.0,
+        0.42
+      ],
+      "fenster": [
+        0.6,
+        0.25,
+        0.9,
+        0.5
+      ]
+    },
+    "schwelle_prozent": 20.0,
+    "pixel_schwelle_grau": 20,
+    "messbreite": 1500
+  },
+  "warnungen": [],
+  "bilder": [
+    {
+      "bild": "wohnzimmer",
+      "hinweis": "Virtually Staged. Some elements have been digitally added.",
+      "original": "wohnzimmer.jpg",
+      "originalgroesse": "3000x2000",
+      "liefergroesse": "4096x2751",
+      "hochrechnung": "4k-Modell (wohnzimmer.png, 4096x2751)",
+      "strukturpruefung": {
+        "gesamt": {
+          "anteil_veraendert_prozent": 33.2,
+          "flaeche_zusammenhaengend_prozent": 26.0,
+          "mittlere_abweichung": 28.1
+        },
+        "oben": {
+          "anteil_veraendert_prozent": 5.7,
+          "flaeche_zusammenhaengend_prozent": 4.1,
+          "mittlere_abweichung": 5.1,
+          "bestanden": true
+        },
+        "fenster": {
+          "anteil_veraendert_prozent": 15.8,
+          "flaeche_zusammenhaengend_prozent": 2.9,
+          "mittlere_abweichung": 10.8,
+          "bestanden": true
+        }
+      },
+      "strukturpruefung_bestanden": true
+    }
+  ]
+}

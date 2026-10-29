@@ -56,6 +56,12 @@
 .rule strong { color:#fff; }
 
 .pa-cta { display:inline-flex; align-items:center; gap:10px; padding:14px 28px; background:#1af2dc; color:#09090b; border:none; font-family:inherit; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; text-decoration:none; }
+.nw-img { width:100%; height:auto; display:block; border:1px solid rgba(255,255,255,.08); background:#111; }
+.nw-rules { margin-top:40px; gap:0 40px; }
+.nw-actions { margin-top:32px; display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
+.nw-note { font-size:12px; color:rgba(255,255,255,.45); line-height:1.6; max-width:520px; }
+.price-anchor--guarantee { border-color:rgba(26,242,220,.4); background:rgba(26,242,220,.04); color:rgba(255,255,255,.78); }
+.price-anchor--guarantee i { color:#1af2dc; margin-right:8px; }
 .pa-lang { font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.55); text-decoration:none; }
 .pa-lang:hover { color:#1af2dc; }
 @media (max-width:767px) { .pa-section { padding:56px 20px; } .price__amount { font-size:28px; } }
