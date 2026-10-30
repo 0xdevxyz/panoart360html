@@ -52,7 +52,7 @@
     <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
     <link rel="stylesheet" type="text/css" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <meta name="theme-color" content="#1af2dc">
+    <meta name="theme-color" content="#f79a48">
 
     <style>
       html, body { overflow: auto !important; height: auto !important; }
@@ -71,21 +71,21 @@
         background: #0a0a0c;
         padding: 56px 0 48px;
         overflow: hidden;
-        border-bottom: 1px solid rgba(26,242,220,0.12);
+        border-bottom: 1px solid rgba(247,154,72,0.12);
       }
       .article-hero::before {
         content: '';
         position: absolute; inset: 0;
         background-image:
-          linear-gradient(rgba(26,242,220,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(26,242,220,0.04) 1px, transparent 1px);
+          linear-gradient(rgba(247,154,72,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(247,154,72,0.04) 1px, transparent 1px);
         background-size: 40px 40px;
         pointer-events: none;
       }
       .article-hero::after {
         content: '';
         position: absolute; inset: 0;
-        background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(26,242,220,0.07) 0%, transparent 70%);
+        background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(247,154,72,0.07) 0%, transparent 70%);
         pointer-events: none;
       }
       .article-topbar {
@@ -105,12 +105,12 @@
         font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
         margin-bottom: 28px; transition: color .2s;
       }
-      .article-hero__back:hover { color: #1af2dc; }
+      .article-hero__back:hover { color: #f79a48; }
       .article-hero__cat {
         display: inline-block;
         font-size: 10px; font-weight: 700;
         letter-spacing: 0.18em; text-transform: uppercase;
-        color: #1af2dc; margin-bottom: 14px;
+        color: #f79a48; margin-bottom: 14px;
       }
       .article-hero__h1 {
         font-size: clamp(28px, 4.5vw, 52px);
@@ -146,14 +146,14 @@
         font-size: 15px; line-height: 1.85;
         color: rgba(255,255,255,0.65); margin-bottom: 18px;
       }
-      .article-content a { color: #1af2dc; text-decoration: none; }
+      .article-content a { color: #f79a48; text-decoration: none; }
       .article-content a:hover { text-decoration: underline; }
       .article-content strong { color: rgba(255,255,255,0.85); }
 
       .article-highlight {
         background: #16151a;
-        border: 1px solid rgba(26,242,220,0.15);
-        border-left: 3px solid #1af2dc;
+        border: 1px solid rgba(247,154,72,0.15);
+        border-left: 3px solid #f79a48;
         border-radius: 0 12px 12px 0;
         padding: 20px 24px; margin: 28px 0;
       }
@@ -173,7 +173,7 @@
         padding: 24px;
         display: flex; flex-direction: column; gap: 10px;
       }
-      .dd-card.do { border-top: 3px solid #1af2dc; }
+      .dd-card.do { border-top: 3px solid #f79a48; }
       .dd-card.dont { border-top: 3px solid #ff5e5e; }
       .dd-card__badge {
         display: inline-flex; align-items: center; gap: 6px;
@@ -181,7 +181,7 @@
         padding: 4px 10px; border-radius: 6px;
         width: fit-content;
       }
-      .dd-card.do .dd-card__badge { background: rgba(26,242,220,0.1); color: #1af2dc; }
+      .dd-card.do .dd-card__badge { background: rgba(247,154,72,0.1); color: #f79a48; }
       .dd-card.dont .dd-card__badge { background: rgba(255,94,94,0.1); color: #ff5e5e; }
       .dd-card__num {
         font-size: 28px; font-weight: 900; line-height: 1;
@@ -219,18 +219,18 @@
       /* Verdict box */
       .verdict-box {
         background: linear-gradient(135deg, #0d1a19 0%, #091210 100%);
-        border: 1px solid rgba(26,242,220,0.2);
+        border: 1px solid rgba(247,154,72,0.2);
         border-radius: 20px; padding: 36px 40px; margin: 48px 0;
         position: relative; overflow: hidden;
       }
       .verdict-box::before {
         content: '';
         position: absolute; top: 0; left: 0; right: 0; height: 2px;
-        background: linear-gradient(90deg, #1af2dc, transparent);
+        background: linear-gradient(90deg, #f79a48, transparent);
       }
       .verdict-box__label {
         font-size: 10px; font-weight: 700; letter-spacing: .2em;
-        text-transform: uppercase; color: #1af2dc; margin-bottom: 14px;
+        text-transform: uppercase; color: #f79a48; margin-bottom: 14px;
       }
       .verdict-box h3 {
         font-size: clamp(18px, 2.5vw, 24px); font-weight: 800;
@@ -247,14 +247,14 @@
         border-radius: 14px; padding: 22px 24px; text-decoration: none;
         display: flex; flex-direction: column; gap: 8px; transition: border-color .2s;
       }
-      .article-related__card:hover { border-color: rgba(26,242,220,0.25); }
-      .article-related__cat { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #1af2dc; }
+      .article-related__card:hover { border-color: rgba(247,154,72,0.25); }
+      .article-related__cat { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #f79a48; }
       .article-related__title { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.85); line-height: 1.45; }
       .article-related__read { font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 2px; }
 
       /* CTA */
       .article-cta {
-        background: #16151a; border: 1px solid rgba(26,242,220,0.15);
+        background: #16151a; border: 1px solid rgba(247,154,72,0.15);
         border-radius: 20px; padding: 36px 40px; margin-top: 64px;
         text-align: center;
       }
@@ -262,7 +262,7 @@
       .article-cta p { font-size: 14px; color: rgba(255,255,255,0.45); margin-bottom: 24px; }
       .article-cta__btn {
         display: inline-flex; align-items: center; gap: 10px;
-        background: #1af2dc; color: #09090b;
+        background: #f79a48; color: #09090b;
         font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
         border: none; padding: 14px 28px; border-radius: 10px;
         cursor: pointer; transition: opacity .2s; font-family: inherit;
@@ -273,7 +273,7 @@
       .article-footer { border-top: 1px solid rgba(255,255,255,0.06); padding: 28px 32px; text-align: center; }
       .article-footer p { font-size: 12px; color: rgba(255,255,255,0.2); }
       .article-footer a { color: rgba(255,255,255,0.35); text-decoration: none; margin: 0 8px; }
-      .article-footer a:hover { color: #1af2dc; }
+      .article-footer a:hover { color: #f79a48; }
 
       @media (max-width: 700px) {
         .article-hero__inner, .article-topbar, .article-content { padding-left: 16px; padding-right: 16px; }
@@ -652,10 +652,10 @@
       </div>
       <div style="flex:1;overflow-y:auto;display:flex;align-items:center;justify-content:center;padding:40px 20px;">
         <div style="max-width:520px;width:100%;text-align:center;">
-          <p style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#1af2dc;margin-bottom:16px;">Projekt anfragen</p>
+          <p style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#f79a48;margin-bottom:16px;">Projekt anfragen</p>
           <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:#fff;margin-bottom:12px;">Lassen Sie uns sprechen.</h2>
           <p style="font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:32px;">Schreiben Sie uns &ndash; wir melden uns innerhalb von 24 Stunden.</p>
-          <a href="mailto:mail@panoart360.de?subject=Projektanfrage&body=Hallo%20PanoArt360%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20eine%20Zusammenarbeit.%0A%0AMein%20Name%3A%0AMein%20Unternehmen%3A%0AMein%20Anliegen%3A" style="display:inline-flex;align-items:center;gap:10px;background:#1af2dc;color:#09090b;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;padding:16px 32px;border-radius:12px;text-decoration:none;">
+          <a href="mailto:mail@panoart360.de?subject=Projektanfrage&body=Hallo%20PanoArt360%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20eine%20Zusammenarbeit.%0A%0AMein%20Name%3A%0AMein%20Unternehmen%3A%0AMein%20Anliegen%3A" style="display:inline-flex;align-items:center;gap:10px;background:#f79a48;color:#09090b;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;padding:16px 32px;border-radius:12px;text-decoration:none;">
             E-Mail schreiben <i class="fa-solid fa-arrow-right"></i>
           </a>
           <p style="font-size:12px;color:rgba(255,255,255,0.2);margin-top:20px;">Oder direkt: <a href="tel:+491738448941" style="color:rgba(255,255,255,0.4);text-decoration:none;">+49 173 8448 941</a></p>

@@ -59,7 +59,7 @@
     <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
     <link rel="stylesheet" type="text/css" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <meta name="theme-color" content="#1af2dc">
+    <meta name="theme-color" content="#f79a48">
 
     <style>
       html, body { overflow: auto !important; height: auto !important; }
@@ -79,62 +79,62 @@
       .lp-topbar__nav { display: flex; align-items: center; gap: 24px; }
       .lp-topbar__nav a { font-size: 12px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color .2s; }
       .lp-topbar__nav a:hover { color: rgba(255,255,255,0.75); }
-      .lp-topbar__cta { display: inline-flex; align-items: center; gap: 8px; background: #1af2dc; color: #09090b; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 9px 18px; border-radius: 8px; border: none; font-family: inherit; cursor: pointer; transition: opacity .2s; }
+      .lp-topbar__cta { display: inline-flex; align-items: center; gap: 8px; background: #f79a48; color: #09090b; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 9px 18px; border-radius: 8px; border: none; font-family: inherit; cursor: pointer; transition: opacity .2s; }
       .lp-topbar__cta:hover { opacity: .84; }
 
       /* Hero */
       .lp-hero { position: relative; padding: 90px 0 80px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.05); }
-      .lp-hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(26,242,220,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(26,242,220,0.035) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
-      .lp-hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 0% 50%, rgba(26,242,220,0.07) 0%, transparent 65%); pointer-events: none; }
+      .lp-hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(247,154,72,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(247,154,72,0.035) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
+      .lp-hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 0% 50%, rgba(247,154,72,0.07) 0%, transparent 65%); pointer-events: none; }
       .lp-hero__inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; }
       .lp-hero__breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 11px; color: rgba(255,255,255,0.28); margin-bottom: 24px; }
       .lp-hero__breadcrumb a { color: inherit; text-decoration: none; }
       .lp-hero__breadcrumb a:hover { color: rgba(255,255,255,0.6); }
-      .lp-hero__badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(26,242,220,0.08); border: 1px solid rgba(26,242,220,0.2); border-radius: 20px; padding: 5px 14px; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #1af2dc; margin-bottom: 20px; }
-      .lp-hero__badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #1af2dc; box-shadow: 0 0 8px #1af2dc; animation: pulse 2s infinite; }
+      .lp-hero__badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,154,72,0.08); border: 1px solid rgba(247,154,72,0.2); border-radius: 20px; padding: 5px 14px; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #f79a48; margin-bottom: 20px; }
+      .lp-hero__badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #f79a48; box-shadow: 0 0 8px #f79a48; animation: pulse 2s infinite; }
       @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
       .lp-hero__h1 { font-size: clamp(32px, 4.5vw, 58px); font-weight: 900; color: #fff; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 22px; }
-      .lp-hero__h1 em { font-style: normal; color: #1af2dc; }
+      .lp-hero__h1 em { font-style: normal; color: #f79a48; }
       .lp-hero__sub { font-size: 16px; color: rgba(255,255,255,0.5); line-height: 1.75; margin-bottom: 36px; max-width: 520px; }
       .lp-hero__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-      .lp-hero__btn-primary { display: inline-flex; align-items: center; gap: 10px; background: #1af2dc; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 16px 30px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
+      .lp-hero__btn-primary { display: inline-flex; align-items: center; gap: 10px; background: #f79a48; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 16px 30px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
       .lp-hero__btn-primary:hover { opacity: .87; transform: translateY(-2px); }
       .lp-hero__btn-ghost { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.65); font-size: 11px; font-weight: 600; padding: 15px 24px; border-radius: 12px; text-decoration: none; transition: background .2s, color .2s; }
       .lp-hero__btn-ghost:hover { background: rgba(255,255,255,0.09); color: #fff; }
 
       /* Trust card */
-      .lp-hero__card { background: #16151a; border: 1px solid rgba(26,242,220,0.12); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+      .lp-hero__card { background: #16151a; border: 1px solid rgba(247,154,72,0.12); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 20px; }
       .lp-hero__card-label { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.25); }
       .lp-trust-row { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
       .lp-trust-row:last-child { border-bottom: none; padding-bottom: 0; }
-      .lp-trust-icon { width: 38px; height: 38px; background: rgba(26,242,220,0.08); border: 1px solid rgba(26,242,220,0.14); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1af2dc; font-size: 15px; flex-shrink: 0; }
+      .lp-trust-icon { width: 38px; height: 38px; background: rgba(247,154,72,0.08); border: 1px solid rgba(247,154,72,0.14); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #f79a48; font-size: 15px; flex-shrink: 0; }
       .lp-trust-text strong { display: block; font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 2px; }
       .lp-trust-text span { font-size: 11px; color: rgba(255,255,255,0.35); }
 
       /* Sections */
       .lp-section { max-width: 1200px; margin: 0 auto; padding: 80px 32px; }
-      .lp-section__label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 12px; }
+      .lp-section__label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #f79a48; margin-bottom: 12px; }
       .lp-section__h2 { font-size: clamp(26px, 3.5vw, 42px); font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 16px; }
       .lp-section__sub { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 580px; margin-bottom: 52px; }
 
       /* Services Grid */
       .lp-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
       .lp-service-card { background: #16151a; border: 1px solid rgba(255,255,255,0.07); border-radius: 18px; padding: 28px 26px; transition: border-color .3s, transform .3s; }
-      .lp-service-card:hover { border-color: rgba(26,242,220,0.22); transform: translateY(-4px); }
-      .lp-service-card__icon { width: 44px; height: 44px; background: rgba(26,242,220,0.08); border: 1px solid rgba(26,242,220,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #1af2dc; font-size: 18px; margin-bottom: 18px; }
+      .lp-service-card:hover { border-color: rgba(247,154,72,0.22); transform: translateY(-4px); }
+      .lp-service-card__icon { width: 44px; height: 44px; background: rgba(247,154,72,0.08); border: 1px solid rgba(247,154,72,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #f79a48; font-size: 18px; margin-bottom: 18px; }
       .lp-service-card__title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: -0.01em; }
       .lp-service-card__text { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; }
 
       /* Local fact box */
-      .lp-local-fact { background: #16151a; border: 1px solid rgba(26,242,220,0.15); border-left: 3px solid #1af2dc; border-radius: 0 16px 16px 0; padding: 24px 28px; margin: 52px 0 0; max-width: 1200px; margin-left: auto; margin-right: auto; }
+      .lp-local-fact { background: #16151a; border: 1px solid rgba(247,154,72,0.15); border-left: 3px solid #f79a48; border-radius: 0 16px 16px 0; padding: 24px 28px; margin: 52px 0 0; max-width: 1200px; margin-left: auto; margin-right: auto; }
       .lp-local-fact p { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.75; }
       .lp-local-fact strong { color: rgba(255,255,255,0.85); }
 
       /* Process */
       .lp-process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
-      .lp-process::before { content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, rgba(26,242,220,0.2), transparent); }
+      .lp-process::before { content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, rgba(247,154,72,0.2), transparent); }
       .lp-process-step { text-align: center; padding: 0 16px; }
-      .lp-process-step__num { width: 56px; height: 56px; border-radius: 50%; background: #16151a; border: 2px solid rgba(26,242,220,0.2); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 900; color: #1af2dc; margin: 0 auto 20px; position: relative; z-index: 1; }
+      .lp-process-step__num { width: 56px; height: 56px; border-radius: 50%; background: #16151a; border: 2px solid rgba(247,154,72,0.2); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 900; color: #f79a48; margin: 0 auto 20px; position: relative; z-index: 1; }
       .lp-process-step__title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 8px; }
       .lp-process-step__text { font-size: 12px; color: rgba(255,255,255,0.38); line-height: 1.65; }
 
@@ -142,9 +142,9 @@
       .lp-faq { max-width: 800px; margin: 0 auto; }
       .lp-faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
       .lp-faq-item__q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; font-size: 15px; font-weight: 600; color: #fff; cursor: pointer; list-style: none; transition: color .2s; }
-      .lp-faq-item__q:hover { color: #1af2dc; }
+      .lp-faq-item__q:hover { color: #f79a48; }
       .lp-faq-item__q::-webkit-details-marker { display: none; }
-      .lp-faq-item__q i { color: #1af2dc; font-size: 11px; transition: transform .3s; flex-shrink: 0; }
+      .lp-faq-item__q i { color: #f79a48; font-size: 11px; transition: transform .3s; flex-shrink: 0; }
       .lp-faq-item[open] .lp-faq-item__q i { transform: rotate(45deg); }
       .lp-faq-item__a { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; padding: 0 0 22px; }
 
@@ -153,18 +153,18 @@
       .lp-stat { padding: 28px 24px; text-align: center; }
       .lp-stat + .lp-stat { border-left: 1px solid rgba(255,255,255,0.06); }
       .lp-stat__num { font-size: 32px; font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1; margin-bottom: 6px; }
-      .lp-stat__num span { color: #1af2dc; }
+      .lp-stat__num span { color: #f79a48; }
       .lp-stat__label { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.5; }
 
       /* Final CTA */
-      .lp-cta { position: relative; background: #16151a; border-top: 1px solid rgba(26,242,220,0.1); overflow: hidden; }
-      .lp-cta::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(ellipse, rgba(26,242,220,0.06) 0%, transparent 65%); pointer-events: none; }
+      .lp-cta { position: relative; background: #16151a; border-top: 1px solid rgba(247,154,72,0.1); overflow: hidden; }
+      .lp-cta::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(ellipse, rgba(247,154,72,0.06) 0%, transparent 65%); pointer-events: none; }
       .lp-cta__inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 100px 32px; text-align: center; }
-      .lp-cta__eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; }
+      .lp-cta__eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #f79a48; margin-bottom: 16px; }
       .lp-cta__h2 { font-size: clamp(28px, 4vw, 50px); font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 18px; }
       .lp-cta__sub { font-size: 15px; color: rgba(255,255,255,0.42); line-height: 1.7; margin-bottom: 36px; }
       .lp-cta__actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
-      .lp-cta__btn { display: inline-flex; align-items: center; gap: 10px; background: #1af2dc; color: #09090b; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 18px 36px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
+      .lp-cta__btn { display: inline-flex; align-items: center; gap: 10px; background: #f79a48; color: #09090b; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 18px 36px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
       .lp-cta__btn:hover { opacity: .87; transform: translateY(-2px); }
       .lp-cta__tel { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color .2s; }
       .lp-cta__tel:hover { color: rgba(255,255,255,0.75); }
@@ -178,12 +178,12 @@
 
       /* Overlay Form */
       .pf-overlay { position: fixed; inset: 0; z-index: 9999; background: #0a0a0c; display: flex; flex-direction: column; opacity: 0; pointer-events: none; transition: opacity .3s ease; overflow: hidden; }
-      .pf-overlay::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(26,242,220,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(26,242,220,0.025) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
+      .pf-overlay::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(247,154,72,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(247,154,72,0.025) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
       .pf-overlay.is-open { opacity: 1; pointer-events: all; }
       .pf-topbar { position: relative; z-index: 2; display: flex; align-items: center; gap: 18px; padding: 16px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); flex-shrink: 0; }
       .pf-topbar__logo { height: 28px; width: auto; opacity: .65; }
       .pf-topbar__progress { flex: 1; height: 2px; background: rgba(255,255,255,0.06); border-radius: 2px; overflow: hidden; }
-      .pf-topbar__bar { height: 100%; background: linear-gradient(90deg,#1af2dc,#0dd9c3); border-radius: 2px; width: 0%; transition: width .5s cubic-bezier(.25,1,.5,1); }
+      .pf-topbar__bar { height: 100%; background: linear-gradient(90deg,#f79a48,#ef6f2e); border-radius: 2px; width: 0%; transition: width .5s cubic-bezier(.25,1,.5,1); }
       .pf-topbar__close { width: 32px; height: 32px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s,color .2s; flex-shrink: 0; }
       .pf-topbar__close:hover { background: rgba(255,255,255,0.1); color: #fff; }
       .pf-body { flex: 1; position: relative; overflow: hidden; }
@@ -191,33 +191,33 @@
       .pf-step.is-active { opacity: 1; transform: translateY(0); pointer-events: all; transition: opacity .45s cubic-bezier(.25,1,.5,1),transform .45s cubic-bezier(.25,1,.5,1); }
       .pf-step.is-out { opacity: 0; transform: translateY(-40px); pointer-events: none; transition: opacity .25s ease,transform .25s ease; }
       .pf-step__inner { width: 100%; max-width: 660px; }
-      .pf-step__num { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+      .pf-step__num { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #f79a48; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
       .pf-step__q { font-size: clamp(24px,4vw,42px); font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px; }
-      .pf-step__q .pf-ast { color: #1af2dc; }
+      .pf-step__q .pf-ast { color: #f79a48; }
       .pf-step__sub { font-size: 14px; color: rgba(255,255,255,0.3); margin: -16px 0 22px; line-height: 1.55; }
-      .pf-input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(18px,2.5vw,26px); font-family: inherit; padding: 8px 0 12px; outline: none; caret-color: #1af2dc; transition: border-color .2s; }
-      .pf-input:focus { border-color: #1af2dc; }
+      .pf-input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(18px,2.5vw,26px); font-family: inherit; padding: 8px 0 12px; outline: none; caret-color: #f79a48; transition: border-color .2s; }
+      .pf-input:focus { border-color: #f79a48; }
       .pf-input::placeholder { color: rgba(255,255,255,0.15); }
-      .pf-textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(16px,2vw,22px); font-family: inherit; padding: 8px 0 12px; outline: none; resize: none; min-height: 120px; line-height: 1.65; caret-color: #1af2dc; transition: border-color .2s; }
-      .pf-textarea:focus { border-color: #1af2dc; }
+      .pf-textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(16px,2vw,22px); font-family: inherit; padding: 8px 0 12px; outline: none; resize: none; min-height: 120px; line-height: 1.65; caret-color: #f79a48; transition: border-color .2s; }
+      .pf-textarea:focus { border-color: #f79a48; }
       .pf-textarea::placeholder { color: rgba(255,255,255,0.15); }
       .pf-options { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
       .pf-option { display: flex; align-items: center; gap: 10px; padding: 11px 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: rgba(255,255,255,0.5); font-size: 14px; font-family: inherit; cursor: pointer; transition: border-color .2s,background .2s,color .2s; }
-      .pf-option:hover { border-color: rgba(26,242,220,0.25); color: #e0e0e0; }
-      .pf-option.is-sel { border-color: #1af2dc; background: rgba(26,242,220,0.07); color: #fff; }
+      .pf-option:hover { border-color: rgba(247,154,72,0.25); color: #e0e0e0; }
+      .pf-option.is-sel { border-color: #f79a48; background: rgba(247,154,72,0.07); color: #fff; }
       .pf-option__key { width: 20px; height: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-radius: 4px; font-size: 9px; font-weight: 700; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); flex-shrink: 0; }
-      .pf-option.is-sel .pf-option__key { background: rgba(26,242,220,0.12); border-color: rgba(26,242,220,0.3); color: #1af2dc; }
+      .pf-option.is-sel .pf-option__key { background: rgba(247,154,72,0.12); border-color: rgba(247,154,72,0.3); color: #f79a48; }
       .pf-err { font-size: 13px; color: #ff6b6b; margin-top: 10px; opacity: 0; transition: opacity .2s; min-height: 18px; }
       .pf-err.show { opacity: 1; }
       .pf-nav { margin-top: 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-      .pf-btn { display: inline-flex; align-items: center; gap: 8px; background: #1af2dc; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 13px 24px; border-radius: 10px; cursor: pointer; transition: opacity .2s,transform .2s; font-family: inherit; }
+      .pf-btn { display: inline-flex; align-items: center; gap: 8px; background: #f79a48; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 13px 24px; border-radius: 10px; cursor: pointer; transition: opacity .2s,transform .2s; font-family: inherit; }
       .pf-btn:hover { opacity: .87; transform: translateY(-2px); }
       .pf-hint { font-size: 11px; color: rgba(255,255,255,0.18); }
       .pf-hint kbd { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); border-radius: 3px; padding: 1px 5px; font-size: 9px; font-family: monospace; }
       .pf-back { background: none; border: none; color: rgba(255,255,255,0.25); font-size: 11px; font-family: inherit; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: color .2s; padding: 0; letter-spacing: 0.07em; text-transform: uppercase; }
       .pf-back:hover { color: rgba(255,255,255,0.6); }
       .pf-success__wrap { text-align: center; max-width: 480px; width: 100%; }
-      .pf-success__icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(26,242,220,0.1); border: 1px solid rgba(26,242,220,0.25); display: flex; align-items: center; justify-content: center; color: #1af2dc; font-size: 24px; margin: 0 auto 24px; }
+      .pf-success__icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(247,154,72,0.1); border: 1px solid rgba(247,154,72,0.25); display: flex; align-items: center; justify-content: center; color: #f79a48; font-size: 24px; margin: 0 auto 24px; }
       .pf-success__h { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; }
       .pf-success__p { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.65; margin-bottom: 28px; }
       .pf-footer { position: relative; z-index: 2; padding: 14px 40px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: flex-end; flex-shrink: 0; }
@@ -484,7 +484,7 @@
 
       <!-- Local fact -->
       <div style="max-width:1200px;margin:0 auto;padding:0 32px 52px;">
-        <div style="background:#16151a;border:1px solid rgba(26,242,220,0.15);border-left:3px solid #1af2dc;border-radius:0 16px 16px 0;padding:24px 28px;">
+        <div style="background:#16151a;border:1px solid rgba(247,154,72,0.15);border-left:3px solid #f79a48;border-radius:0 16px 16px 0;padding:24px 28px;">
           <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.75;margin:0;"><strong style="color:rgba(255,255,255,0.85);">Mittweida – Hochschulstadt mit digitalem Potenzial:</strong> Mittweida beheimatet die Hochschule Mittweida mit Schwerpunkten in Medien, Technik und Wirtschaft – eine der größten Hochschulen Sachsens. Der Mix aus Studierenden, Hochschulpartnern und dem lokalen Mittelstand schafft einen Markt, der professionelle Webpräsenz schätzt und erwartet.<br><br>Lokale Unternehmen, die in Mittweida und der Umgebung zwischen Chemnitz und Freiberg aktiv sind, profitieren von Webseiten, die auf lokale Suchbegriffe optimiert sind. PanoArt360 aus dem benachbarten Limbach-Oberfrohna ist in unter 15 Minuten vor Ort.</p>
         </div>
       </div>
@@ -492,7 +492,7 @@
       <!-- Local industries -->
       <div style="max-width:1200px;margin:0 auto;padding:0 32px 52px;">
         <div style="background:#16151a;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:32px 36px;">
-          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1af2dc;margin:0 0 10px;">Unsere Kunden in Mittweida</p>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#f79a48;margin:0 0 10px;">Unsere Kunden in Mittweida</p>
           <h2 style="font-size:clamp(20px,2.5vw,28px);font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1.2;margin:0 0 20px;">Webdesign Mittweida – wer von uns profitiert</h2>
           <p style="font-size:14px;color:rgba(255,255,255,0.58);line-height:1.8;margin:0 0 14px;">Mittweida ist eine Hochschulstadt mit großem Einfluss: Die Hochschule Mittweida zählt mit Schwerpunkten in Medien, Lasertechnik, Wirtschaft und Soziales zu den größten Hochschulen Sachsens. Dieser Mix prägt den lokalen Markt – mit digital-affinen Studierenden, Hochschulpartnern und einem Mittelstand, der hohe Qualitätsansprüche stellt und Webseiten kritisch bewertet.</p>
           <p style="font-size:14px;color:rgba(255,255,255,0.58);line-height:1.8;margin:0 0 14px;">In Mittweida und dem Umland zwischen Chemnitz, Freiberg und Rochlitz arbeitet PanoArt360 mit Handwerksbetrieben (Sanitär, Elektro, Bau), die online Auftraggeber gewinnen wollen; Gastronomie und Pensionen, die Hochschulgäste und Durchreisende ansprechen; sowie Dienstleistern wie Ärzten, Therapeuten und Beratern, die in der Region als erste Anlaufstelle sichtbar sein müssen. Auch Startups und Ausgründungen der Hochschule Mittweida zählen zu unserer Zielgruppe.</p>
@@ -556,7 +556,7 @@
           </details>
           <details class="lp-faq-item">
             <summary class="lp-faq-item__q">Helft ihr auch bei SEO, damit ich in Mittweida bei Google gefunden werde?<i class="fa-solid fa-plus"></i></summary>
-            <p class="lp-faq-item__a">Ja. Lokales SEO ist fester Bestandteil unserer Arbeit. Wir optimieren Ihre Webseite f&uuml;r relevante Suchanfragen in Mittweida und der Region &ndash; inklusive Google My Business. Mehr dazu auf unserer <a href="seo-agentur-chemnitz.html" style="color:#1af2dc;">SEO-Seite</a>.</p>
+            <p class="lp-faq-item__a">Ja. Lokales SEO ist fester Bestandteil unserer Arbeit. Wir optimieren Ihre Webseite f&uuml;r relevante Suchanfragen in Mittweida und der Region &ndash; inklusive Google My Business. Mehr dazu auf unserer <a href="seo-agentur-chemnitz.html" style="color:#f79a48;">SEO-Seite</a>.</p>
           </details>
         </div>
       </section>

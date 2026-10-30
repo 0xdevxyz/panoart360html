@@ -203,7 +203,7 @@ body {
   min-width: 320px;
   overflow-x: hidden !important;
   font: normal 400 1.6rem/1.4 "Montserrat", sans-serif;
-  background-color: #1af2dc;
+  background-color: #f79a48;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1493,13 +1493,13 @@ h1 span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1 span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 h1 span.colored {
-  color: #1af2dc;
+  color: #f79a48;
 }
 h1.medium {
   font-size: 8rem;
@@ -1511,10 +1511,10 @@ h1.medium span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1.medium span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 h1.large {
   font-size: 5rem;
@@ -1526,10 +1526,10 @@ h1.large span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1.large span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 @media only screen and (min-width: 768px) {
   h1.large {
@@ -1542,10 +1542,10 @@ h1.large span.outline-colored {
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
   h1.large span.outline-colored {
-    color: #1af2dc;
+    color: #f79a48;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #1af2dc;
+    -webkit-text-stroke-color: #f79a48;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -1573,13 +1573,13 @@ h2 span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h2 span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 h2 span.colored {
-  color: #1af2dc;
+  color: #f79a48;
 }
 h2 small {
   display: block;
@@ -1653,10 +1653,10 @@ a {
   opacity: 0.5;
   font: normal 700 13.4rem/0.84 "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 .section-caption.bright {
   opacity: 1;
@@ -1719,13 +1719,13 @@ a {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .popup-title__title span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 .popup-title__title span.colored {
-  color: #1af2dc;
+  color: #f79a48;
 }
 
 .popup-title__text {
@@ -1746,7 +1746,7 @@ a {
   position: relative;
   width: 100%;
   padding: 2rem 0;
-  background-color: #1af2dc;
+  background-color: #f79a48;
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -1864,7 +1864,7 @@ a {
           transform: translateX(-50%);
   width: 0%;
   height: 1px;
-  background-color: #1af2dc;
+  background-color: #f79a48;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   -moz-transition: width 0.3s ease-in-out;
@@ -1932,7 +1932,7 @@ a {
           transform: translateX(-50%);
   width: 0%;
   height: 1px;
-  background-color: #1af2dc;
+  background-color: #f79a48;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   -moz-transition: width 0.3s ease-in-out;
@@ -2070,7 +2070,7 @@ a {
 }
 
 .btn-fill {
-  background-color: #1af2dc;
+  background-color: #f79a48;
   height: 4.4rem;
   line-height: 4.4rem;
   padding: 0 2rem;
@@ -2200,7 +2200,7 @@ form .inputs-description {
   color: rgb(255, 255, 255);
 }
 .form-light input:focus, .form-light textarea:focus {
-  border: 1px solid #1af2dc;
+  border: 1px solid #f79a48;
 }
 .form-light .inputs-description {
   color: rgba(255, 255, 255, 0.6);
@@ -2225,7 +2225,7 @@ form .inputs-description {
   position: relative;
   font-size: 4rem;
   line-height: 1;
-  color: #1af2dc;
+  color: #f79a48;
 }
 
 .reply-group__title {
@@ -2537,7 +2537,7 @@ form .inputs-description {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #1af2dc;
+  background-color: #f79a48;
 }
 
 .media__image {
@@ -2970,7 +2970,7 @@ form .inputs-description {
   display: block;
   font: normal 600 1.4rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #1af2dc;
+  color: #f79a48;
 }
 .slide__caption p {
   font: normal 600 1.4rem/1.2 "Montserrat", sans-serif;
@@ -3151,7 +3151,7 @@ form .inputs-description {
   position: relative;
   width: 100%;
   padding: 2rem 0;
-  background-color: #1af2dc;
+  background-color: #f79a48;
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -3315,7 +3315,7 @@ form .inputs-description {
   left: 0;
   width: 0px;
   height: 1px;
-  background-color: #1af2dc;
+  background-color: #f79a48;
 }
 
 .skill-bar-percent {
@@ -3728,7 +3728,7 @@ form .inputs-description {
 
 .pswp__button--close {
   position: relative;
-  background-color: #1af2dc;
+  background-color: #f79a48;
 }
 .pswp__button--close:active {
   opacity: 1;
@@ -3795,7 +3795,7 @@ form .inputs-description {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  background-color: #1af2dc;
+  background-color: #f79a48;
 }
 #zoom-in .btn-icon, #zoom-out .btn-icon {
   position: relative;
@@ -3829,7 +3829,7 @@ form .inputs-description {
   overflow-y: auto !important;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: #1af2dc rgba(255,255,255,.06);
+  scrollbar-color: #f79a48 rgba(255,255,255,.06);
 }
 .media-container.portfolio-container::-webkit-scrollbar {
   width: 3px;
@@ -3838,7 +3838,7 @@ form .inputs-description {
   background: rgba(255,255,255,.04);
 }
 .media-container.portfolio-container::-webkit-scrollbar-thumb {
-  background: #1af2dc;
+  background: #f79a48;
   border-radius: 2px;
 }
 
@@ -3850,7 +3850,7 @@ form .inputs-description {
     overflow-x: hidden;
     padding-right: 8px;
     scrollbar-width: thin;
-    scrollbar-color: #1af2dc rgba(255,255,255,.06);
+    scrollbar-color: #f79a48 rgba(255,255,255,.06);
   }
   .about .blocks-container::-webkit-scrollbar {
     width: 3px;
@@ -3860,7 +3860,7 @@ form .inputs-description {
     border-radius: 2px;
   }
   .about .blocks-container::-webkit-scrollbar-thumb {
-    background: #1af2dc;
+    background: #f79a48;
     border-radius: 2px;
   }
 }
@@ -3939,7 +3939,7 @@ form .inputs-description {
   content: '+';
   font-size: 20px;
   font-weight: 300;
-  color: #1af2dc;
+  color: #f79a48;
   flex-shrink: 0;
   transition: transform .25s ease;
 }
@@ -3947,7 +3947,7 @@ form .inputs-description {
   transform: rotate(45deg);
 }
 .pano-faq__item[open] .pano-faq__q {
-  color: #1af2dc;
+  color: #f79a48;
 }
 .pano-faq__a {
   padding: 0 0 20px;
@@ -3980,8 +3980,8 @@ form .inputs-description {
   position: absolute;
   inset: -80px;
   background-image:
-    linear-gradient(rgba(26, 242, 220, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 242, 220, 0.022) 1px, transparent 1px);
+    linear-gradient(rgba(247, 154, 72, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 154, 72, 0.022) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: heroGridDrift 30s linear infinite;
   transition: transform 0.18s ease-out;
@@ -4004,7 +4004,7 @@ form .inputs-description {
 .hero-orb-1 {
   width: min(700px, 70vw);
   height: min(700px, 70vw);
-  background: radial-gradient(circle, rgba(26, 242, 220, 0.11) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(247, 154, 72, 0.11) 0%, transparent 65%);
   top: -20%;
   left: -15%;
   animation: orbFloat1 20s ease-in-out infinite;
@@ -4013,7 +4013,7 @@ form .inputs-description {
 .hero-orb-2 {
   width: min(500px, 50vw);
   height: min(500px, 50vw);
-  background: radial-gradient(circle, rgba(26, 242, 220, 0.07) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(247, 154, 72, 0.07) 0%, transparent 65%);
   bottom: -15%;
   right: 5%;
   animation: orbFloat2 26s ease-in-out infinite;
@@ -4022,7 +4022,7 @@ form .inputs-description {
 .hero-orb-3 {
   width: min(380px, 38vw);
   height: min(380px, 38vw);
-  background: radial-gradient(circle, rgba(26, 242, 220, 0.05) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(247, 154, 72, 0.05) 0%, transparent 65%);
   top: 30%;
   left: 42%;
   animation: orbFloat3 17s ease-in-out infinite;

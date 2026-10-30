@@ -88,7 +88,7 @@
     <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
     <link rel="stylesheet" type="text/css" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <meta name="theme-color" content="#1af2dc">
+    <meta name="theme-color" content="#f79a48">
 
     <style>
       html, body { overflow: auto !important; height: auto !important; }
@@ -118,7 +118,7 @@
       .lp-topbar__nav a:hover { color: rgba(255,255,255,0.75); }
       .lp-topbar__cta {
         display: inline-flex; align-items: center; gap: 8px;
-        background: #1af2dc; color: #09090b;
+        background: #f79a48; color: #09090b;
         font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
         padding: 9px 18px; border-radius: 8px; border: none; font-family: inherit; cursor: pointer; transition: opacity .2s;
       }
@@ -132,13 +132,13 @@
       .lp-hero::before {
         content: ''; position: absolute; inset: 0;
         background-image:
-          linear-gradient(rgba(26,242,220,0.03) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(26,242,220,0.03) 1px, transparent 1px);
+          linear-gradient(rgba(247,154,72,0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(247,154,72,0.03) 1px, transparent 1px);
         background-size: 48px 48px; pointer-events: none;
       }
       .lp-hero::after {
         content: ''; position: absolute; inset: 0;
-        background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(26,242,220,0.06) 0%, transparent 65%);
+        background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(247,154,72,0.06) 0%, transparent 65%);
         pointer-events: none;
       }
       .lp-hero__inner {
@@ -154,21 +154,21 @@
       .lp-hero__breadcrumb a:hover { color: rgba(255,255,255,0.6); }
       .lp-hero__badge {
         display: inline-flex; align-items: center; gap: 8px;
-        background: rgba(26,242,220,0.08); border: 1px solid rgba(26,242,220,0.2);
+        background: rgba(247,154,72,0.08); border: 1px solid rgba(247,154,72,0.2);
         border-radius: 20px; padding: 5px 14px;
         font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-        color: #1af2dc; margin-bottom: 20px;
+        color: #f79a48; margin-bottom: 20px;
       }
       .lp-hero__badge::before {
         content: ''; width: 6px; height: 6px; border-radius: 50%;
-        background: #1af2dc; box-shadow: 0 0 8px #1af2dc; animation: pulse 2s infinite;
+        background: #f79a48; box-shadow: 0 0 8px #f79a48; animation: pulse 2s infinite;
       }
       @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
       .lp-hero__h1 {
         font-size: clamp(30px, 4vw, 56px); font-weight: 900; color: #fff;
         line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 22px;
       }
-      .lp-hero__h1 em { font-style: normal; color: #1af2dc; }
+      .lp-hero__h1 em { font-style: normal; color: #f79a48; }
       .lp-hero__sub {
         font-size: 16px; color: rgba(255,255,255,0.5);
         line-height: 1.75; margin-bottom: 36px; max-width: 520px;
@@ -176,7 +176,7 @@
       .lp-hero__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
       .lp-hero__btn {
         display: inline-flex; align-items: center; gap: 10px;
-        background: #1af2dc; color: #09090b;
+        background: #f79a48; color: #09090b;
         font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
         border: none; padding: 16px 30px; border-radius: 12px;
         cursor: pointer; font-family: inherit; text-decoration: none;
@@ -194,7 +194,7 @@
 
       /* SEO rank visual */
       .seo-rank-visual {
-        background: #16151a; border: 1px solid rgba(26,242,220,0.12);
+        background: #16151a; border: 1px solid rgba(247,154,72,0.12);
         border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px;
       }
       .seo-rank-visual__label {
@@ -211,7 +211,7 @@
         display: flex; align-items: center; justify-content: center;
         font-size: 11px; font-weight: 700; flex-shrink: 0;
       }
-      .seo-rank-bar__pos.top { background: rgba(26,242,220,0.15); color: #1af2dc; }
+      .seo-rank-bar__pos.top { background: rgba(247,154,72,0.15); color: #f79a48; }
       .seo-rank-bar__pos.mid { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.3); }
       .seo-rank-bar__track {
         flex: 1; height: 6px; background: rgba(255,255,255,0.05);
@@ -219,7 +219,7 @@
       }
       .seo-rank-bar__fill {
         height: 100%; border-radius: 3px;
-        background: linear-gradient(90deg, #1af2dc, #0dd9c3);
+        background: linear-gradient(90deg, #f79a48, #ef6f2e);
       }
       .seo-rank-bar__pct {
         font-size: 10px; color: rgba(255,255,255,0.3); width: 32px; text-align: right;
@@ -227,7 +227,7 @@
 
       /* Sections */
       .lp-section { max-width: 1200px; margin: 0 auto; padding: 80px 32px; }
-      .lp-section__label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 12px; }
+      .lp-section__label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #f79a48; margin-bottom: 12px; }
       .lp-section__h2 { font-size: clamp(26px, 3.5vw, 42px); font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 16px; }
       .lp-section__sub { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 580px; margin-bottom: 52px; }
 
@@ -239,7 +239,7 @@
         border-radius: 18px; padding: 28px 24px;
         transition: border-color .3s, transform .3s;
       }
-      .seo-pillar:nth-child(1) { border-top-color: #1af2dc; }
+      .seo-pillar:nth-child(1) { border-top-color: #f79a48; }
       .seo-pillar:nth-child(2) { border-top-color: #8b5cf6; }
       .seo-pillar:nth-child(3) { border-top-color: #f59e0b; }
       .seo-pillar:hover { transform: translateY(-4px); }
@@ -254,7 +254,7 @@
         display: flex; align-items: flex-start; gap: 8px;
         font-size: 12px; color: rgba(255,255,255,0.5);
       }
-      .seo-pillar__items li::before { content: '→'; color: #1af2dc; flex-shrink: 0; }
+      .seo-pillar__items li::before { content: '→'; color: #f79a48; flex-shrink: 0; }
 
       /* Local SEO cities */
       .seo-cities {
@@ -266,7 +266,7 @@
         padding: 10px 18px; border-radius: 20px;
         font-size: 13px; color: rgba(255,255,255,0.55);
       }
-      .seo-city i { color: #1af2dc; font-size: 10px; }
+      .seo-city i { color: #f79a48; font-size: 10px; }
 
       /* Results / Numbers */
       .seo-results {
@@ -281,7 +281,7 @@
         font-size: clamp(28px, 3vw, 44px); font-weight: 900; color: #fff;
         letter-spacing: -0.03em; margin-bottom: 6px;
       }
-      .seo-result-item__num span { color: #1af2dc; }
+      .seo-result-item__num span { color: #f79a48; }
       .seo-result-item__label { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.5; }
 
       /* FAQ */
@@ -292,26 +292,26 @@
         padding: 22px 0; font-size: 15px; font-weight: 600; color: #fff;
         cursor: pointer; list-style: none; transition: color .2s;
       }
-      .lp-faq-item__q:hover { color: #1af2dc; }
+      .lp-faq-item__q:hover { color: #f79a48; }
       .lp-faq-item__q::-webkit-details-marker { display: none; }
-      .lp-faq-item__q i { color: #1af2dc; font-size: 11px; transition: transform .3s; flex-shrink: 0; }
+      .lp-faq-item__q i { color: #f79a48; font-size: 11px; transition: transform .3s; flex-shrink: 0; }
       .lp-faq-item[open] .lp-faq-item__q i { transform: rotate(45deg); }
       .lp-faq-item__a { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; padding: 0 0 22px; }
 
       /* CTA */
-      .lp-cta { position: relative; background: #16151a; border-top: 1px solid rgba(26,242,220,0.1); overflow: hidden; }
+      .lp-cta { position: relative; background: #16151a; border-top: 1px solid rgba(247,154,72,0.1); overflow: hidden; }
       .lp-cta::before {
         content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
         width: 600px; height: 400px;
-        background: radial-gradient(ellipse, rgba(26,242,220,0.06) 0%, transparent 65%);
+        background: radial-gradient(ellipse, rgba(247,154,72,0.06) 0%, transparent 65%);
         pointer-events: none;
       }
       .lp-cta__inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 100px 32px; text-align: center; }
-      .lp-cta__eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; }
+      .lp-cta__eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #f79a48; margin-bottom: 16px; }
       .lp-cta__h2 { font-size: clamp(28px, 4vw, 50px); font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 18px; }
       .lp-cta__sub { font-size: 15px; color: rgba(255,255,255,0.42); line-height: 1.7; margin-bottom: 36px; }
       .lp-cta__actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
-      .lp-cta__btn { display: inline-flex; align-items: center; gap: 10px; background: #1af2dc; color: #09090b; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 18px 36px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
+      .lp-cta__btn { display: inline-flex; align-items: center; gap: 10px; background: #f79a48; color: #09090b; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 18px 36px; border-radius: 12px; cursor: pointer; font-family: inherit; text-decoration: none; transition: opacity .2s, transform .2s; }
       .lp-cta__btn:hover { opacity: .87; transform: translateY(-2px); }
       .lp-cta__secondary { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color .2s; }
       .lp-cta__secondary:hover { color: rgba(255,255,255,0.75); }
@@ -325,12 +325,12 @@
 
       /* Overlay form styles (copied from blog.html) */
       .pf-overlay { position: fixed; inset: 0; z-index: 9999; background: #0a0a0c; display: flex; flex-direction: column; opacity: 0; pointer-events: none; transition: opacity .3s ease; overflow: hidden; }
-      .pf-overlay::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(26,242,220,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(26,242,220,0.025) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
+      .pf-overlay::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(247,154,72,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(247,154,72,0.025) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
       .pf-overlay.is-open { opacity: 1; pointer-events: all; }
       .pf-topbar { position: relative; z-index: 2; display: flex; align-items: center; gap: 18px; padding: 16px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); flex-shrink: 0; }
       .pf-topbar__logo { height: 28px; width: auto; opacity: .65; }
       .pf-topbar__progress { flex: 1; height: 2px; background: rgba(255,255,255,0.06); border-radius: 2px; overflow: hidden; }
-      .pf-topbar__bar { height: 100%; background: linear-gradient(90deg, #1af2dc, #0dd9c3); border-radius: 2px; width: 0%; transition: width .5s cubic-bezier(.25,1,.5,1); }
+      .pf-topbar__bar { height: 100%; background: linear-gradient(90deg, #f79a48, #ef6f2e); border-radius: 2px; width: 0%; transition: width .5s cubic-bezier(.25,1,.5,1); }
       .pf-topbar__close { width: 32px; height: 32px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s; flex-shrink: 0; }
       .pf-topbar__close:hover { background: rgba(255,255,255,0.1); color: #fff; }
       .pf-body { flex: 1; position: relative; overflow: hidden; }
@@ -338,32 +338,32 @@
       .pf-step.is-active { opacity: 1; transform: translateY(0); pointer-events: all; transition: opacity .45s cubic-bezier(.25,1,.5,1), transform .45s cubic-bezier(.25,1,.5,1); }
       .pf-step.is-out { opacity: 0; transform: translateY(-40px); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
       .pf-step__inner { width: 100%; max-width: 660px; }
-      .pf-step__num { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #1af2dc; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+      .pf-step__num { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #f79a48; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
       .pf-step__q { font-size: clamp(24px, 4vw, 42px); font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px; }
-      .pf-step__q .pf-ast { color: #1af2dc; }
-      .pf-input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(18px, 2.5vw, 26px); font-family: inherit; padding: 8px 0 12px; outline: none; caret-color: #1af2dc; transition: border-color .2s; }
-      .pf-input:focus { border-color: #1af2dc; }
+      .pf-step__q .pf-ast { color: #f79a48; }
+      .pf-input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(18px, 2.5vw, 26px); font-family: inherit; padding: 8px 0 12px; outline: none; caret-color: #f79a48; transition: border-color .2s; }
+      .pf-input:focus { border-color: #f79a48; }
       .pf-input::placeholder { color: rgba(255,255,255,0.15); }
-      .pf-textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(16px, 2vw, 22px); font-family: inherit; padding: 8px 0 12px; outline: none; resize: none; min-height: 120px; line-height: 1.65; caret-color: #1af2dc; transition: border-color .2s; }
-      .pf-textarea:focus { border-color: #1af2dc; }
+      .pf-textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(255,255,255,0.12); color: #fff; font-size: clamp(16px, 2vw, 22px); font-family: inherit; padding: 8px 0 12px; outline: none; resize: none; min-height: 120px; line-height: 1.65; caret-color: #f79a48; transition: border-color .2s; }
+      .pf-textarea:focus { border-color: #f79a48; }
       .pf-textarea::placeholder { color: rgba(255,255,255,0.15); }
       .pf-options { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
       .pf-option { display: flex; align-items: center; gap: 10px; padding: 11px 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: rgba(255,255,255,0.5); font-size: 14px; font-family: inherit; cursor: pointer; transition: border-color .2s, background .2s, color .2s; }
-      .pf-option:hover { border-color: rgba(26,242,220,0.25); color: #e0e0e0; }
-      .pf-option.is-sel { border-color: #1af2dc; background: rgba(26,242,220,0.07); color: #fff; }
+      .pf-option:hover { border-color: rgba(247,154,72,0.25); color: #e0e0e0; }
+      .pf-option.is-sel { border-color: #f79a48; background: rgba(247,154,72,0.07); color: #fff; }
       .pf-option__key { width: 20px; height: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-radius: 4px; font-size: 9px; font-weight: 700; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); flex-shrink: 0; }
-      .pf-option.is-sel .pf-option__key { background: rgba(26,242,220,0.12); border-color: rgba(26,242,220,0.3); color: #1af2dc; }
+      .pf-option.is-sel .pf-option__key { background: rgba(247,154,72,0.12); border-color: rgba(247,154,72,0.3); color: #f79a48; }
       .pf-err { font-size: 13px; color: #ff6b6b; margin-top: 10px; opacity: 0; transition: opacity .2s; min-height: 18px; }
       .pf-err.show { opacity: 1; }
       .pf-nav { margin-top: 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-      .pf-btn { display: inline-flex; align-items: center; gap: 8px; background: #1af2dc; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 13px 24px; border-radius: 10px; cursor: pointer; transition: opacity .2s, transform .2s; font-family: inherit; }
+      .pf-btn { display: inline-flex; align-items: center; gap: 8px; background: #f79a48; color: #09090b; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; border: none; padding: 13px 24px; border-radius: 10px; cursor: pointer; transition: opacity .2s, transform .2s; font-family: inherit; }
       .pf-btn:hover { opacity: .87; transform: translateY(-2px); }
       .pf-hint { font-size: 11px; color: rgba(255,255,255,0.18); }
       .pf-hint kbd { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); border-radius: 3px; padding: 1px 5px; font-size: 9px; font-family: monospace; }
       .pf-back { background: none; border: none; color: rgba(255,255,255,0.25); font-size: 11px; font-family: inherit; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: color .2s; padding: 0; letter-spacing: 0.07em; text-transform: uppercase; }
       .pf-back:hover { color: rgba(255,255,255,0.6); }
       .pf-success__wrap { text-align: center; max-width: 480px; width: 100%; }
-      .pf-success__icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(26,242,220,0.1); border: 1px solid rgba(26,242,220,0.25); display: flex; align-items: center; justify-content: center; color: #1af2dc; font-size: 24px; margin: 0 auto 24px; }
+      .pf-success__icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(247,154,72,0.1); border: 1px solid rgba(247,154,72,0.25); display: flex; align-items: center; justify-content: center; color: #f79a48; font-size: 24px; margin: 0 auto 24px; }
       .pf-success__h { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; }
       .pf-success__p { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.65; margin-bottom: 28px; }
       .pf-footer { position: relative; z-index: 2; padding: 14px 40px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: flex-end; flex-shrink: 0; }
@@ -455,7 +455,7 @@
                 <div class="seo-rank-bar__pos top">1</div>
                 <span style="flex:0 0 140px; font-size:11px;">Ihr Unternehmen</span>
                 <div class="seo-rank-bar__track"><div class="seo-rank-bar__fill" style="width:96%"></div></div>
-                <span class="seo-rank-bar__pct" style="color:#1af2dc;">96%</span>
+                <span class="seo-rank-bar__pct" style="color:#f79a48;">96%</span>
               </div>
               <div class="seo-rank-bar__item" style="opacity:.5">
                 <div class="seo-rank-bar__pos mid">2</div>
@@ -472,7 +472,7 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
               <div style="background:#0d0d0f;border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
-                <div style="font-size:22px;font-weight:900;color:#1af2dc;letter-spacing:-0.02em;">+128%</div>
+                <div style="font-size:22px;font-weight:900;color:#f79a48;letter-spacing:-0.02em;">+128%</div>
                 <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:3px;">Mehr organische Besucher</div>
               </div>
               <div style="background:#0d0d0f;border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
@@ -594,7 +594,7 @@
             </details>
             <details class="lp-faq-item">
               <summary class="lp-faq-item__q">Kann ich meine Webseite schon selbst f&uuml;r SEO optimieren?<i class="fa-solid fa-plus"></i></summary>
-              <p class="lp-faq-item__a">Grundlegende Ma&szlig;nahmen wie Google My Business einrichten, relevante Keywords in Texte einbauen und Ladezeiten verbessern kann jeder. F&uuml;r nachhaltige Ergebnisse in wettbewerbsintensiven Branchen empfehlen wir professionelle Unterst&uuml;tzung &ndash; lesen Sie dazu auch unseren <a href="blog.html" style="color:#1af2dc;">SEO-Blog</a>.</p>
+              <p class="lp-faq-item__a">Grundlegende Ma&szlig;nahmen wie Google My Business einrichten, relevante Keywords in Texte einbauen und Ladezeiten verbessern kann jeder. F&uuml;r nachhaltige Ergebnisse in wettbewerbsintensiven Branchen empfehlen wir professionelle Unterst&uuml;tzung &ndash; lesen Sie dazu auch unseren <a href="blog.html" style="color:#f79a48;">SEO-Blog</a>.</p>
             </details>
             <details class="lp-faq-item">
               <summary class="lp-faq-item__q">Arbeitet ihr auch mit Google Ads zusammen?<i class="fa-solid fa-plus"></i></summary>

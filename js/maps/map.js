@@ -191,7 +191,7 @@ window.initMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#1af2dc"
+              "color": "#f79a48"
             }
           ]
         },
@@ -200,7 +200,7 @@ window.initMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#1af2dc"
+              "color": "#f79a48"
             }
           ]
         },

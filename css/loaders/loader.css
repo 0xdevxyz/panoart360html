@@ -89,10 +89,10 @@
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .loader__text span.outline-colored {
-  color: #1af2dc;
+  color: #f79a48;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1af2dc;
+  -webkit-text-stroke-color: #f79a48;
 }
 .loader__text span:nth-of-type(2) {
   -webkit-animation: 1s ease-in-out 0.2s infinite fadeIn;
@@ -120,10 +120,10 @@
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
   .loader__text span.outline-colored {
-    color: #1af2dc;
+    color: #f79a48;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #1af2dc;
+    -webkit-text-stroke-color: #f79a48;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -137,10 +137,10 @@
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
   .loader__text span.outline-colored {
-    color: #1af2dc;
+    color: #f79a48;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #1af2dc;
+    -webkit-text-stroke-color: #f79a48;
   }
 }
 
