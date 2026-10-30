@@ -23,6 +23,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://panoart360.de/einkaufsliste/modern/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://panoart360.de/einkaufsliste/warm/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://panoart360.de/nachweis/beispiel/</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>

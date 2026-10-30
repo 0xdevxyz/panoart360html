@@ -129,3 +129,12 @@
 .hs-list__sum { display:flex; justify-content:space-between; margin:12px 0 4px; font-size:14px; font-weight:700; color:#fff; }
 .hs-list__meta { margin:0 0 18px; font-size:11px; color:rgba(255,255,255,.45); letter-spacing:.04em; }
 .hs-list__note { margin:14px 0 0; font-size:11px; color:rgba(255,255,255,.4); letter-spacing:.04em; line-height:1.6; }
+
+/* Stil-Auswahl im Gastgeber-Abschnitt (30.10.2026) */
+.hs-tabs { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:36px; }
+.hs-tabs__label { font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.5); margin-right:4px; }
+.hs-tab { padding:9px 18px; background:transparent; color:#fff; border:1px solid rgba(255,255,255,.25); font-family:inherit; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+.hs-tab:hover { border-color:#f79a48; }
+.hs-tab.is-on { background:#f79a48; color:#050505; border-color:#f79a48; }
+.hs-panel[hidden] { display:none; }
+.hs-tabs + .hs-demo { margin-top:24px; }

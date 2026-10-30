@@ -738,10 +738,16 @@
         <p class="pa-lead">Send us the photo of the empty room. We furnish it with real products and attach the shopping list: what you see in the image, you can order. Once the furniture is in, you photograph the unit and we enhance the photos for the listing.</p>
         <div class="pa-grid pa-grid--3" style="margin-top:32px;">
           <div class="step"><p class="step__num">01</p><h3 class="step__h">Send the empty photo</h3><p class="step__p">One photo per room from the doorway corner, window in frame. Add your budget and style wish, nothing else.</p></div>
-          <div class="step"><p class="step__num">02</p><h3 class="step__h">Pick a style</h3><p class="step__p">We propose pieces from the style library: sofa, armchair, table, lamp, rug, plant. Large pieces come out recognisably, cushions and art only approximately, and the list says so.</p></div>
+          <div class="step"><p class="step__num">02</p><h3 class="step__h">Pick a style</h3><p class="step__p">Three styles to choose from (Scandinavian, Modern, Warm), more on request. We propose pieces from the style library: sofa, armchair, table, lamp, rug, plant. Large pieces come out recognisably, cushions and art only approximately, and the list says so.</p></div>
           <div class="step"><p class="step__num">03</p><h3 class="step__h">Image plus shopping list</h3><p class="step__p">Per room one image with proof and camera check, plus the list with prices, item numbers and links. The retailer delivers, we sell no furniture.</p></div>
         </div>
-        <div class="pa-grid pa-grid--2 hs-demo">
+                <div class="hs-tabs" role="tablist" aria-label="Pick a style:">
+          <span class="hs-tabs__label">Pick a style:</span>
+          <button type="button" class="hs-tab is-on" role="tab" aria-selected="true" aria-controls="hs-panel-S" data-hs="S">Scandinavian</button>
+          <button type="button" class="hs-tab" role="tab" aria-selected="false" aria-controls="hs-panel-M" data-hs="M">Modern</button>
+          <button type="button" class="hs-tab" role="tab" aria-selected="false" aria-controls="hs-panel-W" data-hs="W">Warm</button>
+        </div>
+        <div class="pa-grid pa-grid--2 hs-demo hs-panel" id="hs-panel-S" role="tabpanel">
           <div>
             <div class="ba" style="--pos:50%">
               <img src="/img/staging/living-room-shop-before.webp" alt="Living room, furnished with real products, Before" loading="lazy">
@@ -751,7 +757,7 @@
               <span class="ba__note">Label on the image (German): furnishing preview, not the listing, furniture shown is not present.</span>
               <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Before / After">
             </div>
-            <p class="ba-caption"><strong>Living room, furnished with real products.</strong> Test room, 30 October 2026: 8 of 11 pieces recognisably matched, 2 approximate, 1 missing. German retailers today, US and UK libraries on request.</p>
+            <p class="ba-caption">Living room, furnished with real products. Test room, 30 October 2026, style Scandinavian: 8 of 11 pieces recognisably matched, 2 approximate, 1 missing. German retailers today, US and UK libraries on request.</p>
           </div>
           <div class="hs-list">
             <p class="hs-list__h">Shopping list for this room</p>
@@ -770,9 +776,87 @@
             <p class="hs-list__sum"><span>Total, 10 pieces</span><span>2363,93 &euro;</span></p>
             <p class="hs-list__meta">IKEA Germany, prices as of 29 October 2026</p>
             <a href="/einkaufsliste/beispiel/" class="pa-cta" target="_blank" rel="noopener">View the shopping list &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <p class="hs-list__note">Furnishing preview, not for the listing. Prices without guarantee, as of 29 October 2026.</p>
+            <p class="hs-list__note">Furnishing preview, not for the listing. Prices without guarantee.</p>
           </div>
         </div>
+        <div class="pa-grid pa-grid--2 hs-demo hs-panel" id="hs-panel-M" role="tabpanel" hidden>
+          <div>
+            <div class="ba" style="--pos:50%">
+              <img src="/img/staging/living-room-shop-before.webp" alt="Living room, furnished in modern style, Before" loading="lazy">
+              <img class="ba__after" src="/img/staging/living-room-modern-after.webp" alt="Living room, furnished in modern style, After, furnished with real products" loading="lazy">
+              <div class="ba__handle"></div>
+              <span class="ba__tag ba__tag--l">Before</span><span class="ba__tag ba__tag--r">After</span>
+              <span class="ba__note">Label on the image (German): furnishing preview, not the listing, furniture shown is not present.</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Before / After">
+            </div>
+            <p class="ba-caption">Same room, style Modern: 9 of 11 pieces recognisably matched, 2 approximate (side table, cushions). Window wall 17.8 % changed, camera steady.</p>
+          </div>
+          <div class="hs-list">
+            <p class="hs-list__h">Shopping list for this room</p>
+            <ul class="hs-list__items">
+<li><span>ÄPPLARYD 3er-Sofa</span><span>799,00 &euro;</span></li>
+<li><span>FRIHETEN Sessel</span><span>129,00 &euro;</span></li>
+<li><span>FRÖTORP Couchtisch</span><span>149,00 &euro;</span></li>
+<li><span>FRÖTORP Beistelltisch <em>(shown approximately)</em></span><span>99,99 &euro;</span></li>
+<li><span>KNARDRUP Teppich Kurzflor</span><span>199,00 &euro;</span></li>
+<li><span>SKOTTORP / SKAFTET Standleuchte, bogenförmig</span><span>79,99 &euro;</span></li>
+<li><span>FEJKA Topfpflanze, künstlich</span><span>59,99 &euro;</span></li>
+<li><span>PERSILLADE Übertopf</span><span>19,99 &euro;</span></li>
+<li><span>PJÄTTERYD Bild</span><span>24,99 &euro;</span></li>
+<li><span>2 &times; PARADISBUSKE Kissen <em>(shown approximately)</em></span><span>9,98 &euro;</span></li>
+<li><span>SLÅNGRÅMAL Plaid</span><span>19,99 &euro;</span></li>
+            </ul>
+            <p class="hs-list__sum"><span>Total, 11 pieces</span><span>1590,92 &euro;</span></p>
+            <p class="hs-list__meta">IKEA Germany, prices as of 30 October 2026</p>
+            <a href="/einkaufsliste/modern/" class="pa-cta" target="_blank" rel="noopener">View the shopping list &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="hs-list__note">Furnishing preview, not for the listing. Prices without guarantee.</p>
+          </div>
+        </div>
+        <div class="pa-grid pa-grid--2 hs-demo hs-panel" id="hs-panel-W" role="tabpanel" hidden>
+          <div>
+            <div class="ba" style="--pos:50%">
+              <img src="/img/staging/living-room-shop-before.webp" alt="Living room, furnished in warm style, Before" loading="lazy">
+              <img class="ba__after" src="/img/staging/living-room-warm-after.webp" alt="Living room, furnished in warm style, After, furnished with real products" loading="lazy">
+              <div class="ba__handle"></div>
+              <span class="ba__tag ba__tag--l">Before</span><span class="ba__tag ba__tag--r">After</span>
+              <span class="ba__note">Label on the image (German): furnishing preview, not the listing, furniture shown is not present.</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Before / After">
+            </div>
+            <p class="ba-caption">Same room, style Warm: 9 of 11 pieces recognisably matched, 2 approximate (planter, wall art). Window wall 18.4 % changed, camera steady.</p>
+          </div>
+          <div class="hs-list">
+            <p class="hs-list__h">Shopping list for this room</p>
+            <ul class="hs-list__items">
+<li><span>SÖDERHAMN 3er-Sofa</span><span>599,00 &euro;</span></li>
+<li><span>EKENÄSET Sessel</span><span>229,00 &euro;</span></li>
+<li><span>BORGEBY Couchtisch</span><span>129,00 &euro;</span></li>
+<li><span>VALNÄS Beistelltisch</span><span>149,00 &euro;</span></li>
+<li><span>LOHALS Teppich flach gewebt</span><span>99,99 &euro;</span></li>
+<li><span>VARPTROSS Standleuchte</span><span>74,99 &euro;</span></li>
+<li><span>FEJKA Topfpflanze, künstlich</span><span>49,99 &euro;</span></li>
+<li><span>VALLMOFRÖN Übertopf <em>(shown approximately)</em></span><span>24,99 &euro;</span></li>
+<li><span>PJÄTTERYD Bild <em>(shown approximately)</em></span><span>29,99 &euro;</span></li>
+<li><span>2 &times; DYTÅG Kissenbezug</span><span>19,98 &euro;</span></li>
+<li><span>ALLFRAKEN Plaid</span><span>39,99 &euro;</span></li>
+            </ul>
+            <p class="hs-list__sum"><span>Total, 11 pieces</span><span>1445,92 &euro;</span></p>
+            <p class="hs-list__meta">IKEA Germany, prices as of 30 October 2026</p>
+            <a href="/einkaufsliste/warm/" class="pa-cta" target="_blank" rel="noopener">View the shopping list &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="hs-list__note">Furnishing preview, not for the listing. Prices without guarantee.</p>
+          </div>
+        </div>
+        <script>
+        (function () {
+          var tabs = document.querySelectorAll('.hs-tab');
+          tabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+              var k = tab.getAttribute('data-hs');
+              tabs.forEach(function (o) { var on = o === tab; o.classList.toggle('is-on', on); o.setAttribute('aria-selected', on ? 'true' : 'false'); });
+              document.querySelectorAll('.hs-panel').forEach(function (p) { p.hidden = p.id !== 'hs-panel-' + k; });
+            });
+          });
+        })();
+        </script>
       </div>
     </section>
 
