@@ -35,10 +35,10 @@
     <link rel="alternate" hreflang="x-default" href="https://panoart360.de/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css?v=20261030c">
+    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css?v=20261031a">
     <link rel="stylesheet" type="text/css" href="/css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css?v=20261030c">
-    <link rel="stylesheet" type="text/css" href="/css/immobilien.css?v=20261030c">
+    <link rel="stylesheet" type="text/css" href="/css/main.css?v=20261031a">
+    <link rel="stylesheet" type="text/css" href="/css/immobilien.css?v=20261031a">
 
     <meta name="theme-color" content="#f79a48">
     <meta name="msapplication-navbutton-color" content="#f79a48">
@@ -264,6 +264,20 @@
     <!-- Navigation End -->
 
     <!-- Main Screen Start -->
+        <!-- Feste Leiste ab dem Hero: Anschluss an alle Abschnitte der Seite -->
+    <header class="pa-topbar" id="paTopbar" aria-label="Menü">
+      <a href="#" class="pa-topbar__logo" id="paTopLogo" aria-label="Nach oben"><img src="/img/pano-Logo.png?v=20261030" alt="panoart360" width="112" height="25"></a>
+      <nav class="pa-topbar__nav">
+        <a href="#before-after" data-pa-scroll="before-after">Beispiele</a>
+        <a href="#proof" data-pa-scroll="proof">Nachweis</a>
+        <a href="#hosts" data-pa-scroll="hosts">Einrichten</a>
+        <a href="#pricing" data-pa-scroll="pricing">Preise</a>
+        <a href="#faq" data-pa-scroll="faq">FAQ</a>
+      </nav>
+      <button type="button" class="pa-topbar__cta" data-pf-open>Erstes Foto kostenlos</button>
+      <button type="button" class="pa-topbar__burger" id="paTopMenu" aria-label="Menü"><span></span><span></span><span></span></button>
+    </header>
+
     <section id="main" class="main">
       <div class="hero-animated-bg" aria-hidden="true">
         <div class="hero-grid"></div>
@@ -1161,6 +1175,24 @@
         });
       });
       window.paCloseMenuThen = closeMenuThen;
+      // Feste Leiste: erscheint, sobald der Hero verlassen ist
+      var bar = document.getElementById('paTopbar');
+      function barState() { if (bar) bar.classList.toggle('is-on', window.scrollY > window.innerHeight * 0.6); }
+      window.addEventListener('scroll', barState, { passive: true }); barState();
+      document.querySelectorAll('[data-pa-scroll]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var el = document.getElementById(a.getAttribute('data-pa-scroll'));
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      var logo = document.getElementById('paTopLogo');
+      if (logo) logo.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      var burger = document.getElementById('paTopMenu'), trig = document.getElementById('menu-trigger');
+      if (burger && trig) burger.addEventListener('click', function () { trig.click(); });
+      // Menuepunkt "Start": zurueck an den Seitenanfang
+      var home = document.getElementById('home-trigger');
+      if (home) home.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
     })();
     </script>
 
