@@ -170,3 +170,10 @@ body.overflow-hidden .pa-topbar,
 body:has(.menu.animate-in) .pa-topbar,
 body:has(.inner.animate-in) .pa-topbar,
 body:has(.popup.animate-in) .pa-topbar { transform:translateY(-110%); }
+
+/* Overlays ueber den Abschnitten (02.11.2026). Hero und .pa-section haben den Stapelrang 10, das Theme legt Menue (9), Seiten-Overlays (9 bis 10)
+   und Kontaktformular (10) darunter. Weiter unten auf der Seite geoeffnet waren sie unsichtbar, die Seite gesperrt und der Besucher ohne Ausweg. */
+nav.menu { z-index:20; }
+section.inner { z-index:20; }
+section.inner.animate-in { z-index:21; }
+div.popup { z-index:22; }
