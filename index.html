@@ -35,10 +35,10 @@
     <link rel="alternate" hreflang="x-default" href="https://panoart360.de/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css?v=20261102a">
+    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css?v=20261102b">
     <link rel="stylesheet" type="text/css" href="/css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css?v=20261102a">
-    <link rel="stylesheet" type="text/css" href="/css/immobilien.css?v=20261102a">
+    <link rel="stylesheet" type="text/css" href="/css/main.css?v=20261102b">
+    <link rel="stylesheet" type="text/css" href="/css/immobilien.css?v=20261102b">
 
     <meta name="theme-color" content="#f79a48">
     <meta name="msapplication-navbutton-color" content="#f79a48">
@@ -1190,6 +1190,14 @@
       if (logo) logo.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
       var burger = document.getElementById('paTopMenu'), trig = document.getElementById('menu-trigger');
       if (burger && trig) burger.addEventListener('click', function () { trig.click(); });
+      // Notausgang: Escape schliesst Menue und Seiten-Overlays (Besucher sollen nie festsitzen)
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Escape') return;
+        var menuEl = document.getElementById('menu');
+        if (menuEl && menuEl.classList.contains('animate-in')) { var c = document.getElementById('menu-close'); if (c) c.click(); return; }
+        var offen = document.querySelector('section.inner.animate-in .section-close');
+        if (offen) offen.click();
+      });
       // Menuepunkt "Start": zurueck an den Seitenanfang
       var home = document.getElementById('home-trigger');
       if (home) home.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
