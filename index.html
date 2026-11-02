@@ -1256,6 +1256,8 @@
       document.querySelectorAll('[data-pf-open]').forEach(function (el) {
         el.addEventListener('click', function (e) { e.preventDefault(); window.paCloseMenuThen(function () { openForm(''); }); });
       });
+      // Ratgeberseiten verlinken auf /#order: Bestellformular nach dem Laden oeffnen
+      if (location.hash === '#order') { try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {} setTimeout(function () { openForm(''); }, 900); }
       document.querySelectorAll('[data-order]').forEach(function (el) {
         el.addEventListener('click', function (e) {
           e.preventDefault();

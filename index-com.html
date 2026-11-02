@@ -1031,6 +1031,14 @@
       </div>
     </section>
 
+    <nav aria-label="Guides" style="position:relative;z-index:10;background:#0a0a0a;padding:22px 32px 0;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:11px;letter-spacing:0.08em;border-top:1px solid rgba(255,255,255,0.06);">
+      <span style="color:rgba(255,255,255,0.3);text-transform:uppercase;">Guides</span>
+      <a href="/virtual-staging-cost/" style="color:rgba(255,255,255,0.4);text-decoration:none;">Virtual staging cost and pricing</a>
+      <a href="/virtual-staging-before-and-after/" style="color:rgba(255,255,255,0.4);text-decoration:none;">Virtual staging before and after</a>
+      <a href="/360-virtual-staging/" style="color:rgba(255,255,255,0.4);text-decoration:none;">360 virtual staging</a>
+      <a href="/real-estate-photo-enhancement/" style="color:rgba(255,255,255,0.4);text-decoration:none;">Real estate photo editing</a>
+      <a href="/best-virtual-staging/" style="color:rgba(255,255,255,0.4);text-decoration:none;">How to choose a virtual staging service</a>
+    </nav>
     <footer style="position:relative;z-index:10;background:#0a0a0a;padding:20px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:12px;letter-spacing:0.08em;border-top:1px solid rgba(255,255,255,0.06);">
       <span style="color:rgba(255,255,255,0.3);">&copy; 2026 panoart360 &ndash; Listing visuals, Markkleeberg, Germany</span>
       <nav aria-label="Footer" style="display:flex;gap:20px;font-size:10px;">
@@ -1255,6 +1263,8 @@
       document.querySelectorAll('[data-pf-open]').forEach(function (el) {
         el.addEventListener('click', function (e) { e.preventDefault(); window.paCloseMenuThen(function () { openForm(''); }); });
       });
+      // Ratgeberseiten verlinken auf /#order: Bestellformular nach dem Laden oeffnen
+      if (location.hash === '#order') { try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {} setTimeout(function () { openForm(''); }, 900); }
       document.querySelectorAll('[data-order]').forEach(function (el) {
         el.addEventListener('click', function (e) {
           e.preventDefault();
