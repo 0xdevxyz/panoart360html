@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /mail.php
+
+Sitemap: https://panoart360.com/sitemap.xml
